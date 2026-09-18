@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -n 'modified_by\\\\|updated_by\\\\|withActivityCounts\\\\|function activity\\\\|casts\\(\\)\\\\|protected $fillable\\\\|protected $table' app/Models/Patient.php app/Models/PatientVisit.php app/Models/User.php)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}
