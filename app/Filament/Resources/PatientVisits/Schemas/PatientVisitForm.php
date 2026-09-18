@@ -42,6 +42,14 @@ class PatientVisitForm
                     Hidden::make('pazientecode'),
                     Toggle::make('active')->label('Visita attiva')->default(true),
                 ]),
+            Section::make('Trattamento e annotazioni')
+                ->columns(3)
+                ->schema([
+                    TextInput::make('Trattamentonuovo')->label('Nuovo trattamento'),
+                    DatePicker::make('Trattamentonuovodal')->label('Nuovo trattamento dal'),
+                    TextInput::make('Trattamentovecchio')->label('Trattamento precedente'),
+                    Textarea::make('annotazione')->label('Annotazione')->columnSpanFull(),
+                ]),
             Section::make('Parametri clinici')
                 ->columns(4)
                 ->schema([
@@ -81,14 +89,6 @@ class PatientVisitForm
                     Toggle::make('placcadxomogenea')->label('Placca dx omogenea'),
                     Textarea::make('placche_sx')->label('Note placca sx')->columnSpan(2),
                     Textarea::make('placche_dx')->label('Note placca dx')->columnSpan(2),
-                ]),
-            Section::make('Trattamento e annotazioni')
-                ->columns(3)
-                ->schema([
-                    TextInput::make('Trattamentonuovo')->label('Nuovo trattamento'),
-                    DatePicker::make('Trattamentonuovodal')->label('Nuovo trattamento dal'),
-                    TextInput::make('Trattamentovecchio')->label('Trattamento precedente'),
-                    Textarea::make('annotazione')->label('Annotazione')->columnSpanFull(),
                 ]),
         ]);
     }

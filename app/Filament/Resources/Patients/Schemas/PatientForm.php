@@ -9,6 +9,7 @@ use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Section;
+use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Components\Utilities\Set;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\DB;
@@ -41,7 +42,7 @@ class PatientForm
                 ->columns(4)
                 ->schema([
                     DatePicker::make('datanascita')->label('Data di nascita'),
-                    Select::make('sesso')->options(['M' => 'Maschio', 'F' => 'Femmina'])->default('M'),
+                    Select::make('sesso')->options(['M' => 'Maschio', 'F' => 'Femmina'])->default('M')->live(),
                     Select::make('etnia_id')->label('Etnia')->options(self::lookup('etnias'))->searchable(),
                     Select::make('rischio_id')->label('Fattore di rischio')->options(self::lookup('rischios'))->searchable(),
                     Select::make('statocivile_id')->label('Stato civile')->options(self::lookup('statociviles'))->searchable(),
@@ -65,7 +66,8 @@ class PatientForm
                     DatePicker::make('datahiv')->label('Data diagnosi HIV'),
                     DatePicker::make('positivodal')->label('HIV positivo dal'),
                     TextInput::make('stadiocdc')->label('Stadio CDC'),
-                    Toggle::make('menopausa')->label('Menopausa'),
+                    Toggle::make('menopausa')->label('Menopausa')
+                        ->disabled(fn (Get $get): bool => $get('sesso') === 'M'),
                 ]),
             Section::make('Terapia e valori basali')
                 ->columns(4)

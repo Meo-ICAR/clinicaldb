@@ -119,11 +119,12 @@ class UsersTable
                             });
                     }),
             ])
-            ->defaultGroup(
+            ->groups([
                 Group::make('centercode')
                     ->label('Centro')
                     ->getTitleFromRecordUsing(fn (User $record): string => $record->center ?: ($record->centercode ?: 'Senza centro')),
-            )
+            ])
+            ->defaultGroup('centercode')
             ->persistGroupInSession()
             ->defaultSort('center')
             ->recordActions([]);
