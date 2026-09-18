@@ -34,7 +34,8 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->navigationGroups([
                 NavigationGroup::make('Amministrazione'),
-                NavigationGroup::make('Tabelle di lookup'),
+                NavigationGroup::make('Tabelle di lookup')
+                    ->collapsed(),
             ])
             ->navigationItems([
                 NavigationItem::make('Dashboard')

@@ -26,7 +26,7 @@ class UserResource extends Resource
 
     protected static string|UnitEnum|null $navigationGroup = 'Amministrazione';
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedAcademicCap;
 
     public static function getEloquentQuery(): Builder
     {

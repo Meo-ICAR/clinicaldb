@@ -24,7 +24,7 @@ class PatientVisitResource extends Resource
 
     protected static ?string $pluralModelLabel = 'visite';
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedCalendarDays;
 
     public static function form(Schema $schema): Schema
     {
