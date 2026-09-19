@@ -31,4 +31,20 @@ class PatientVisit extends Model
     {
         return $this->belongsTo(Patient::class, 'patient_id');
     }
+
+    protected static function booted(): void
+    {
+        static::creating(function (self $visit): void {
+            if (auth()->check()) {
+                $visit->created_by ??= auth()->id();
+                $visit->modified_by ??= auth()->id();
+            }
+        });
+
+        static::updating(function (self $visit): void {
+            if (auth()->check()) {
+                $visit->modified_by = auth()->id();
+            }
+        });
+    }
 }

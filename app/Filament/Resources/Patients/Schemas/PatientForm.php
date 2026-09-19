@@ -31,10 +31,11 @@ class PatientForm
                         ->searchable()
                         ->required()
                         ->live()
+                        ->default(fn (): ?string => auth()->user()?->centercode)
                         ->afterStateUpdated(function (?string $state, Set $set): void {
                             $set('centro', DB::table('centers')->where('centercode', $state)->value('center'));
                         }),
-                    Hidden::make('centro'),
+                    Hidden::make('centro')->default(fn (): ?string => auth()->user()?->center),
                     DatePicker::make('arruolato')->label('Data arruolamento')->required(),
                     Toggle::make('active')->label('Scheda attiva')->default(true),
                 ]),
@@ -46,7 +47,7 @@ class PatientForm
                     Select::make('etnia_id')->label('Etnia')->options(self::lookup('etnias'))->searchable(),
                     Select::make('rischio_id')->label('Fattore di rischio')->options(self::lookup('rischios'))->searchable(),
                     Select::make('statocivile_id')->label('Stato civile')->options(self::lookup('statociviles'))->searchable(),
-                    TextInput::make('studioanni')->label('Anni di studio')->numeric()->minValue(0)->maxValue(30),
+                    TextInput::make('studioanni')->label('Anni di studio (anni)')->numeric()->minValue(0)->maxValue(30),
                     Select::make('fumo_id')->label('Fumo')->options(self::lookup('fumos'))->searchable(),
                     TextInput::make('fumodurata')->label('Durata fumo (anni)')->numeric()->minValue(0),
                     Toggle::make('cammino')->label('Cammino regolare'),
@@ -78,8 +79,8 @@ class PatientForm
                     Select::make('nnrti_id')->label('NNRTI')->options(self::lookup('nnrtis'))->searchable(),
                     Select::make('ini_id')->label('INI')->options(self::lookup('inis'))->searchable(),
                     DatePicker::make('trattamentodal')->label('Terapia dal'),
-                    TextInput::make('cd4')->label('CD4')->numeric()->minValue(0),
-                    TextInput::make('cd4nadir')->label('CD4 nadir')->numeric()->minValue(0),
+                    TextInput::make('cd4')->label('CD4 (cell/µL)')->numeric()->minValue(0),
+                    TextInput::make('cd4nadir')->label('CD4 nadir (cell/µL)')->numeric()->minValue(0),
                     DatePicker::make('cd4data')->label('Data CD4'),
                     TextInput::make('altezza')->label('Altezza (cm)')->numeric()->minValue(30)->maxValue(250),
                     Textarea::make('farmaciterapia')->label('Terapia corrente')->columnSpan(2),
