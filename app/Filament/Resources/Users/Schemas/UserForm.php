@@ -3,10 +3,14 @@
 namespace App\Filament\Resources\Users\Schemas;
 
 use Filament\Forms\Components\DateTimePicker;
+use Filament\Forms\Components\Hidden;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
+use Filament\Schemas\Components\Utilities\Set;
 use Filament\Schemas\Schema;
+use Illuminate\Support\Facades\DB;
 
 class UserForm
 {
@@ -21,11 +25,20 @@ class UserForm
                     ->email(),
                 TextInput::make('password')
                     ->password()
+                    ->default('demo1234')
                     ->required(),
                 TextInput::make('first_name'),
                 TextInput::make('last_name'),
-                TextInput::make('center'),
-                TextInput::make('centercode'),
+                Select::make('centercode')
+                    ->label('Centro')
+                    ->options(fn (): array => DB::table('centers')->orderBy('center')->pluck('center', 'centercode')->all())
+                    ->searchable()
+                    ->required()
+                    ->live()
+                    ->afterStateUpdated(function (?string $state, Set $set): void {
+                        $set('center', DB::table('centers')->where('centercode', $state)->value('center'));
+                    }),
+                Hidden::make('center'),
                 TextInput::make('phone')
                     ->tel(),
                 TextInput::make('token'),

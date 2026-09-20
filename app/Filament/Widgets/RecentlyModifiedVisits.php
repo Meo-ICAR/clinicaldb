@@ -19,6 +19,10 @@ class RecentlyModifiedVisits extends TableWidget
         return $table
             ->query(fn (): Builder => PatientVisit::query()
                 ->where('modified_by', auth()->id())
+                ->when(
+                    filled(auth()->user()?->centercode),
+                    fn (Builder $query): Builder => $query->where('centrocode', auth()->user()->centercode),
+                )
                 ->latest('modified')
                 ->limit(3))
             ->paginated(false)

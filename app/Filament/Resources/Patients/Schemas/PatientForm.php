@@ -21,6 +21,7 @@ class PatientForm
         return $schema->components([
             Section::make('Identificazione e arruolamento')
                 ->description('Dati identificativi pseudonimizzati e centro di riferimento.')
+                ->columnSpanFull()
                 ->columns(3)
                 ->schema([
                     TextInput::make('pazientecode')->label('Codice paziente')->required()->maxLength(15)->unique(ignoreRecord: true),
@@ -40,6 +41,7 @@ class PatientForm
                     Toggle::make('active')->label('Scheda attiva')->default(true),
                 ]),
             Section::make('Dati anagrafici')
+                ->columnSpanFull()
                 ->columns(4)
                 ->schema([
                     DatePicker::make('datanascita')->label('Data di nascita'),
@@ -54,6 +56,7 @@ class PatientForm
                     Toggle::make('sport')->label('Attività sportiva'),
                 ]),
             Section::make('Anamnesi clinica')
+                ->columnSpanFull()
                 ->columns(4)
                 ->schema([
                     Select::make('infezionehiv_id')->label('Infezione HIV')->options(self::lookup('infezionehivs'))->searchable(),
@@ -71,6 +74,7 @@ class PatientForm
                         ->disabled(fn (Get $get): bool => $get('sesso') === 'M'),
                 ]),
             Section::make('Terapia e valori basali')
+                ->columnSpanFull()
                 ->columns(4)
                 ->schema([
                     Select::make('naive_id')->label('Naive')->options(self::lookup('naives'))->searchable(),

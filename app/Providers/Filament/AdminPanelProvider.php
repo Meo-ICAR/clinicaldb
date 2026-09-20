@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use App\Filament\Pages\Auth\EditProfile;
 use App\Filament\Pages\Dashboard;
 use App\Filament\Widgets\RecentlyModifiedPatients;
 use App\Filament\Widgets\RecentlyModifiedVisits;
@@ -37,6 +38,8 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->login()
             ->passwordReset()
+            ->registration()
+            ->profile(EditProfile::class)
             ->plugin(
                 FilamentSocialitePlugin::make()
                     ->providers([
@@ -53,6 +56,7 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->navigationGroups([
                 NavigationGroup::make('Amministrazione'),
+                NavigationGroup::make('Documentazione'),
                 NavigationGroup::make('Tabelle di lookup')
                     ->collapsed(),
             ])

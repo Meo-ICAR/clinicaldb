@@ -2,7 +2,6 @@
 
 namespace App\Filament\Resources\PatientVisits;
 
-use App\Filament\Resources\PatientVisits\Pages\CreatePatientVisit;
 use App\Filament\Resources\PatientVisits\Pages\EditPatientVisit;
 use App\Filament\Resources\PatientVisits\Pages\ListPatientVisits;
 use App\Filament\Resources\PatientVisits\Schemas\PatientVisitForm;
@@ -47,7 +46,6 @@ class PatientVisitResource extends Resource
     {
         return [
             'index' => ListPatientVisits::route('/'),
-            'create' => CreatePatientVisit::route('/create'),
             'edit' => EditPatientVisit::route('/{record}/edit'),
         ];
     }

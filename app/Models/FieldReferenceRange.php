@@ -21,19 +21,32 @@ class FieldReferenceRange extends Model
     }
 
     /**
-     * Classifica un valore rispetto alle soglie cliniche del campo.
-     * La direzione (alto o basso patologico) è dedotta dal verso di normal_value -> warning_value.
-     * Restituisce null quando non ci sono soglie sufficienti o il valore è nella norma.
+     * Direzione clinica dedotta confrontando normal_value con warning_value:
+     * 'high' se un valore alto è patologico (warning >= normal), 'low' se lo è un valore basso.
+     * Restituisce null quando mancano le soglie per determinarla.
      */
-    public function severityFor(float $value): ?string
+    public function direction(): ?string
     {
         if ($this->normal_value === null || $this->warning_value === null) {
             return null;
         }
 
-        $highIsBad = $this->warning_value >= $this->normal_value;
+        return $this->warning_value >= $this->normal_value ? 'high' : 'low';
+    }
 
-        if ($highIsBad) {
+    /**
+     * Classifica un valore rispetto alle soglie cliniche del campo.
+     * Restituisce null quando non ci sono soglie sufficienti o il valore è nella norma.
+     */
+    public function severityFor(float $value): ?string
+    {
+        $direction = $this->direction();
+
+        if ($direction === null) {
+            return null;
+        }
+
+        if ($direction === 'high') {
             if ($this->alert_value !== null && $value >= $this->alert_value) {
                 return 'alert';
             }

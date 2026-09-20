@@ -2,10 +2,12 @@
 
 namespace App\Filament\Resources\PatientVisits\Schemas;
 
+use App\Filament\Resources\Patients\PatientResource;
 use App\Models\FieldReferenceRange;
 use App\Models\Patient;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Hidden;
+use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
@@ -13,10 +15,11 @@ use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Tabs;
 use Filament\Schemas\Components\Tabs\Tab;
-use Filament\Schemas\Components\Utilities\Set;
+use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\HtmlString;
 
 class PatientVisitForm
 {
@@ -69,29 +72,35 @@ class PatientVisitForm
 
         return $schema->components([
             Section::make('Visita')
-                ->columns(4)
+                ->columnSpanFull()
+                ->columns(5)
                 ->schema([
-                    Select::make('patient_id')
-                        ->label('Paziente')
-                        ->options(fn (): array => Patient::query()->orderBy('pazientecode')->pluck('pazientecode', 'id')->all())
-                        ->searchable()
-                        ->preload()
-                        ->required()
-                        ->live()
-                        ->afterStateUpdated(function (?int $state, Set $set): void {
-                            $patient = $state ? Patient::query()->find($state) : null;
+                    Placeholder::make('pazientecode_display')
+                        ->label('Codice paziente')
+                        ->content(function (Get $get): HtmlString {
+                            $patient = ($patientId = $get('patient_id')) ? Patient::query()->find($patientId) : null;
 
-                            $set('centro', $patient?->centro);
-                            $set('centrocode', $patient?->centrocode);
-                            $set('pazientecode', $patient?->pazientecode);
+                            if (! $patient) {
+                                return new HtmlString('—');
+                            }
+
+                            $url = PatientResource::getUrl('edit', ['record' => $patient]);
+
+                            return new HtmlString('<a href="'.e($url).'" target="_blank" class="underline text-primary-600 dark:text-primary-400 font-medium">'.e($patient->pazientecode).'</a>');
                         }),
+                    Hidden::make('patient_id')
+                        ->default(fn (mixed $livewire): ?int => method_exists($livewire, 'getOwnerRecord') ? $livewire->getOwnerRecord()->getKey() : null)
+                        ->required(),
                     DatePicker::make('visitadel')->label('Data visita')->required(),
                     Select::make('statogen_id')->label('Stato generale')->options(self::lookup('statogens'))->searchable(),
                     TextInput::make('DOPPLERID')->label('ID Doppler')->numeric(),
-                    Hidden::make('centro'),
-                    Hidden::make('centrocode'),
-                    Hidden::make('pazientecode'),
-                    Toggle::make('active')->label('Visita attiva')->default(true),
+                    Hidden::make('centro')
+                        ->default(fn (mixed $livewire): ?string => method_exists($livewire, 'getOwnerRecord') ? $livewire->getOwnerRecord()->centro : null),
+                    Hidden::make('centrocode')
+                        ->default(fn (mixed $livewire): ?string => method_exists($livewire, 'getOwnerRecord') ? $livewire->getOwnerRecord()->centrocode : null),
+                    Hidden::make('pazientecode')
+                        ->default(fn (mixed $livewire): ?string => method_exists($livewire, 'getOwnerRecord') ? $livewire->getOwnerRecord()->pazientecode : null),
+                    Toggle::make('active')->label('Visita approvata')->default(true),
                 ]),
             Tabs::make('Dettagli visita')
                 ->tabs([
@@ -135,6 +144,13 @@ class PatientVisitForm
                             self::numericField('Bil_I', 'Bilirubina indiretta', 'mg/dL', $ranges),
                         ])
                         ->columns(4),
+                    Tab::make('Terapie')
+                        ->schema([
+                            Section::make()
+                                ->columnSpanFull()
+                                ->columns(3)
+                                ->schema(self::terapieToggles()),
+                        ]),
                     Tab::make('Doppler')
                         ->schema([
                             Section::make('Spessore Intima-Media (IMT)')
@@ -198,53 +214,64 @@ class PatientVisitForm
                                     Textarea::make('placcamorfo')->label('Maggiori caratteristiche morfostrutturali placca')->columnSpanFull(),
                                 ]),
                         ]),
-                    Tab::make('Terapie')
-                        ->schema([
-                            Toggle::make('TC_TSA')->label('Lamivudina (3TC)'),
-                            Toggle::make('ABC_TSA')->label('Abacavir'),
-                            Toggle::make('TPV_TSA')->label('Tipranavir'),
-                            Toggle::make('ATV_TSA')->label('Atazanavir'),
-                            Toggle::make('AZT_TSA')->label('Zidovudina'),
-                            Toggle::make('DT_TSA')->label('Stavudina (d4T)'),
-                            Toggle::make('DDI_TSA')->label('Didanosina'),
-                            Toggle::make('IDV_TSA')->label('Indinavir'),
-                            Toggle::make('DRV_TSA')->label('Darunavir'),
-                            Toggle::make('DVG_TSA')->label('Dolutegravir'),
-                            Toggle::make('EFV_TSA')->label('Efavirenz'),
-                            Toggle::make('ETV_TSA')->label('Etravirina'),
-                            Toggle::make('FPV_TSA')->label('Fosamprenavir'),
-                            Toggle::make('FTC_TSA')->label('Emtricitabina'),
-                            Toggle::make('LPV_TSA')->label('Lopinavir'),
-                            Toggle::make('MRV_TSA')->label('Maraviroc'),
-                            Toggle::make('NFV_TSA')->label('Nelfinavir'),
-                            Toggle::make('NVP_TSA')->label('Nevirapina'),
-                            Toggle::make('RAL_TSA')->label('Raltegravir'),
-                            Toggle::make('EVG_TSA')->label('Elvitegravir'),
-                            Toggle::make('RPV_TSA')->label('Rilpivirina'),
-                            Toggle::make('RTV_TSA')->label('Ritonavir'),
-                            Toggle::make('SQV_TSA')->label('Saquinavir'),
-                            Toggle::make('FI_TSA')->label('Enfuvirtide / inibitori della fusione'),
-                            Toggle::make('TDF_TSA')->label('Tenofovir disoproxil (TDF)'),
-                            Toggle::make('COBI_TSA')->label('Cobicistat'),
-                            Toggle::make('bictegravir')->label('Bictegravir'),
-                            Toggle::make('SPE_TSA')->label('Farmaci sperimentali'),
-                            Toggle::make('NRTI_TSA')->label('NRTI aggregati'),
-                            Toggle::make('NNRTI_TSA')->label('NNRTI aggregati'),
-                            Toggle::make('PI_TSA')->label('PI aggregati'),
-                            Toggle::make('II_TSA')->label('InSTI aggregati'),
-                            Toggle::make('T_TSA')->label('Tenofovir (TDF o TAF) aggregato'),
-                            Toggle::make('STATIN_ON')->label('Statina al momento'),
-                            Toggle::make('STATIN_EVER')->label('Ha mai fatto statina'),
-                            Toggle::make('FIBRATO_ON')->label('Fibrato'),
-                            Toggle::make('FIBRATO_EVER')->label('Ha mai fatto fibrato'),
-                            Toggle::make('IPER_ON')->label('Ipertensivi'),
-                            Toggle::make('IPER_EVER')->label('Ha mai fatto farmaci ipertensivi'),
-                        ])
-                        ->columns(3),
+
                 ])
                 ->columnSpanFull(),
             Textarea::make('annotazione')->label('Altre annotazioni')->columnSpanFull(),
         ]);
+    }
+
+    /** @return array<int, Toggle> */
+    private static function terapieToggles(): array
+    {
+        $fields = [
+            'TC_TSA' => 'Lamivudina (3TC)',
+            'ABC_TSA' => 'Abacavir',
+            'TPV_TSA' => 'Tipranavir',
+            'ATV_TSA' => 'Atazanavir',
+            'AZT_TSA' => 'Zidovudina',
+            'DT_TSA' => 'Stavudina (d4T)',
+            'DDI_TSA' => 'Didanosina',
+            'IDV_TSA' => 'Indinavir',
+            'DRV_TSA' => 'Darunavir',
+            'DVG_TSA' => 'Dolutegravir',
+            'EFV_TSA' => 'Efavirenz',
+            'ETV_TSA' => 'Etravirina',
+            'FPV_TSA' => 'Fosamprenavir',
+            'FTC_TSA' => 'Emtricitabina',
+            'LPV_TSA' => 'Lopinavir',
+            'MRV_TSA' => 'Maraviroc',
+            'NFV_TSA' => 'Nelfinavir',
+            'NVP_TSA' => 'Nevirapina',
+            'RAL_TSA' => 'Raltegravir',
+            'EVG_TSA' => 'Elvitegravir',
+            'RPV_TSA' => 'Rilpivirina',
+            'RTV_TSA' => 'Ritonavir',
+            'SQV_TSA' => 'Saquinavir',
+            'FI_TSA' => 'Enfuvirtide / inibitori della fusione',
+            'TDF_TSA' => 'Tenofovir disoproxil (TDF)',
+            'COBI_TSA' => 'Cobicistat',
+            'bictegravir' => 'Bictegravir',
+            'SPE_TSA' => 'Farmaci sperimentali',
+            'NRTI_TSA' => 'NRTI aggregati',
+            'NNRTI_TSA' => 'NNRTI aggregati',
+            'PI_TSA' => 'PI aggregati',
+            'II_TSA' => 'InSTI aggregati',
+            'T_TSA' => 'Tenofovir (TDF o TAF) aggregato',
+            'STATIN_ON' => 'Statina al momento',
+            'STATIN_EVER' => 'Ha fatto statina',
+            'FIBRATO_ON' => 'Fibrato',
+            'FIBRATO_EVER' => 'Ha fatto fibrato',
+            'IPER_ON' => 'Ipertensivi',
+            'IPER_EVER' => 'Ha fatto farmaci ipertensivi',
+        ];
+
+        asort($fields, SORT_STRING | SORT_FLAG_CASE);
+
+        return collect($fields)
+            ->map(fn (string $label, string $name): Toggle => Toggle::make($name)->label($label))
+            ->values()
+            ->all();
     }
 
     private static function numericField(string $name, string $label, ?string $unit, Collection $ranges): TextInput

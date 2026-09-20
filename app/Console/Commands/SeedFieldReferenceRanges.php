@@ -20,6 +20,13 @@ class SeedFieldReferenceRanges extends Command
      * (es. misure di placca in mm, capqi) le soglie sono lasciate assenti e viene
      * calcolata solo la statistica descrittiva (min/max/media).
      *
+     * Fonti verificate via ricerca web (settembre 2026): NCEP ATP III (colesterolo, LDL,
+     * HDL, trigliceridi); AHA/ACC 2017 (pressione arteriosa); DHHS Antiretroviral
+     * Guidelines (CD4, HIV RNA <50 non rilevabile, fallimento virologico >200, rischio
+     * di rebound ≥500); ADA Standards of Care 2024 (glicemia); NASCET (stenosi carotidea
+     * <50/50-69/70-99%); NHS (gamma GT); range di laboratorio standard per creatinina,
+     * bilirubina totale/diretta/indiretta, insulina a digiuno, proteinuria su stick.
+     *
      * @var array<string, array{label: string, unit: ?string, normal?: float, warning?: float, alert?: float}>
      */
     private const FIELD_DEFINITIONS = [
@@ -29,7 +36,7 @@ class SeedFieldReferenceRanges extends Command
         'PAD' => ['label' => 'Pressione diastolica', 'unit' => 'mmHg', 'normal' => 80, 'warning' => 90, 'alert' => 120],
         'CD4' => ['label' => 'CD4', 'unit' => 'cell/µL', 'normal' => 500, 'warning' => 350, 'alert' => 200],
         'CD4CD8' => ['label' => 'Rapporto CD4/CD8', 'unit' => null, 'normal' => 1.0, 'warning' => 0.6, 'alert' => 0.3],
-        'HIVRNA' => ['label' => 'HIV RNA', 'unit' => 'copie/mL', 'normal' => 50, 'warning' => 200, 'alert' => 1000],
+        'HIVRNA' => ['label' => 'HIV RNA', 'unit' => 'copie/mL', 'normal' => 50, 'warning' => 200, 'alert' => 500],
         'Creatinina' => ['label' => 'Creatinina', 'unit' => 'mg/dL', 'normal' => 1.2, 'warning' => 1.5, 'alert' => 2.0],
         'Colesterolo' => ['label' => 'Colesterolo totale', 'unit' => 'mg/dL', 'normal' => 200, 'warning' => 240, 'alert' => 300],
         'HDL' => ['label' => 'HDL', 'unit' => 'mg/dL', 'normal' => 60, 'warning' => 40, 'alert' => 30],
@@ -74,7 +81,7 @@ class SeedFieldReferenceRanges extends Command
     {
         foreach (self::FIELD_DEFINITIONS as $field => $definition) {
             $stats = DB::table('patient_visits')
-                ->selectRaw("MIN(`{$field}`) as min_value, MAX(`{$field}`) as max_value, AVG(`{$field}`) as weighted_average")
+                ->selectRaw("MIN(`{$field}`) as min_value, MAX(`{$field}`) as max_value, AVG(CASE WHEN `{$field}` <> 0 THEN `{$field}` END) as weighted_average")
                 ->whereNotNull($field)
                 ->first();
 

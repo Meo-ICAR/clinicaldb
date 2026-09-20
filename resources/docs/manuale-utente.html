@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClinicalDB — Manuale utente</title>
+<style>
+  :root {
+    --primary: #b45309;
+    --primary-light: #fef3c7;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --bg: #ffffff;
+    --bg-alt: #f9fafb;
+    --danger: #dc2626;
+    --warning: #b45309;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg-alt);
+    margin: 0;
+    line-height: 1.6;
+  }
+  .layout { display: flex; max-width: 1200px; margin: 0 auto; min-height: 100vh; }
+  nav.toc {
+    width: 260px;
+    flex-shrink: 0;
+    padding: 32px 20px;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+  nav.toc h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin: 0 0 12px; }
+  nav.toc ol { list-style: none; padding: 0; margin: 0; counter-reset: toc; }
+  nav.toc li { counter-increment: toc; margin-bottom: 6px; }
+  nav.toc a { color: var(--text); text-decoration: none; font-size: 14px; }
+  nav.toc a:before { content: counter(toc) ". "; color: var(--primary); font-weight: 600; }
+  nav.toc a:hover { color: var(--primary); }
+  main { flex: 1; background: var(--bg); padding: 40px 48px; border-left: 1px solid var(--border); }
+  header.doc-header { margin-bottom: 32px; }
+  header.doc-header h1 { margin: 0 0 6px; font-size: 30px; }
+  header.doc-header p { color: var(--muted); margin: 0; }
+  section { margin-bottom: 40px; scroll-margin-top: 20px; }
+  section h2 {
+    font-size: 20px;
+    border-bottom: 2px solid var(--primary-light);
+    padding-bottom: 8px;
+    margin-top: 0;
+  }
+  section h3 { font-size: 16px; margin-bottom: 6px; }
+  .card {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 16px 0;
+  }
+  .note { border-left: 4px solid var(--primary); }
+  .warn { border-left: 4px solid var(--warning); background: #fffbeb; }
+  .danger { border-left: 4px solid var(--danger); background: #fef2f2; }
+  code, kbd {
+    background: #f3f4f6;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 13px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 14px; }
+  th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--bg-alt); }
+  .badge { display: inline-block; border-radius: 999px; padding: 2px 10px; font-size: 12px; font-weight: 600; }
+  .badge.ok { background: #dcfce7; color: #166534; }
+  .badge.warn { background: #fef9c3; color: #854d0e; }
+  .badge.alert { background: #fee2e2; color: #991b1b; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); }
+  @media (max-width: 860px) {
+    .layout { flex-direction: column; }
+    nav.toc { width: auto; position: static; max-height: none; }
+    main { border-left: none; padding: 24px; }
+  }
+  @media print {
+    nav.toc { display: none; }
+    main { border: none; padding: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+  <nav class="toc">
+    <h2>Indice</h2>
+    <ol>
+      <li><a href="#introduzione">Introduzione</a></li>
+      <li><a href="#accesso">Accesso all'applicazione</a></li>
+      <li><a href="#pazienti">Gestione pazienti</a></li>
+      <li><a href="#visite">Gestione visite</a></li>
+      <li><a href="#permessi">Chi può modificare cosa</a></li>
+      <li><a href="#filtri">Ricerca, filtri ed esportazione</a></li>
+      <li><a href="#range">Range di riferimento (amministrazione)</a></li>
+      <li><a href="#profilo">Profilo utente</a></li>
+      <li><a href="#assistenza">Assistenza</a></li>
+    </ol>
+  </nav>
+  <main>
+    <header class="doc-header">
+      <h1>ClinicalDB — Manuale utente</h1>
+      <p>Guida all'uso dell'applicazione per la gestione dei pazienti e delle visite di follow-up.</p>
+    </header>
+
+    <section id="introduzione">
+      <h2>1. Introduzione</h2>
+      <p>
+        ClinicalDB è l'applicazione utilizzata dai centri partecipanti per registrare i pazienti arruolati
+        e le relative visite di follow-up (dati anagrafici, esami di laboratorio, ecografia carotidea e
+        terapie). L'accesso avviene tramite il pannello di amministrazione all'indirizzo
+        <code>/admin</code>.
+      </p>
+    </section>
+
+    <section id="accesso">
+      <h2>2. Accesso all'applicazione</h2>
+      <h3>Login con email e password</h3>
+      <p>Inserire l'indirizzo email e la password nella schermata di accesso.</p>
+      <h3>Login con Google</h3>
+      <p>
+        È disponibile anche l'accesso rapido tramite pulsante "Google" nella pagina di login. Il tuo
+        account deve essere già stato creato da un amministratore con la stessa email del tuo account
+        Google.
+      </p>
+      <h3>Password dimenticata</h3>
+      <p>
+        Dalla schermata di login, selezionare "Password dimenticata?" e inserire la propria email:
+        verrà inviata una email con un link per impostare una nuova password, valido per 60 minuti.
+      </p>
+      <div class="card note">
+        <strong>Nota</strong> — se non ricevi l'email di reset, controlla la cartella spam prima di
+        richiedere un nuovo invio.
+      </div>
+    </section>
+
+    <section id="pazienti">
+      <h2>3. Gestione pazienti</h2>
+      <p>
+        Dalla voce di menu <strong>Pazienti</strong> è possibile consultare l'elenco dei pazienti,
+        crearne di nuovi o modificare quelli esistenti.
+      </p>
+      <h3>Creazione di un nuovo paziente</h3>
+      <p>Nel form di creazione sono richiesti almeno:</p>
+      <ul>
+        <li><strong>Codice paziente</strong> — codice anonimizzato univoco;</li>
+        <li><strong>Iniziali</strong> — iniziali di nome e cognome;</li>
+        <li><strong>Centro</strong> — precompilato con il centro del tuo utente, ma modificabile;</li>
+        <li><strong>Data arruolamento</strong>.</li>
+      </ul>
+      <p>
+        Le altre sezioni del form (Dati anagrafici, Anamnesi clinica, Terapia e valori basali) possono
+        essere completate in un secondo momento.
+      </p>
+    </section>
+
+    <section id="visite">
+      <h2>4. Gestione visite</h2>
+      <p>
+        Le visite di follow-up si aggiungono dalla scheda <strong>Visite</strong> presente all'interno
+        della pagina di un paziente (non esiste una creazione di visita "libera", scollegata da un
+        paziente: la visita eredita automaticamente paziente e centro).
+      </p>
+      <p>Il form di una visita è organizzato in schede:</p>
+      <table>
+        <tr><th>Scheda</th><th>Contenuto</th></tr>
+        <tr><td>Anagrafica</td><td>Stato civile, fumo, peso, circonferenza, terapia ARV in corso</td></tr>
+        <tr><td>Esami</td><td>CD4, HIV RNA, funzionalità epatica e renale, lipidi, glicemia</td></tr>
+        <tr><td>Doppler</td><td>Spessore intima-media (IMT) e caratteristiche delle placche carotidee</td></tr>
+        <tr><td>Terapie</td><td>Farmaci antiretrovirali e altre terapie in corso, in ordine alfabetico</td></tr>
+      </table>
+      <h3>Colorazione dei valori fuori range</h3>
+      <p>
+        Alcuni campi numerici (es. CD4, colesterolo, pressione arteriosa) confrontano automaticamente il
+        valore inserito con soglie cliniche di riferimento:
+      </p>
+      <p>
+        <span class="badge ok">Normale</span> nessuna colorazione &nbsp;
+        <span class="badge warn">Attenzione</span> sfondo giallo &nbsp;
+        <span class="badge alert">Allerta</span> sfondo rosso
+      </p>
+      <div class="card warn">
+        Le soglie sono valori di riferimento generali di letteratura clinica: rimangono valori
+        indicativi e non sostituiscono il giudizio clinico.
+      </div>
+    </section>
+
+    <section id="permessi">
+      <h2>5. Chi può modificare cosa</h2>
+      <p>
+        Tutti gli utenti possono <strong>consultare</strong> l'intero elenco di pazienti e visite,
+        indipendentemente dal centro. La <strong>modifica</strong> e l'<strong>eliminazione</strong>,
+        invece, sono permesse solo se è vera almeno una di queste condizioni:
+      </p>
+      <ul>
+        <li>il record (paziente o visita) è stato creato da te;</li>
+        <li>il record appartiene al tuo stesso centro;</li>
+        <li>il tuo utente ha i permessi di amministratore.</li>
+      </ul>
+      <p>
+        Se nessuna delle condizioni è vera, il pulsante "Modifica" non è disponibile e l'accesso diretto
+        alla pagina di modifica viene bloccato.
+      </p>
+    </section>
+
+    <section id="filtri">
+      <h2>6. Ricerca, filtri ed esportazione</h2>
+      <p>
+        Ogni elenco (Pazienti, Visite) dispone di una casella di ricerca rapida e di un pannello
+        <strong>Filtri</strong> con regole avanzate, organizzate per tipo di dato (Booleano, Data,
+        Numero, Testo) per facilitarne la consultazione su un numero elevato di campi.
+      </p>
+      <p>
+        Il pulsante <strong>Esporta Excel</strong>, in alto a destra di ogni elenco, genera un file
+        con i dati attualmente visualizzati (tenendo conto di eventuali filtri applicati).
+      </p>
+    </section>
+
+    <section id="range">
+      <h2>7. Range di riferimento (amministrazione)</h2>
+      <p>
+        La sezione <strong>Amministrazione &rarr; Range di riferimento</strong> permette di consultare e
+        correggere le soglie cliniche (normale/warning/alert) usate per colorare i campi delle visite,
+        oltre a minimo, massimo e media effettivamente osservati nei dati.
+      </p>
+      <p>
+        Cliccando sul valore Min, Max, Normale, Warning o Alert di una riga si apre l'elenco delle
+        visite che ricadono in quella fascia, utile per individuare e correggere dati anomali
+        (es. valori impossibili inseriti per errore).
+      </p>
+      <p>
+        Il pulsante <strong>Ricalcola min/max/media</strong> aggiorna queste statistiche sulla base dei
+        dati attualmente presenti a sistema; le soglie cliniche normale/warning/alert non vengono
+        modificate da questa azione e restano gestite manualmente.
+      </p>
+    </section>
+
+    <section id="profilo">
+      <h2>8. Profilo utente</h2>
+      <p>
+        Dal menu utente in alto a destra è possibile accedere alla pagina <strong>Profilo</strong> per
+        aggiornare nome, email e password, e consultare il proprio centro di afferenza.
+      </p>
+    </section>
+
+    <section id="assistenza">
+      <h2>9. Assistenza</h2>
+      <p>
+        Per problemi di accesso o segnalazioni, contattare l'amministratore di sistema del proprio
+        centro.
+      </p>
+    </section>
+
+    <footer>
+      ClinicalDB — Manuale utente. Documento generato per l'uso interno dell'applicazione.
+    </footer>
+  </main>
+</div>
+</body>
+</html>
