@@ -36,6 +36,8 @@ class AdminPanelProvider extends PanelProvider
             ->default()
             ->id('admin')
             ->path('admin')
+            ->brandLogo(asset('images/clinicaldb.png'))
+            ->brandLogoHeight('2.5rem')
             ->login()
             ->passwordReset()
             ->registration()
