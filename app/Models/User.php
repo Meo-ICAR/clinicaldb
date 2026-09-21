@@ -11,6 +11,7 @@ use Filament\Panel;
 use Illuminate\Database\Eloquent\Attributes\Hidden;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -30,11 +31,20 @@ class User extends Authenticatable implements FilamentUser, HasName
     protected $keyType = 'string';
 
     /** @use HasFactory<UserFactory> */
-    use HasFactory, Notifiable;
+    use HasFactory, HasUuids, Notifiable;
 
     public function canAccessPanel(Panel $panel): bool
     {
         return true;
+    }
+
+    protected static function booted(): void
+    {
+        static::creating(function (self $user): void {
+            if (blank($user->username)) {
+                $user->username = $user->email;
+            }
+        });
     }
 
     /**
