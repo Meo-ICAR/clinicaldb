@@ -16,4 +16,14 @@ class ListStenosis extends ListRecords
             CreateAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/list_stenosis.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/list_stenosis.title');
+    }
 }

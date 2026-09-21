@@ -16,4 +16,14 @@ class ListTrattamentoCausaAbbandonos extends ListRecords
             CreateAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/list_trattamento_causa_abbandonos.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/list_trattamento_causa_abbandonos.title');
+    }
 }

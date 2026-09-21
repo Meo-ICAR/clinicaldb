@@ -16,4 +16,14 @@ class EditFieldReferenceRange extends EditRecord
             DeleteAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/edit_field_reference_range.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/edit_field_reference_range.title');
+    }
 }

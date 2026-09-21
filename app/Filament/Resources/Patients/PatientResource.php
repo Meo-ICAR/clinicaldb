@@ -20,11 +20,11 @@ class PatientResource extends Resource
 {
     protected static ?string $model = Patient::class;
 
-    protected static ?string $navigationLabel = 'Pazienti';
+    protected static ?string $navigationLabel = null;
 
-    protected static ?string $modelLabel = 'paziente';
+    protected static ?string $modelLabel = null;
 
-    protected static ?string $pluralModelLabel = 'pazienti';
+    protected static ?string $pluralModelLabel = null;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedIdentification;
 
@@ -53,5 +53,20 @@ class PatientResource extends Resource
             'create' => CreatePatient::route('/create'),
             'edit' => EditPatient::route('/{record}/edit'),
         ];
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/patient_resource.navigation_label');
+    }
+
+    public static function getModelLabel(): string
+    {
+        return __('filament/admin/patient_resource.model_label');
+    }
+
+    public static function getPluralModelLabel(): string
+    {
+        return __('filament/admin/patient_resource.plural_model_label');
     }
 }

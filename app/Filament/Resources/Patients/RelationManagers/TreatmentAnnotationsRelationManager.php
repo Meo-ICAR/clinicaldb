@@ -15,21 +15,22 @@ use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
 
 class TreatmentAnnotationsRelationManager extends RelationManager
 {
     protected static string $relationship = 'visits';
 
-    protected static ?string $title = 'Trattamento e annotazioni';
+    protected static ?string $title = null;
 
     public function form(Schema $schema): Schema
     {
         return $schema->components([
-            DatePicker::make('Trattamentonuovodal')->label('Nuovo trattamento dal'),
-            TextInput::make('Trattamentonuovo')->label('Nuovo trattamento'),
-            TextInput::make('Trattamentovecchio')->label('Trattamento precedente'),
-            Textarea::make('annotazione')->label('Annotazione')->columnSpanFull(),
+            DatePicker::make('Trattamentonuovodal')->label(__('filament/admin/treatment_annotations_relation_manager.trattamentonuovodal')),
+            TextInput::make('Trattamentonuovo')->label(__('filament/admin/treatment_annotations_relation_manager.trattamentonuovo')),
+            TextInput::make('Trattamentovecchio')->label(__('filament/admin/treatment_annotations_relation_manager.trattamentovecchio')),
+            Textarea::make('annotazione')->label(__('filament/admin/treatment_annotations_relation_manager.annotazione'))->columnSpanFull(),
         ]);
     }
 
@@ -49,23 +50,31 @@ class TreatmentAnnotationsRelationManager extends RelationManager
                     });
             }))
             ->columns([
-                TextColumn::make('Trattamentonuovo')->label('Nuovo trattamento')->searchable(),
-                TextColumn::make('Trattamentonuovodal')->label('Dal')->date('d/m/Y')->sortable(),
-                TextColumn::make('Trattamentovecchio')->label('Trattamento precedente')->searchable(),
-                TextColumn::make('annotazione')->label('Annotazione')->limit(80)->wrap(),
+                TextColumn::make('Trattamentonuovo')->label(__('filament/admin/treatment_annotations_relation_manager.trattamentonuovo'))->searchable(),
+                TextColumn::make('Trattamentonuovodal')->label(__('filament/admin/treatment_annotations_relation_manager.trattamentonuovodal'))->date('d/m/Y')->sortable(),
+                TextColumn::make('Trattamentovecchio')->label(__('filament/admin/treatment_annotations_relation_manager.trattamentovecchio'))->searchable(),
+                TextColumn::make('annotazione')->label(__('filament/admin/treatment_annotations_relation_manager.annotazione'))->limit(80)->wrap(),
             ])
             ->headerActions([
-                CreateAction::make(),
+                CreateAction::make()
+                    ->label(__('filament/admin/treatment_annotations_relation_manager.create')),
                 ExportAction::make()->label('Esporta Excel'),
             ])
             ->recordActions([
-                EditAction::make(),
-                DeleteAction::make(),
+                EditAction::make()
+                    ->label(__('filament/admin/treatment_annotations_relation_manager.edit')),
+                DeleteAction::make()
+                    ->label(__('filament/admin/treatment_annotations_relation_manager.delete')),
             ])
             ->toolbarActions([
                 BulkActionGroup::make([
                     DeleteBulkAction::make(),
                 ]),
             ]);
+    }
+
+    public static function getTitle(Model $ownerRecord, string $pageClass): string
+    {
+        return __('filament/admin/treatment_annotations_relation_manager.title');
     }
 }

@@ -16,4 +16,14 @@ class ListLavoros extends ListRecords
             CreateAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/list_lavoros.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/list_lavoros.title');
+    }
 }

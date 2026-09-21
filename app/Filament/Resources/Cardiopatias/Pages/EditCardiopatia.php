@@ -16,4 +16,14 @@ class EditCardiopatia extends EditRecord
             DeleteAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/edit_cardiopatia.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/edit_cardiopatia.title');
+    }
 }

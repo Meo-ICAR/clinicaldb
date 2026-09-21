@@ -16,4 +16,14 @@ class ListDrogas extends ListRecords
             CreateAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/list_drogas.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/list_drogas.title');
+    }
 }

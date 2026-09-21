@@ -16,4 +16,14 @@ class EditCenter extends EditRecord
             DeleteAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/edit_center.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/edit_center.title');
+    }
 }

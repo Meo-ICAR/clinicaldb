@@ -16,4 +16,14 @@ class ListOsteoporosis extends ListRecords
             CreateAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/list_osteoporosis.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/list_osteoporosis.title');
+    }
 }

@@ -29,24 +29,25 @@ class PatientVisitsTable
     {
         return $table
             ->columns([
-                TextColumn::make('patient.pazientecode')->label('Paziente')->searchable()->sortable(),
-                TextColumn::make('visitadel')->label('Data visita')->date('d/m/Y')->sortable(),
-                TextColumn::make('centrocode')->label('Centro')->searchable(),
-                TextColumn::make('CD4')->label('CD4')->numeric()->sortable(),
-                TextColumn::make('HIVRNA')->label('HIV RNA')->numeric()->sortable(),
-                TextColumn::make('peso')->label('Peso')->numeric(),
-                IconColumn::make('HIVRNAnorilevabile')->label('RNA non rilevabile')->boolean(),
-                IconColumn::make('active')->label('Attiva')->boolean(),
+                TextColumn::make('patient.pazientecode')->label(__('filament/admin/patient_visit_resource.patient.pazientecode'))->searchable()->sortable(),
+                TextColumn::make('visitadel')->label(__('filament/admin/patient_visit_resource.visitadel'))->date('d/m/Y')->sortable(),
+                TextColumn::make('centrocode')->label(__('filament/admin/patient_visit_resource.centrocode'))->searchable(),
+                TextColumn::make('CD4')->label(__('filament/admin/patient_visit_resource.c_d4'))->numeric()->sortable(),
+                TextColumn::make('HIVRNA')->label(__('filament/admin/patient_visit_resource.h_i_v_r_n_a'))->numeric()->sortable(),
+                TextColumn::make('peso')->label(__('filament/admin/patient_visit_resource.peso'))->numeric(),
+                IconColumn::make('HIVRNAnorilevabile')->label(__('filament/admin/patient_visit_resource.h_i_v_r_n_anorilevabile'))->boolean(),
+                IconColumn::make('active')->label(__('filament/admin/patient_visit_resource.active'))->boolean(),
             ])
             ->headerActions([
-                ExportAction::make()->label('Esporta Excel'),
+                ExportAction::make()->label(__('filament/admin/patient_visit_resource.export')),
             ])
             ->defaultSort('visitadel', 'desc')
-            ->recordActions([EditAction::make()])
+            ->recordActions([EditAction::make()
+                ->label(__('filament/admin/patient_visit_resource.edit'))])
             ->modifyQueryUsing(fn (Builder $query): Builder => self::applyAnomalyFilter($query))
             ->filters([
                 SelectFilter::make('centrocode')
-                    ->label('Centro')
+                    ->label(__('filament/admin/patient_visit_resource.centrocode'))
                     ->options(fn (): array => DB::table('centers')->orderBy('center')->pluck('center', 'centercode')->all())
                     ->searchable()
                     ->default(fn (): ?string => auth()->user()?->centercode),
@@ -55,7 +56,8 @@ class PatientVisitsTable
             ->filtersFormWidth(Width::TwoExtraLarge)
             ->toolbarActions([
                 BulkActionGroup::make([
-                    DeleteBulkAction::make(),
+                    DeleteBulkAction::make()
+                        ->label(__('filament/admin/patient_visit_resource.delete_bulk')),
                 ]),
             ]);
     }

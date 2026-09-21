@@ -19,11 +19,11 @@ class FieldReferenceRangeResource extends Resource
 {
     protected static ?string $model = FieldReferenceRange::class;
 
-    protected static ?string $navigationLabel = 'Range di riferimento';
+    protected static ?string $navigationLabel = null;
 
-    protected static ?string $modelLabel = 'range di riferimento';
+    protected static ?string $modelLabel = null;
 
-    protected static ?string $pluralModelLabel = 'range di riferimento';
+    protected static ?string $pluralModelLabel = null;
 
     protected static string|UnitEnum|null $navigationGroup = 'Amministrazione';
 
@@ -53,5 +53,20 @@ class FieldReferenceRangeResource extends Resource
             'create' => CreateFieldReferenceRange::route('/create'),
             'edit' => EditFieldReferenceRange::route('/{record}/edit'),
         ];
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/field_reference_range_resource.navigation_label');
+    }
+
+    public static function getModelLabel(): string
+    {
+        return __('filament/admin/field_reference_range_resource.model_label');
+    }
+
+    public static function getPluralModelLabel(): string
+    {
+        return __('filament/admin/field_reference_range_resource.plural_model_label');
     }
 }

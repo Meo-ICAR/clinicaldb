@@ -16,4 +16,14 @@ class EditSino extends EditRecord
             DeleteAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/edit_sino.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/edit_sino.title');
+    }
 }

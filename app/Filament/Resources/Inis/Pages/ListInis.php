@@ -16,4 +16,14 @@ class ListInis extends ListRecords
             CreateAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/list_inis.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/list_inis.title');
+    }
 }

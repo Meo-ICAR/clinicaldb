@@ -16,4 +16,14 @@ class EditFumo extends EditRecord
             DeleteAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/edit_fumo.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/edit_fumo.title');
+    }
 }

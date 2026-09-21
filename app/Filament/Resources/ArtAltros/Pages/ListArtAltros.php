@@ -16,4 +16,14 @@ class ListArtAltros extends ListRecords
             CreateAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/list_art_altros.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/list_art_altros.title');
+    }
 }

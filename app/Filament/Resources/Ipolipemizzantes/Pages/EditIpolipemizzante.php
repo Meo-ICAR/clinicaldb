@@ -16,4 +16,14 @@ class EditIpolipemizzante extends EditRecord
             DeleteAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/edit_ipolipemizzante.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/edit_ipolipemizzante.title');
+    }
 }

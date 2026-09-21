@@ -20,66 +20,66 @@ class UsersTable
         return $table
             ->columns([
                 TextColumn::make('last_name')
-                    ->label('Specialista')
+                    ->label(__('filament/admin/user_resource.last_name'))
                     ->formatStateUsing(fn (string $state, User $record): string => $record->getFilamentName())
                     ->searchable(['first_name', 'last_name'])
                     ->sortable(),
                 TextColumn::make('center')
-                    ->label('Centro')
+                    ->label(__('filament/admin/user_resource.center'))
                     ->searchable()
                     ->sortable(),
                 TextColumn::make('centercode')
-                    ->label('Codice centro')
+                    ->label(__('filament/admin/user_resource.centercode'))
                     ->sortable(),
                 TextColumn::make('role')
-                    ->label('Ruolo')
+                    ->label(__('filament/admin/user_resource.role'))
                     ->badge()
                     ->sortable(),
                 IconColumn::make('active')
-                    ->label('Afferenza attiva')
+                    ->label(__('filament/admin/user_resource.active'))
                     ->boolean(),
                 TextColumn::make('inserted_patients_count')
-                    ->label('Pazienti inseriti')
+                    ->label(__('filament/admin/user_resource.inserted_patients_count'))
                     ->numeric()
                     ->sortable()
                     ->summarize(Sum::make()->label('')),
                 TextColumn::make('performed_visits_count')
-                    ->label('Visite effettuate')
+                    ->label(__('filament/admin/user_resource.performed_visits_count'))
                     ->numeric()
                     ->sortable()
                     ->summarize(Sum::make()->label('')),
                 TextColumn::make('patients_modified_count')
-                    ->label('Pazienti modificati')
+                    ->label(__('filament/admin/user_resource.patients_modified_count'))
                     ->numeric()
                     ->sortable()
                     ->summarize(Sum::make()->label('')),
                 TextColumn::make('visits_modified_count')
-                    ->label('Visite modificate')
+                    ->label(__('filament/admin/user_resource.visits_modified_count'))
                     ->numeric()
                     ->sortable()
                     ->summarize(Sum::make()->label('')),
                 TextColumn::make('last_login')
-                    ->label('Ultimo accesso')
+                    ->label(__('filament/admin/user_resource.last_login'))
                     ->dateTime('d/m/Y H:i')
                     ->sortable(),
             ])
             ->headerActions([
-                ExportAction::make()->label('Esporta Excel'),
+                ExportAction::make()->label(__('filament/admin/user_resource.export')),
             ])
             ->filters([
                 SelectFilter::make('centercode')
-                    ->label('Centro')
+                    ->label(__('filament/admin/user_resource.centercode'))
                     ->options(fn (): array => DB::table('centers')->orderBy('center')->pluck('center', 'centercode')->all())
                     ->searchable(),
                 SelectFilter::make('active')
-                    ->label('Afferenza')
+                    ->label(__('filament/admin/user_resource.active'))
                     ->options([
                         1 => 'Solo attivi',
                         0 => 'Non attivi',
                     ])
                     ->default(1),
                 SelectFilter::make('has_activity')
-                    ->label('Attività presente')
+                    ->label(__('filament/admin/user_resource.has_activity'))
                     ->options([
                         1 => 'Solo con pazienti o visite',
                     ])
@@ -95,7 +95,7 @@ class UsersTable
                         });
                     }),
                 SelectFilter::make('activity_period')
-                    ->label('Attività modificata')
+                    ->label(__('filament/admin/user_resource.activity_period'))
                     ->options([
                         6 => 'Ultimi 6 mesi',
                         12 => 'Ultimi 12 mesi',

@@ -16,4 +16,14 @@ class ListEcogenicitas extends ListRecords
             CreateAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/list_ecogenicitas.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/list_ecogenicitas.title');
+    }
 }

@@ -16,4 +16,14 @@ class ListCirrosis extends ListRecords
             CreateAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/list_cirrosis.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/list_cirrosis.title');
+    }
 }

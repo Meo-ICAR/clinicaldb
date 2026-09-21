@@ -18,11 +18,11 @@ class UserResource extends Resource
 {
     protected static ?string $model = User::class;
 
-    protected static ?string $navigationLabel = 'Specialisti';
+    protected static ?string $navigationLabel = null;
 
-    protected static ?string $modelLabel = 'specialista';
+    protected static ?string $modelLabel = null;
 
-    protected static ?string $pluralModelLabel = 'specialisti';
+    protected static ?string $pluralModelLabel = null;
 
     protected static string|UnitEnum|null $navigationGroup = 'Amministrazione';
 
@@ -55,5 +55,20 @@ class UserResource extends Resource
         return [
             'index' => ListUsers::route('/'),
         ];
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/user_resource.navigation_label');
+    }
+
+    public static function getModelLabel(): string
+    {
+        return __('filament/admin/user_resource.model_label');
+    }
+
+    public static function getPluralModelLabel(): string
+    {
+        return __('filament/admin/user_resource.plural_model_label');
     }
 }

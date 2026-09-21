@@ -28,22 +28,23 @@ class PatientsTable
     {
         return $table
             ->columns([
-                TextColumn::make('pazientecode')->label('Codice')->searchable()->sortable(),
-                TextColumn::make('iniziali')->label('Iniziali')->searchable(),
-                TextColumn::make('centrocode')->label('Centro')->searchable()->sortable(),
-                TextColumn::make('arruolato')->label('Arruolato')->date('d/m/Y')->sortable(),
-                TextColumn::make('sesso')->label('Sesso'),
-                TextColumn::make('datanascita')->label('Nascita')->date('d/m/Y')->sortable(),
-                IconColumn::make('active')->label('Attivo')->boolean(),
+                TextColumn::make('pazientecode')->label(__('filament/admin/patient_resource.pazientecode'))->searchable()->sortable(),
+                TextColumn::make('iniziali')->label(__('filament/admin/patient_resource.iniziali'))->searchable(),
+                TextColumn::make('centrocode')->label(__('filament/admin/patient_resource.centrocode'))->searchable()->sortable(),
+                TextColumn::make('arruolato')->label(__('filament/admin/patient_resource.arruolato'))->date('d/m/Y')->sortable(),
+                TextColumn::make('sesso')->label(__('filament/admin/patient_resource.sesso')),
+                TextColumn::make('datanascita')->label(__('filament/admin/patient_resource.datanascita'))->date('d/m/Y')->sortable(),
+                IconColumn::make('active')->label(__('filament/admin/patient_resource.active'))->boolean(),
             ])
             ->headerActions([
-                ExportAction::make()->label('Esporta Excel'),
+                ExportAction::make()->label(__('filament/admin/patient_resource.export')),
             ])
             ->defaultSort('arruolato', 'desc')
-            ->recordActions([EditAction::make()])
+            ->recordActions([EditAction::make()
+                ->label(__('filament/admin/patient_resource.edit'))])
             ->filters([
                 SelectFilter::make('centrocode')
-                    ->label('Centro')
+                    ->label(__('filament/admin/patient_resource.centrocode'))
                     ->options(fn (): array => DB::table('centers')->orderBy('center')->pluck('center', 'centercode')->all())
                     ->searchable()
                     ->default(fn (): ?string => auth()->user()?->centercode),
@@ -52,7 +53,8 @@ class PatientsTable
             ->filtersFormWidth(Width::TwoExtraLarge)
             ->toolbarActions([
                 BulkActionGroup::make([
-                    DeleteBulkAction::make(),
+                    DeleteBulkAction::make()
+                        ->label(__('filament/admin/patient_resource.delete_bulk')),
                 ]),
             ]);
     }

@@ -16,4 +16,14 @@ class ListTrattamentos extends ListRecords
             CreateAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/list_trattamentos.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/list_trattamentos.title');
+    }
 }

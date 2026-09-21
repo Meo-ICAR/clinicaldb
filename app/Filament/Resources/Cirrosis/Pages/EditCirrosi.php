@@ -16,4 +16,14 @@ class EditCirrosi extends EditRecord
             DeleteAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/edit_cirrosi.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/edit_cirrosi.title');
+    }
 }

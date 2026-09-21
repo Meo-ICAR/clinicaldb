@@ -16,4 +16,14 @@ class ListFieldReferenceRanges extends ListRecords
             CreateAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/list_field_reference_ranges.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/list_field_reference_ranges.title');
+    }
 }

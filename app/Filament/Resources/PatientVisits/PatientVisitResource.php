@@ -17,11 +17,11 @@ class PatientVisitResource extends Resource
 {
     protected static ?string $model = PatientVisit::class;
 
-    protected static ?string $navigationLabel = 'Visite';
+    protected static ?string $navigationLabel = null;
 
-    protected static ?string $modelLabel = 'visita';
+    protected static ?string $modelLabel = null;
 
-    protected static ?string $pluralModelLabel = 'visite';
+    protected static ?string $pluralModelLabel = null;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedCalendarDays;
 
@@ -48,5 +48,20 @@ class PatientVisitResource extends Resource
             'index' => ListPatientVisits::route('/'),
             'edit' => EditPatientVisit::route('/{record}/edit'),
         ];
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/patient_visit_resource.navigation_label');
+    }
+
+    public static function getModelLabel(): string
+    {
+        return __('filament/admin/patient_visit_resource.model_label');
+    }
+
+    public static function getPluralModelLabel(): string
+    {
+        return __('filament/admin/patient_visit_resource.plural_model_label');
     }
 }

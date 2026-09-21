@@ -22,23 +22,23 @@ class FieldReferenceRangesTable
     {
         return $table
             ->columns([
-                TextColumn::make('table')->label('Tabella')->badge()->sortable(),
-                TextColumn::make('field')->label('Colonna')->searchable()->sortable(),
-                TextColumn::make('label')->label('Etichetta')->searchable(),
-                TextColumn::make('unit')->label('Unità'),
-                TextColumn::make('min_value')->label('Min')->numeric()
+                TextColumn::make('table')->label(__('filament/admin/field_reference_range_resource.table'))->badge()->sortable(),
+                TextColumn::make('field')->label(__('filament/admin/field_reference_range_resource.field'))->searchable()->sortable(),
+                TextColumn::make('label')->label(__('filament/admin/field_reference_range_resource.label'))->searchable(),
+                TextColumn::make('unit')->label(__('filament/admin/field_reference_range_resource.unit')),
+                TextColumn::make('min_value')->label(__('filament/admin/field_reference_range_resource.min_value'))->numeric()
                     ->url(fn (FieldReferenceRange $record): ?string => self::anomalyUrl($record, 'min')),
-                TextColumn::make('weighted_average')->label('Media')->numeric(2),
-                TextColumn::make('max_value')->label('Max')->numeric()
+                TextColumn::make('weighted_average')->label(__('filament/admin/field_reference_range_resource.weighted_average'))->numeric(2),
+                TextColumn::make('max_value')->label(__('filament/admin/field_reference_range_resource.max_value'))->numeric()
                     ->url(fn (FieldReferenceRange $record): ?string => self::anomalyUrl($record, 'max')),
-                TextColumn::make('normal_value')->label('Normale')->numeric()
+                TextColumn::make('normal_value')->label(__('filament/admin/field_reference_range_resource.normal_value'))->numeric()
                     ->url(fn (FieldReferenceRange $record): ?string => self::anomalyUrl($record, 'normal')),
-                TextColumn::make('warning_value')->label('Warning')->numeric()
+                TextColumn::make('warning_value')->label(__('filament/admin/field_reference_range_resource.warning_value'))->numeric()
                     ->url(fn (FieldReferenceRange $record): ?string => self::anomalyUrl($record, 'warning')),
-                TextColumn::make('alert_value')->label('Alert')->numeric()
+                TextColumn::make('alert_value')->label(__('filament/admin/field_reference_range_resource.alert_value'))->numeric()
                     ->url(fn (FieldReferenceRange $record): ?string => self::anomalyUrl($record, 'alert')),
                 TextColumn::make('direction')
-                    ->label('Direzione')
+                    ->label(__('filament/admin/field_reference_range_resource.direction'))
                     ->state(fn (FieldReferenceRange $record): ?string => $record->direction())
                     ->formatStateUsing(fn (?string $state): string => match ($state) {
                         'high' => 'Alto patologico',
@@ -53,16 +53,17 @@ class FieldReferenceRangesTable
             ])
             ->filters([
                 SelectFilter::make('table')
-                    ->label('Tabella')
+                    ->label(__('filament/admin/field_reference_range_resource.table'))
                     ->options([
                         'patients' => 'patients',
                         'patient_visits' => 'patient_visits',
                     ]),
             ])
             ->headerActions([
-                CreateAction::make(),
+                CreateAction::make()
+                    ->label(__('filament/admin/field_reference_range_resource.create')),
                 Action::make('recalculate')
-                    ->label('Ricalcola min/max/media')
+                    ->label(__('filament/admin/field_reference_range_resource.recalculate'))
                     ->icon(Heroicon::OutlinedCalculator)
                     ->color('gray')
                     ->requiresConfirmation()
@@ -78,11 +79,13 @@ class FieldReferenceRangesTable
                     }),
             ])
             ->recordActions([
-                EditAction::make(),
+                EditAction::make()
+                    ->label(__('filament/admin/field_reference_range_resource.edit')),
             ])
             ->toolbarActions([
                 BulkActionGroup::make([
-                    DeleteBulkAction::make(),
+                    DeleteBulkAction::make()
+                        ->label(__('filament/admin/field_reference_range_resource.delete_bulk')),
                 ]),
             ]);
     }

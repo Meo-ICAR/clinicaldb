@@ -16,4 +16,14 @@ class EditTrattamentoCausaAbbandono extends EditRecord
             DeleteAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/edit_trattamento_causa_abbandono.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/edit_trattamento_causa_abbandono.title');
+    }
 }

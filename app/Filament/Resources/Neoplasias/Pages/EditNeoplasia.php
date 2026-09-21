@@ -16,4 +16,14 @@ class EditNeoplasia extends EditRecord
             DeleteAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/edit_neoplasia.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/edit_neoplasia.title');
+    }
 }

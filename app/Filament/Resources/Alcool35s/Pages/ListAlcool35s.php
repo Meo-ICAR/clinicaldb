@@ -16,4 +16,14 @@ class ListAlcool35s extends ListRecords
             CreateAction::make(),
         ];
     }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/list_alcool35s.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/list_alcool35s.title');
+    }
 }

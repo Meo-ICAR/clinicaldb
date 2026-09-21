@@ -89,34 +89,38 @@ class PatientVisitForm
                             return new HtmlString('<a href="'.e($url).'" target="_blank" class="underline text-primary-600 dark:text-primary-400 font-medium">'.e($patient->pazientecode).'</a>');
                         }),
                     Hidden::make('patient_id')
+                        ->label(__('filament/admin/patient_visit_resource.patient_id'))
                         ->default(fn (mixed $livewire): ?int => method_exists($livewire, 'getOwnerRecord') ? $livewire->getOwnerRecord()->getKey() : null)
                         ->required(),
-                    DatePicker::make('visitadel')->label('Data visita')->required(),
-                    Select::make('statogen_id')->label('Stato generale')->options(self::lookup('statogens'))->searchable(),
-                    TextInput::make('DOPPLERID')->label('ID Doppler')->numeric(),
+                    DatePicker::make('visitadel')->label(__('filament/admin/patient_visit_resource.visitadel'))->required(),
+                    Select::make('statogen_id')->label(__('filament/admin/patient_visit_resource.statogen_id'))->options(self::lookup('statogens'))->searchable(),
+                    TextInput::make('DOPPLERID')->label(__('filament/admin/patient_visit_resource.d_o_p_p_l_e_r_i_d'))->numeric(),
                     Hidden::make('centro')
+                        ->label(__('filament/admin/patient_visit_resource.centro'))
                         ->default(fn (mixed $livewire): ?string => method_exists($livewire, 'getOwnerRecord') ? $livewire->getOwnerRecord()->centro : null),
                     Hidden::make('centrocode')
+                        ->label(__('filament/admin/patient_visit_resource.centrocode'))
                         ->default(fn (mixed $livewire): ?string => method_exists($livewire, 'getOwnerRecord') ? $livewire->getOwnerRecord()->centrocode : null),
                     Hidden::make('pazientecode')
+                        ->label(__('filament/admin/patient_visit_resource.pazientecode'))
                         ->default(fn (mixed $livewire): ?string => method_exists($livewire, 'getOwnerRecord') ? $livewire->getOwnerRecord()->pazientecode : null),
-                    Toggle::make('active')->label('Visita approvata')->default(true),
+                    Toggle::make('active')->label(__('filament/admin/patient_visit_resource.active'))->default(true),
                 ]),
             Tabs::make('Dettagli visita')
                 ->tabs([
                     Tab::make('Anagrafica')
                         ->schema([
-                            Select::make('statocivile_id')->label('Stato civile')->options(self::lookup('statociviles'))->searchable(),
-                            Select::make('fumo_id')->label('Fumatore')->options(self::lookup('fumos'))->searchable(),
-                            TextInput::make('fumodurata')->label('Fumo da (anni)')->numeric()->minValue(0),
-                            Toggle::make('menopausa')->label('Menopausa'),
+                            Select::make('statocivile_id')->label(__('filament/admin/patient_visit_resource.statocivile_id'))->options(self::lookup('statociviles'))->searchable(),
+                            Select::make('fumo_id')->label(__('filament/admin/patient_visit_resource.fumo_id'))->options(self::lookup('fumos'))->searchable(),
+                            TextInput::make('fumodurata')->label(__('filament/admin/patient_visit_resource.fumodurata'))->numeric()->minValue(0),
+                            Toggle::make('menopausa')->label(__('filament/admin/patient_visit_resource.menopausa')),
                             self::numericField('peso', 'Peso', 'kg', $ranges),
                             self::numericField('circonferenza', 'Circonferenza', 'cm', $ranges),
                             self::numericField('capqi', 'CAP/QI', null, $ranges),
-                            TextInput::make('Trattamentonuovo')->label('Trattamento ARV attuale'),
-                            DatePicker::make('Trattamentonuovodal')->label('Data di inizio'),
-                            TextInput::make('Trattamentovecchio')->label('Trattamento ARV precedente'),
-                            Select::make('trattamentocausaabbandono_id')->label('Causa modifica ARV')->options(self::lookup('trattamentocausaabbandonos'))->searchable(),
+                            TextInput::make('Trattamentonuovo')->label(__('filament/admin/patient_visit_resource.trattamentonuovo')),
+                            DatePicker::make('Trattamentonuovodal')->label(__('filament/admin/patient_visit_resource.trattamentonuovodal')),
+                            TextInput::make('Trattamentovecchio')->label(__('filament/admin/patient_visit_resource.trattamentovecchio')),
+                            Select::make('trattamentocausaabbandono_id')->label(__('filament/admin/patient_visit_resource.trattamentocausaabbandono_id'))->options(self::lookup('trattamentocausaabbandonos'))->searchable(),
                         ])
                         ->columns(3),
                     Tab::make('Esami')
@@ -124,7 +128,7 @@ class PatientVisitForm
                             self::numericField('CD4', 'CD4', 'cell/µL', $ranges),
                             self::numericField('CD4CD8', 'CD4/CD8', null, $ranges),
                             self::numericField('HIVRNA', 'HIV RNA', 'copie/mL', $ranges),
-                            Toggle::make('HIVRNAnorilevabile')->label('HIV RNA non rilevabile'),
+                            Toggle::make('HIVRNAnorilevabile')->label(__('filament/admin/patient_visit_resource.h_i_v_r_n_anorilevabile')),
                             self::numericField('Creatinina', 'Creatinina', 'mg/dL', $ranges),
                             self::numericField('PAS', 'Pressione sistolica', 'mmHg', $ranges),
                             self::numericField('PAD', 'Pressione diastolica', 'mmHg', $ranges),
@@ -135,7 +139,7 @@ class PatientVisitForm
                             self::numericField('Glicemia', 'Glicemia', 'mg/dL', $ranges),
                             self::numericField('Insulina', 'Insulina', 'µU/mL', $ranges),
                             self::numericField('Proteinuria', 'Proteinuria', 'mg/dL', $ranges),
-                            Toggle::make('ProteurinaFlag')->label('Proteinuria presente'),
+                            Toggle::make('ProteurinaFlag')->label(__('filament/admin/patient_visit_resource.proteurina_flag')),
                             self::numericField('GPT', 'GPT (ALT)', 'U/L', $ranges),
                             self::numericField('GOT', 'GOT (AST)', 'U/L', $ranges),
                             self::numericField('gamma_GT', 'Gamma GT', 'U/L', $ranges),
@@ -177,47 +181,47 @@ class PatientVisitForm
                             Section::make('Placche - caratteristiche')
                                 ->columns(2)
                                 ->schema([
-                                    Select::make('placcasxecogen_id')->label('Ecogenicità sx')->options(self::ECOGENICITA_OPTIONS),
-                                    Select::make('placcadxecogen_id')->label('Ecogenicità dx')->options(self::ECOGENICITA_OPTIONS),
-                                    Toggle::make('placcasxstratosup')->label('Strato superficiale disomogeneo sx'),
-                                    Toggle::make('placcadxstratosup')->label('Strato superficiale disomogeneo dx'),
-                                    Toggle::make('placcasxstratopar')->label('Strato parietale disomogeneo sx'),
-                                    Toggle::make('placcadxstratopar')->label('Strato parietale disomogeneo dx'),
-                                    Select::make('placcasxsupendo_id')->label('Superficie endoluminale sx')->options(self::SUPERFICIE_ENDOLUMINALE_OPTIONS),
-                                    Select::make('placcadxsupendo_id')->label('Superficie endoluminale dx')->options(self::SUPERFICIE_ENDOLUMINALE_OPTIONS),
-                                    Toggle::make('placcasxclivaggio')->label('Piano di clivaggio identificabile sx'),
-                                    Toggle::make('placcadxclivaggio')->label('Piano di clivaggio identificabile dx'),
-                                    Toggle::make('placcasxclivaggio2')->label('Clivaggio sx (seconda valutazione)'),
-                                    Toggle::make('placcadxclivaggio2')->label('Clivaggio dx (seconda valutazione)'),
-                                    Toggle::make('placcasxbordi')->label('Placca sx bordi'),
-                                    Toggle::make('placcadxbordi')->label('Placca dx bordi'),
-                                    Toggle::make('placcasxomogenea')->label('Placca sx omogenea'),
-                                    Toggle::make('placcadxomogenea')->label('Placca dx omogenea'),
-                                    Toggle::make('placcasxombra')->label('Placca sx ombra'),
-                                    Toggle::make('placcdsxombra')->label('Placca dx ombra'),
+                                    Select::make('placcasxecogen_id')->label(__('filament/admin/patient_visit_resource.placcasxecogen_id'))->options(self::ECOGENICITA_OPTIONS),
+                                    Select::make('placcadxecogen_id')->label(__('filament/admin/patient_visit_resource.placcadxecogen_id'))->options(self::ECOGENICITA_OPTIONS),
+                                    Toggle::make('placcasxstratosup')->label(__('filament/admin/patient_visit_resource.placcasxstratosup')),
+                                    Toggle::make('placcadxstratosup')->label(__('filament/admin/patient_visit_resource.placcadxstratosup')),
+                                    Toggle::make('placcasxstratopar')->label(__('filament/admin/patient_visit_resource.placcasxstratopar')),
+                                    Toggle::make('placcadxstratopar')->label(__('filament/admin/patient_visit_resource.placcadxstratopar')),
+                                    Select::make('placcasxsupendo_id')->label(__('filament/admin/patient_visit_resource.placcasxsupendo_id'))->options(self::SUPERFICIE_ENDOLUMINALE_OPTIONS),
+                                    Select::make('placcadxsupendo_id')->label(__('filament/admin/patient_visit_resource.placcadxsupendo_id'))->options(self::SUPERFICIE_ENDOLUMINALE_OPTIONS),
+                                    Toggle::make('placcasxclivaggio')->label(__('filament/admin/patient_visit_resource.placcasxclivaggio')),
+                                    Toggle::make('placcadxclivaggio')->label(__('filament/admin/patient_visit_resource.placcadxclivaggio')),
+                                    Toggle::make('placcasxclivaggio2')->label(__('filament/admin/patient_visit_resource.placcasxclivaggio2')),
+                                    Toggle::make('placcadxclivaggio2')->label(__('filament/admin/patient_visit_resource.placcadxclivaggio2')),
+                                    Toggle::make('placcasxbordi')->label(__('filament/admin/patient_visit_resource.placcasxbordi')),
+                                    Toggle::make('placcadxbordi')->label(__('filament/admin/patient_visit_resource.placcadxbordi')),
+                                    Toggle::make('placcasxomogenea')->label(__('filament/admin/patient_visit_resource.placcasxomogenea')),
+                                    Toggle::make('placcadxomogenea')->label(__('filament/admin/patient_visit_resource.placcadxomogenea')),
+                                    Toggle::make('placcasxombra')->label(__('filament/admin/patient_visit_resource.placcasxombra')),
+                                    Toggle::make('placcdsxombra')->label(__('filament/admin/patient_visit_resource.placcdsxombra')),
                                 ]),
                             Section::make('Placche - grading e note')
                                 ->columns(2)
                                 ->schema([
-                                    Select::make('placcasxsteno_id')->label('Stenosi sx')->options(self::STENOSI_OPTIONS),
-                                    Select::make('placcadxsteno_id')->label('Stenosi dx')->options(self::STENOSI_OPTIONS),
+                                    Select::make('placcasxsteno_id')->label(__('filament/admin/patient_visit_resource.placcasxsteno_id'))->options(self::STENOSI_OPTIONS),
+                                    Select::make('placcadxsteno_id')->label(__('filament/admin/patient_visit_resource.placcadxsteno_id'))->options(self::STENOSI_OPTIONS),
                                     self::numericField('placcasxsten', 'Stenosi entità sx', '%', $ranges),
                                     self::numericField('placcadxsten', 'Stenosi entità dx', '%', $ranges),
                                     self::numericField('placcasx', 'Placca sx', 'mm', $ranges),
                                     self::numericField('placcadx', 'Placca dx', 'mm', $ranges),
                                     self::numericField('placcacc', 'Placca segmento carotide comune', 'mm', $ranges),
                                     self::numericField('placcaci', 'Placca segmento carotide interna', 'mm', $ranges),
-                                    Textarea::make('placche_sx')->label('Note placca sx'),
-                                    Textarea::make('placche_dx')->label('Note placca dx'),
-                                    Textarea::make('placche_sxc')->label('Note placca sx (follow-up)'),
-                                    Textarea::make('placche_dxc')->label('Note placca dx (follow-up)'),
-                                    Textarea::make('placcamorfo')->label('Maggiori caratteristiche morfostrutturali placca')->columnSpanFull(),
+                                    Textarea::make('placche_sx')->label(__('filament/admin/patient_visit_resource.placche_sx')),
+                                    Textarea::make('placche_dx')->label(__('filament/admin/patient_visit_resource.placche_dx')),
+                                    Textarea::make('placche_sxc')->label(__('filament/admin/patient_visit_resource.placche_sxc')),
+                                    Textarea::make('placche_dxc')->label(__('filament/admin/patient_visit_resource.placche_dxc')),
+                                    Textarea::make('placcamorfo')->label(__('filament/admin/patient_visit_resource.placcamorfo'))->columnSpanFull(),
                                 ]),
                         ]),
 
                 ])
                 ->columnSpanFull(),
-            Textarea::make('annotazione')->label('Altre annotazioni')->columnSpanFull(),
+            Textarea::make('annotazione')->label(__('filament/admin/patient_visit_resource.annotazione'))->columnSpanFull(),
         ]);
     }
 

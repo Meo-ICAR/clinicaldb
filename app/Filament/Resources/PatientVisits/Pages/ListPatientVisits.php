@@ -19,7 +19,7 @@ class ListPatientVisits extends ListRecords
 
         if (filled(request()->query('rr_field'))) {
             $actions[] = Action::make('clearAnomalyFilter')
-                ->label('Rimuovi filtro valori anomali')
+                ->label(__('filament/admin/list_patient_visits.clear_anomaly_filter'))
                 ->color('gray')
                 ->url(static::getResource()::getUrl('index'));
         }
@@ -52,5 +52,15 @@ class ListPatientVisits extends ListRecords
         };
 
         return new HtmlString('Elenco filtrato: <strong>'.e($field).'</strong> '.e($range).'. Usato per individuare e correggere valori anomali.');
+    }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/list_patient_visits.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/list_patient_visits.title');
     }
 }

@@ -12,10 +12,20 @@ class Dashboard extends BaseDashboard
     {
         return [
             Action::make('archiprevaleatDashboard')
-                ->label('Dashboard ARCHIPREVALEAT')
+                ->label(__('filament/admin/dashboard.archiprevaleat_dashboard'))
                 ->icon(Heroicon::OutlinedArrowTopRightOnSquare)
                 ->url('https://dashboard.archiprevaleat.com')
                 ->openUrlInNewTab(),
         ];
+    }
+
+    public function getTitle(): string
+    {
+        return __('filament/admin/dashboard.title');
+    }
+
+    public static function getNavigationLabel(): string
+    {
+        return __('filament/admin/dashboard.title');
     }
 }
