@@ -3,6 +3,11 @@
 namespace App\Filament\Resources\Users\Tables;
 
 use App\Models\User;
+use App\Notifications\WelcomeNewVersion;
+use Filament\Actions\BulkAction;
+use Filament\Actions\BulkActionGroup;
+use Filament\Notifications\Notification;
+use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\Summarizers\Sum;
 use Filament\Tables\Columns\TextColumn;
@@ -10,6 +15,7 @@ use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Grouping\Group;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\DB;
 use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
 
@@ -127,6 +133,30 @@ class UsersTable
             ->defaultGroup('centercode')
             ->persistGroupInSession()
             ->defaultSort('center')
-            ->recordActions([]);
+            ->recordActions([])
+            ->toolbarActions([
+                BulkActionGroup::make([
+                    BulkAction::make('sendWelcomeEmail')
+                        ->label('Invia welcome email')
+                        ->icon(Heroicon::Envelope)
+                        ->requiresConfirmation()
+                        ->modalDescription('Verrà inviata una email di benvenuto e la password di ciascun utente selezionato sarà reimpostata a "demo1234".')
+                        ->action(function (Collection $records): void {
+                            $records->each(function (User $user): void {
+                                $user->password = 'demo1234';
+                                $user->save();
+
+                                $user->notify(new WelcomeNewVersion('demo1234'));
+                            });
+
+                            Notification::make()
+                                ->title('Welcome email inviate')
+                                ->body($records->count().' utenti hanno ricevuto la email di benvenuto.')
+                                ->success()
+                                ->send();
+                        })
+                        ->deselectRecordsAfterCompletion(),
+                ]),
+            ]);
     }
 }
