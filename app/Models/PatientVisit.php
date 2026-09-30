@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use App\Services\ArchiprevaleatSyncService;
 
 class PatientVisit extends Model
 {
@@ -34,6 +35,11 @@ class PatientVisit extends Model
 
     protected static function booted(): void
     {
+        static::saving(function (PatientVisit $visit) {
+            // Esegue il calcolo automatico prima di scrivere sul DB
+            app(ArchiprevaleatSyncService::class)->normalizeVisitModel($visit);
+        });
+        
         static::creating(function (self $visit): void {
             if (auth()->check()) {
                 $visit->created_by ??= auth()->id();
