@@ -99,31 +99,45 @@ class ArchiprevaleatSyncService
         }
     }
 
-    /**
-     * Trasforma un array di dati grezzi applicando tutte le regole di calcolo.
+   /**
+     * Trasforma un array di dati grezzi applicando tutte le regole di calcolo e sanificazione.
      */
     public function transformRow(array $row): array
     {
         $visitDate = !empty($row['visitadel']) ? Carbon::parse($row['visitadel']) : null;
         $birthDate = !empty($row['p_datanascita']) ? Carbon::parse($row['p_datanascita']) : null;
 
-        // 1. Età e Dati Generali
-        $eta = ($visitDate && $birthDate) ? (int) $visitDate->diffInYears($birthDate) : null;
+        // 1. Età e Dati Generali (Guard per date incoerenti o etá negative)
+        $eta = null;
+        if ($visitDate && $birthDate && $visitDate->gte($birthDate)) {
+            $calculatedEta = (int) $birthDate->diffInYears($visitDate);
+            if ($calculatedEta >= 0 && $calculatedEta <= 120) {
+                $eta = $calculatedEta;
+            }
+        }
         
         $altezzaM = (!empty($row['p_altezza']) && $row['p_altezza'] > 0) ? ($row['p_altezza'] / 100) : null;
-        $peso = !empty($row['peso']) ? (float)$row['peso'] : null;
+        $peso = !empty($row['peso']) && $row['peso'] > 0 ? (float)$row['peso'] : null;
         $bmi = ($peso && $altezzaM) ? round($peso / ($altezzaM * $altezzaM), 2) : null;
 
         $sbp = !empty($row['PAS']) ? (int)$row['PAS'] : null;
         $dbp = !empty($row['PAD']) ? (int)$row['PAD'] : null;
 
-        // 2. Storia HIV e Terapia
+        // 2. Storia HIV e Terapia (Guard per intervalli negativi)
         $dataHiv = !empty($row['p_datahiv']) ? Carbon::parse($row['p_datahiv']) : (!empty($row['p_positivodal']) ? Carbon::parse($row['p_positivodal']) : null);
         $annoHiv = $dataHiv ? (int)$dataHiv->year : null;
-        $anniHiv = ($visitDate && $dataHiv) ? round($visitDate->diffInDays($dataHiv) / 365.25, 2) : null;
+        
+        $anniHiv = null;
+        if ($visitDate && $dataHiv && $visitDate->gte($dataHiv)) {
+            $anniHiv = round($visitDate->diffInDays($dataHiv) / 365.25, 2);
+        }
 
         $inizioArv = !empty($row['Trattamentonuovodal']) ? Carbon::parse($row['Trattamentonuovodal']) : (!empty($row['INIZIO_ARV']) ? Carbon::parse($row['INIZIO_ARV']) : null);
-        $anniTarv = ($visitDate && $inizioArv) ? round($visitDate->diffInDays($inizioArv) / 365.25, 2) : null;
+        
+        $anniTarv = null;
+        if ($visitDate && $inizioArv && $visitDate->gte($inizioArv)) {
+            $anniTarv = round($visitDate->diffInDays($inizioArv) / 365.25, 2);
+        }
 
         $aids = (!empty($row['p_stadiocdc']) && strtoupper($row['p_stadiocdc']) === 'C') ? 1 : 0;
         $regimen = $row['Trattamentonuovo'] ?? null;
@@ -136,15 +150,15 @@ class ArchiprevaleatSyncService
         $insti = (preg_match('/(DTG|BIC|RAL|EVG)/i', $regimenUpper)) ? 1 : 0;
         $doravirina = (strpos($regimenUpper, 'DOR') !== false) ? 1 : 0;
 
-        // 3. Laboratorio ed eGFR (formula CKD-EPI basica)
-        $creat = !empty($row['Creatinina']) ? (float)$row['Creatinina'] : null;
+        // 3. Laboratorio ed eGFR
+        $creat = !empty($row['Creatinina']) && $row['Creatinina'] > 0 ? (float)$row['Creatinina'] : null;
         $sesso = strtoupper($row['p_sesso'] ?? 'M');
         $egfr = $this->calculateEgfr($creat, $eta, $sesso);
 
         // 4. Stile di vita e Comorbilità
         $fumoClean = $this->parseFumo($row['p_fumo_id'] ?? $row['fumo_id'] ?? null);
-        $hcv = (!empty($row['p_epatite_id']) && strpos(strtoupper($row['p_epatite_id']), 'C') !== false) ? 1 : 0;
-        $hbv = (!empty($row['p_epatite_id']) && strpos(strtoupper($row['p_epatite_id']), 'B') !== false) ? 1 : 0;
+        $hcv = (!empty($row['p_epatite_id']) && strpos(strtoupper((string)$row['p_epatite_id']), 'C') !== false) ? 1 : 0;
+        $hbv = (!empty($row['p_epatite_id']) && strpos(strtoupper((string)$row['p_epatite_id']), 'B') !== false) ? 1 : 0;
         $diabete = (!empty($row['p_diabete_id']) && $row['p_diabete_id'] != '0') ? 1 : 0;
         
         $ipertensione = (!empty($row['p_ipertensione_id']) && $row['p_ipertensione_id'] != '0') ? 'S' : 'N';
@@ -157,12 +171,12 @@ class ArchiprevaleatSyncService
         $imtSnValues = array_filter([
             $row['Carotide_interna_sx'] ?? null, $row['Carotide_comune_sx'] ?? null, $row['Bulbo_sx'] ?? null,
             $row['Carotide_comune_sxc'] ?? null, $row['Bulbo_sxc'] ?? null, $row['Carotide_interna_sxc'] ?? null
-        ], function($v) { return $v !== null && $v > 0; });
+        ], fn($v) => $v !== null && $v > 0);
 
         $imtDxValues = array_filter([
             $row['Carotide_interna_dx'] ?? null, $row['Carotide_comune_dx'] ?? null, $row['Bulbo_dx'] ?? null,
             $row['Carotide_comune_dxc'] ?? null, $row['Bulbo_dxc'] ?? null, $row['Carotide_interna_dxc'] ?? null
-        ], function($v) { return $v !== null && $v > 0; });
+        ], fn($v) => $v !== null && $v > 0);
 
         $imtSn = !empty($imtSnValues) ? max($imtSnValues) : null;
         $imtDx = !empty($imtDxValues) ? max($imtDxValues) : null;
@@ -180,7 +194,7 @@ class ArchiprevaleatSyncService
         if ($placcat === 'S') {
             $catImt = 2; // Placca
         } elseif ($ispess === 'S') {
-            $catImt = 1; // High IMT / Ispessimento
+            $catImt = 1; // Ispessimento IMT
         }
 
         return [
@@ -223,7 +237,6 @@ class ArchiprevaleatSyncService
             'cat_imt'         => $catImt,
         ];
     }
-
     /**
      * Calcola la stima eGFR basata sulla Creatinina Sferica (Formula CKD-EPI).
      */
