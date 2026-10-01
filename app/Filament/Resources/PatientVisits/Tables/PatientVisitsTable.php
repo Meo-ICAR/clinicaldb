@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\PatientVisits\Tables;
 
 use App\Models\PatientVisit;
+use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
@@ -14,6 +15,7 @@ use Filament\QueryBuilder\Constraints\TextConstraint;
 use Filament\Support\Enums\Width;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Filters\QueryBuilder;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
@@ -22,9 +24,10 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
+use OpenSpout\Common\Entity\Row;
+use OpenSpout\Writer\XLSX\Writer as XlsxWriter;
 use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
-use pxlrbt\FilamentExcel\Columns\Column;
-use pxlrbt\FilamentExcel\Exports\ExcelExport;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
 class PatientVisitsTable
 {
@@ -43,9 +46,7 @@ class PatientVisitsTable
             ])
             ->headerActions([
                 ExportAction::make()->label(__('filament/admin/patient_visit_resource.export')),
-                ExportAction::make('export_full')
-                    ->label(__('filament/admin/patient_visit_resource.export_full'))
-                    ->exports([self::fullExport()]),
+                self::fullExportAction(),
             ])
             ->defaultSort('visitadel', 'desc')
             ->recordActions([EditAction::make()
@@ -71,28 +72,44 @@ class PatientVisitsTable
     /**
      * Export denormalizzato visite + paziente: rispetta i filtri attivi della tabella e
      * aggiunge alle colonne di patient_visits quelle di patients non già presenti.
+     * Scrive l'xlsx in streaming con OpenSpout: pxlrbt/PhpSpreadsheet con ~260 colonne
+     * per riga è troppo lento e pesante sull'intero archivio.
      */
-    private static function fullExport(): ExcelExport
+    private static function fullExportAction(): Action
     {
-        $visitColumns = Schema::getColumnListing('patient_visits');
-        $patientColumns = array_values(array_diff(Schema::getColumnListing('patients'), $visitColumns, ['id']));
+        return Action::make('export_full')
+            ->label(__('filament/admin/patient_visit_resource.export_full'))
+            ->icon('heroicon-o-arrow-down-tray')
+            ->action(function (HasTable $livewire): BinaryFileResponse {
+                $visitColumns = Schema::getColumnListing('patient_visits');
+                $patientColumns = array_values(array_diff(Schema::getColumnListing('patients'), $visitColumns, ['id']));
 
-        $comments = collect([...Schema::getColumns('patients'), ...Schema::getColumns('patient_visits')])
-            ->filter(fn (array $column): bool => filled($column['comment']))
-            ->pluck('comment', 'name')
-            ->all();
+                $comments = collect([...Schema::getColumns('patients'), ...Schema::getColumns('patient_visits')])
+                    ->filter(fn (array $column): bool => filled($column['comment']))
+                    ->pluck('comment', 'name')
+                    ->all();
 
-        return ExcelExport::make('full')
-            ->useTableQuery()
-            ->modifyQueryUsing(fn (Builder $query): Builder => PatientVisit::query()
-                ->join('patients as p', 'patient_visits.patient_id', '=', 'p.id')
-                ->select(['patient_visits.*', ...array_map(fn (string $column): string => "p.{$column}", $patientColumns)])
-                ->whereIn('patient_visits.id', $query->reorder()->select('patient_visits.id')))
-            ->withColumns(array_map(
-                fn (string $column): Column => Column::make($column)->heading($comments[$column] ?? $column),
-                [...$visitColumns, ...$patientColumns],
-            ))
-            ->withFilename(fn (): string => 'visite_pazienti_'.now()->format('Ymd_His'));
+                $query = PatientVisit::query()
+                    ->join('patients as p', 'patient_visits.patient_id', '=', 'p.id')
+                    ->select(['patient_visits.*', ...array_map(fn (string $column): string => "p.{$column}", $patientColumns)])
+                    ->whereIn('patient_visits.id', $livewire->getFilteredTableQuery()->reorder()->select('patient_visits.id'))
+                    ->orderBy('patient_visits.id');
+
+                $columns = [...$visitColumns, ...$patientColumns];
+                $path = tempnam(sys_get_temp_dir(), 'export_full_').'.xlsx';
+
+                $writer = new XlsxWriter;
+                $writer->openToFile($path);
+                $writer->addRow(Row::fromValues(array_map(fn (string $column): string => $comments[$column] ?? $column, $columns)));
+
+                foreach ($query->toBase()->cursor() as $record) {
+                    $writer->addRow(Row::fromValues(array_map(fn (string $column): mixed => $record->{$column} ?? null, $columns)));
+                }
+
+                $writer->close();
+
+                return response()->download($path, 'visite_pazienti_'.now()->format('Ymd_His').'.xlsx')->deleteFileAfterSend();
+            });
     }
 
     /**
