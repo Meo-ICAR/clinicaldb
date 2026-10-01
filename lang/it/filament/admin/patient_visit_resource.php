@@ -11,6 +11,7 @@ return [
     'delete_bulk' => 'Delete Bulk',
     'edit' => 'Edit',
     'export' => 'Export',
+    'export_full' => 'Scarica Excel completo',
     'fumo_id' => 'Fumo',
     'fumodurata' => 'Fumodurata',
     'h_i_v_r_n_a' => 'Hivrna',

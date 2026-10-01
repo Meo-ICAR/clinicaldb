@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\PatientVisits\Tables;
 
+use App\Models\PatientVisit;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
@@ -22,6 +23,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use pxlrbt\FilamentExcel\Actions\Tables\ExportAction;
+use pxlrbt\FilamentExcel\Columns\Column;
+use pxlrbt\FilamentExcel\Exports\ExcelExport;
 
 class PatientVisitsTable
 {
@@ -40,6 +43,9 @@ class PatientVisitsTable
             ])
             ->headerActions([
                 ExportAction::make()->label(__('filament/admin/patient_visit_resource.export')),
+                ExportAction::make('export_full')
+                    ->label(__('filament/admin/patient_visit_resource.export_full'))
+                    ->exports([self::fullExport()]),
             ])
             ->defaultSort('visitadel', 'desc')
             ->recordActions([EditAction::make()
@@ -60,6 +66,33 @@ class PatientVisitsTable
                         ->label(__('filament/admin/patient_visit_resource.delete_bulk')),
                 ]),
             ]);
+    }
+
+    /**
+     * Export denormalizzato visite + paziente: rispetta i filtri attivi della tabella e
+     * aggiunge alle colonne di patient_visits quelle di patients non già presenti.
+     */
+    private static function fullExport(): ExcelExport
+    {
+        $visitColumns = Schema::getColumnListing('patient_visits');
+        $patientColumns = array_values(array_diff(Schema::getColumnListing('patients'), $visitColumns, ['id']));
+
+        $comments = collect([...Schema::getColumns('patients'), ...Schema::getColumns('patient_visits')])
+            ->filter(fn (array $column): bool => filled($column['comment']))
+            ->pluck('comment', 'name')
+            ->all();
+
+        return ExcelExport::make('full')
+            ->useTableQuery()
+            ->modifyQueryUsing(fn (Builder $query): Builder => PatientVisit::query()
+                ->join('patients as p', 'patient_visits.patient_id', '=', 'p.id')
+                ->select(['patient_visits.*', ...array_map(fn (string $column): string => "p.{$column}", $patientColumns)])
+                ->whereIn('patient_visits.id', $query->reorder()->select('patient_visits.id')))
+            ->withColumns(array_map(
+                fn (string $column): Column => Column::make($column)->heading($comments[$column] ?? $column),
+                [...$visitColumns, ...$patientColumns],
+            ))
+            ->withFilename(fn (): string => 'visite_pazienti_'.now()->format('Ymd_His'));
     }
 
     /**

@@ -15,6 +15,7 @@
         "league/oauth1-client": "^1.11",
         "owenvoke/blade-fontawesome": "^3.3",
         "pxlrbt/filament-excel": "^4.1",
+        "ralouphie/getallheaders": "^3.0",
         "socialiteproviders/google": "^4.1",
         "socialiteproviders/microsoft": "^4.10",
         "webklex/laravel-imap": "^6.2"
