@@ -19,6 +19,7 @@ use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema as DatabaseSchema;
 use Illuminate\Support\HtmlString;
 
 class PatientVisitForm
@@ -65,6 +66,9 @@ class PatientVisitForm
         2 => '2 - Irregolare',
         3 => '3 - Ulcerata',
     ];
+
+    /** @var array<string, string> */
+    private const SI_NO_OPTIONS = ['S' => 'Sì', 'N' => 'No'];
 
     public static function configure(Schema $schema): Schema
     {
@@ -219,6 +223,52 @@ class PatientVisitForm
                                 ]),
                         ]),
 
+                    Tab::make('Archiprevaleat')
+                        ->schema([
+                            Section::make('Dati generali')
+                                ->columns(4)
+                                ->schema([
+                                    self::numericField('archi', self::columnLabel('archi'), null, $ranges),
+                                    TextInput::make('centroext')->label(self::columnLabel('centroext'))->maxLength(255),
+                                    self::numericField('eta', self::columnLabel('eta'), null, $ranges),
+                                    self::numericField('bmi', self::columnLabel('bmi'), null, $ranges),
+                                    self::numericField('sbp', self::columnLabel('sbp'), null, $ranges),
+                                    self::numericField('dbp', self::columnLabel('dbp'), null, $ranges),
+                                    Select::make('fumo_clean')->label(self::columnLabel('fumo_clean'))->options([0 => 'No', 1 => 'Ex', 2 => 'Sì']),
+                                    Select::make('ipertensione')->label(self::columnLabel('ipertensione'))->options(self::SI_NO_OPTIONS),
+                                ]),
+                            Section::make('HIV e terapia ARV')
+                                ->columns(4)
+                                ->schema([
+                                    self::numericField('annohiv', self::columnLabel('annohiv'), null, $ranges),
+                                    self::numericField('anni_hiv', self::columnLabel('anni_hiv'), null, $ranges),
+                                    self::numericField('annitarv', self::columnLabel('annitarv'), null, $ranges),
+                                    self::numericField('cd8', self::columnLabel('cd8'), null, $ranges),
+                                    TextInput::make('risk')->label(self::columnLabel('risk'))->maxLength(100),
+                                    TextInput::make('regimen')->label(self::columnLabel('regimen'))->maxLength(255)->columnSpan(3),
+                                    ...self::columnToggles(['aids', 'nrti', 'nnrti', 'pi', 'insti', 'doravirina', 'nrtipre', 'nnrtipre', 'pipre', 'instipre']),
+                                ]),
+                            Section::make('Comorbilità e terapie')
+                                ->columns(4)
+                                ->schema([
+                                    self::numericField('egfr', self::columnLabel('egfr'), null, $ranges),
+                                    self::numericField('creat', self::columnLabel('creat'), null, $ranges),
+                                    ...self::columnToggles(['hcv', 'hbv', 'diabete', 'htfar', 'statine', 'ipolipemizzanti', 'anyipolip', 'altripolip', 'dislipidemia', 'cvd', 'pat1', 'pat2', 'pat3', 'pat4', 'pat5', 'pat6']),
+                                    TextInput::make('pat6spec')->label(self::columnLabel('pat6spec'))->maxLength(255),
+                                ]),
+                            Section::make('Carotidi (IMT e placche)')
+                                ->columns(4)
+                                ->schema([
+                                    self::numericField('imt_sn', self::columnLabel('imt_sn'), null, $ranges),
+                                    self::numericField('imt_dx', self::columnLabel('imt_dx'), null, $ranges),
+                                    Select::make('cat_imt')->label(self::columnLabel('cat_imt'))->options([0 => 'Normale', 1 => 'Ispessimento', 2 => 'Placca']),
+                                    ...array_map(
+                                        fn (string $name): Select => Select::make($name)->label(self::columnLabel($name))->options(self::SI_NO_OPTIONS),
+                                        ['placcadx_clean', 'placcasn_clean', 'placcat', 'ispessdx', 'ispesssn', 'ispess'],
+                                    ),
+                                ]),
+                        ]),
+
                 ])
                 ->columnSpanFull(),
             Textarea::make('annotazione')->label(__('filament/admin/patient_visit_resource.annotazione'))->columnSpanFull(),
@@ -303,6 +353,27 @@ class PatientVisitForm
                 default => [],
             };
         });
+    }
+
+    /**
+     * @param  array<int, string>  $names
+     * @return array<int, Toggle>
+     */
+    private static function columnToggles(array $names): array
+    {
+        return array_map(fn (string $name): Toggle => Toggle::make($name)->label(self::columnLabel($name)), $names);
+    }
+
+    /**
+     * Etichetta presa dal commento MySQL della colonna di patient_visits, con fallback sul nome.
+     */
+    private static function columnLabel(string $column): string
+    {
+        static $comments = null;
+
+        $comments ??= collect(DatabaseSchema::getColumns('patient_visits'))->pluck('comment', 'name')->all();
+
+        return filled($comments[$column] ?? null) ? $comments[$column] : $column;
     }
 
     /** @return array<string, string> */
