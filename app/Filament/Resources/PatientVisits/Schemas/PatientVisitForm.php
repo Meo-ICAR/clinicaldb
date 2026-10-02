@@ -229,11 +229,8 @@ class PatientVisitForm
                                 ->columns(4)
                                 ->schema([
                                     self::numericField('archi', self::columnLabel('archi'), null, $ranges),
-                                    TextInput::make('centroext')->label(self::columnLabel('centroext'))->maxLength(255),
                                     self::numericField('eta', self::columnLabel('eta'), null, $ranges),
                                     self::numericField('bmi', self::columnLabel('bmi'), null, $ranges),
-                                    self::numericField('sbp', self::columnLabel('sbp'), null, $ranges),
-                                    self::numericField('dbp', self::columnLabel('dbp'), null, $ranges),
                                     Select::make('fumo_clean')->label(self::columnLabel('fumo_clean'))->options([0 => 'No', 1 => 'Ex', 2 => 'Sì']),
                                     Select::make('ipertensione')->label(self::columnLabel('ipertensione'))->options(self::SI_NO_OPTIONS),
                                 ]),
@@ -244,8 +241,6 @@ class PatientVisitForm
                                     self::numericField('anni_hiv', self::columnLabel('anni_hiv'), null, $ranges),
                                     self::numericField('annitarv', self::columnLabel('annitarv'), null, $ranges),
                                     self::numericField('cd8', self::columnLabel('cd8'), null, $ranges),
-                                    TextInput::make('risk')->label(self::columnLabel('risk'))->maxLength(100),
-                                    TextInput::make('regimen')->label(self::columnLabel('regimen'))->maxLength(255)->columnSpan(3),
                                     ...self::columnToggles(['aids', 'nrti', 'nnrti', 'pi', 'insti', 'doravirina', 'nrtipre', 'nnrtipre', 'pipre', 'instipre']),
                                 ]),
                             Section::make('Comorbilità e terapie')
@@ -259,8 +254,6 @@ class PatientVisitForm
                             Section::make('Carotidi (IMT e placche)')
                                 ->columns(4)
                                 ->schema([
-                                    self::numericField('imt_sn', self::columnLabel('imt_sn'), null, $ranges),
-                                    self::numericField('imt_dx', self::columnLabel('imt_dx'), null, $ranges),
                                     Select::make('cat_imt')->label(self::columnLabel('cat_imt'))->options([0 => 'Normale', 1 => 'Ispessimento', 2 => 'Placca']),
                                     ...array_map(
                                         fn (string $name): Select => Select::make($name)->label(self::columnLabel($name))->options(self::SI_NO_OPTIONS),
