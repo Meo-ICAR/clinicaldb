@@ -20,6 +20,7 @@ use Filament\Tables\Filters\QueryBuilder;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Query\Expression;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
@@ -31,6 +32,268 @@ use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
 class PatientVisitsTable
 {
+    /**
+     * Ordine delle colonne dell'export completo: prima i campi di patients, poi quelli di
+     * patient_visits. Le colonne di patient_visits non elencate vanno in coda.
+     *
+     * @var array<int, string>
+     */
+    private const EXPORT_PATIENT_COLUMNS = [
+        'pazientecode',
+        'arruolato',
+        'datanascita',
+        'sesso',
+        'menopausa',
+        'etnia_id',
+        'rischio_id',
+        'studioanni',
+        'statocivile_id',
+        'fumo_id',
+        'fumodurata',
+        'lavoro_id',
+        'cammino',
+        'sport',
+        'ictus_id',
+        'cardiopatie_id',
+        'diabete_id',
+        'dislipidemie_id',
+        'lipodistrofia_id',
+        'neoplasie_id',
+        'osteoporosi_id',
+        'insuffrenale_id',
+        'ormonali_id',
+        'ipolipemizzanti_id',
+        'ipolipemizzantiquali',
+        'ipolipemizzantidamesi',
+        'ipertensione_id',
+        'ipertensionefar_id',
+        'antidiabetici_id',
+        'farmaci_id',
+        'farmaciquali',
+        'alcool_id',
+        'alcool35_id',
+        'droghe_id',
+        'droghequali',
+        'cirrosi_id',
+        'epatite_id',
+        'infezionehiv_id',
+        'stadiocdc',
+        'datahiv',
+        'positivodal',
+        'naive_id',
+        'pi_id',
+        'nrti_id',
+        'nnrti_id',
+        'ini_id',
+        'artaltro_id',
+        'artterapie_id',
+        'trattamentodal',
+        'farmaciterapia',
+        'ultimaterapia',
+        'haart',
+        'infezioni_id',
+        'cd4',
+        'cd4nadir',
+        'cd4data',
+        'altezza',
+        'commenti',
+    ];
+
+    /** @var array<int, string> */
+    private const EXPORT_VISIT_COLUMNS = [
+        'visitadel',
+        'CD4',
+        'CD4CD8',
+        'Trattamentovecchio',
+        'trattamentocausaabbandono_id',
+        'Trattamentonuovo',
+        'Trattamentonuovodal',
+        'peso',
+        'circonferenza',
+        'PAS',
+        'Creatinina',
+        'HIVRNA',
+        'HIVRNAnorilevabile',
+        'placcasxbordi',
+        'placcadxbordi',
+        'placcasxclivaggio',
+        'placcadxclivaggio',
+        'placcasxomogenea',
+        'placcadxomogenea',
+        'placcasxombra',
+        'placcdsxombra',
+        'menopausa',
+        'PAD',
+        'Colesterolo',
+        'HDL',
+        'LDL',
+        'Trigliceridi',
+        'Glicemia',
+        'Insulina',
+        'GPT',
+        'GOT',
+        'gamma_GT',
+        'ProteurinaFlag',
+        'Proteinuria',
+        'centro',
+        'centrocode',
+        'pazientecode',
+        'annotazione',
+        'Bil_T',
+        'Bil_D',
+        'Bil_I',
+        'Carotide_comune_sx',
+        'Carotide_comune_dx',
+        'Bulbo_sx',
+        'Bulbo_dx',
+        'Carotide_interna_sx',
+        'Carotide_interna_dx',
+        'placche_sx',
+        'placche_dx',
+        'Carotide_comune_sxc',
+        'Carotide_comune_dxc',
+        'Bulbo_sxc',
+        'Bulbo_dxc',
+        'Carotide_interna_sxc',
+        'Carotide_interna_dxc',
+        'placche_sxc',
+        'placche_dxc',
+        'statocivile_id',
+        'statogen_id',
+        'fumo_id',
+        'fumodurata',
+        'AGE_TSA',
+        'D_HIV',
+        'FDR',
+        'INIZIO_ARV',
+        'D_AIDS',
+        'D_DIABETE',
+        'D_DECESSO',
+        'YEARS_HIV_TSA',
+        'YEARS_ARV_TSA',
+        'NADIR_CD4_TSA',
+        'HCV_TSA',
+        'HBV_TSA',
+        'D_STATUS',
+        'TIME_SOP_TSA',
+        'VIREMIA_TSA',
+        'CD4_TSA',
+        'CD8_TSA',
+        'Hb_TSA',
+        'PLT_TSA',
+        'AST_TSA',
+        'ALT_TSA',
+        'CD4_CD8_RAPP_TSA',
+        'ALP_TSA',
+        'BILTOT_TSA',
+        'BILDIR_TSA',
+        'CREA_TSA',
+        'GLU_TSA',
+        'TRIG_TSA',
+        'COLEST_TSA',
+        'COLHDL_TSA',
+        'COLLDL_TSA',
+        'BILIND_TSA',
+        'CALCIO_TSA',
+        'INSULINA_TSA',
+        'FOSFORO_TSA',
+        'HOMA_TSA',
+        'FIB_TSA',
+        'EGFR_TSA',
+        'NAIVE_TSA',
+        'TC_TSA',
+        'ABC_TSA',
+        'TPV_TSA',
+        'ATV_TSA',
+        'AZT_TSA',
+        'DT_TSA',
+        'DDI_TSA',
+        'IDV_TSA',
+        'DRV_TSA',
+        'DVG_TSA',
+        'EFV_TSA',
+        'ETV_TSA',
+        'FPV_TSA',
+        'FTC_TSA',
+        'LPV_TSA',
+        'MRV_TSA',
+        'NFV_TSA',
+        'NVP_TSA',
+        'RAL_TSA',
+        'EVG_TSA',
+        'RPV_TSA',
+        'RTV_TSA',
+        'SQV_TSA',
+        'T_TSA',
+        'TDF_TSA',
+        'COBI_TSA',
+        'SPE_TSA',
+        'NRTI_TSA',
+        'NNRTI_TSA',
+        'PI_TSA',
+        'II_TSA',
+        'FI_TSA',
+        'STATIN_ON',
+        'STATIN_EVER',
+        'FIBRATO_ON',
+        'FIBRATO_EVER',
+        'IPER_ON',
+        'IPER_EVER',
+        'FUMO',
+        'PESO_TSA',
+        'PD_TSA',
+        'PS_TSA',
+        'data_TSA',
+        'MIT_DX',
+        'MIT_SX',
+        'LESIONE_BIF',
+        'lesione_DX',
+        'lesione_SX',
+        'LESIONE_BIL',
+        'lesione_f',
+        'lesione_c',
+        'lesione_fc',
+        'PLACCA',
+        'placca_dx',
+        'placca_sx',
+        'placca_bil',
+        'placca_f',
+        'placca_c',
+        'placca_fc',
+        'STENOsi',
+        'F23',
+        'F24',
+        'bmi_tsa',
+        'CVD_risk',
+        'Framingham_score',
+        'DAD_score',
+        'D_CARDIO1',
+        'CARDIO1',
+        'D_CARDIO2',
+        'CARDIO2',
+        'placcasxecogen_id',
+        'placcasxstratosup',
+        'placcadxstratosup',
+        'placcasxstratopar',
+        'placcadxstratopar',
+        'placcasxsupendo_id',
+        'placcadxsupendo_id',
+        'placcasxclivaggio2',
+        'placcadxclivaggio2',
+        'capqi',
+        'placcasxsten',
+        'placcadxsten',
+        'bictegravir',
+        'imtsx',
+        'imtdx',
+        'imtci',
+        'imtcc',
+        'placcasx',
+        'placcadx',
+        'placcaci',
+        'placcacc',
+    ];
+
     public static function configure(Table $table): Table
     {
         return $table
@@ -70,8 +333,7 @@ class PatientVisitsTable
     }
 
     /**
-     * Export denormalizzato visite + paziente: rispetta i filtri attivi della tabella e
-     * aggiunge alle colonne di patient_visits quelle di patients non già presenti.
+     * Export denormalizzato visite + paziente: rispetta i filtri attivi della tabella.
      * Scrive l'xlsx in streaming con OpenSpout: pxlrbt/PhpSpreadsheet con ~260 colonne
      * per riga è troppo lento e pesante sull'intero archivio.
      */
@@ -82,34 +344,57 @@ class PatientVisitsTable
             ->icon('heroicon-o-arrow-down-tray')
             ->action(function (HasTable $livewire): BinaryFileResponse {
                 $visitColumns = Schema::getColumnListing('patient_visits');
-                $patientColumns = array_values(array_diff(Schema::getColumnListing('patients'), $visitColumns, ['id']));
+                $patientColumns = Schema::getColumnListing('patients');
+                $visitComments = self::columnComments('patient_visits');
+                $patientComments = self::columnComments('patients');
 
-                $comments = collect([...Schema::getColumns('patients'), ...Schema::getColumns('patient_visits')])
-                    ->filter(fn (array $column): bool => filled($column['comment']))
-                    ->pluck('comment', 'name')
+                $matchExisting = fn (array $wanted, array $existing): array => collect($wanted)
+                    ->map(fn (string $name): ?string => collect($existing)->first(fn (string $column): bool => strcasecmp($column, $name) === 0))
+                    ->filter()
+                    ->unique()
+                    ->values()
                     ->all();
+
+                $orderedPatient = $matchExisting(self::EXPORT_PATIENT_COLUMNS, $patientColumns);
+                $orderedVisit = $matchExisting(self::EXPORT_VISIT_COLUMNS, $visitColumns);
+                $tailVisit = array_values(array_diff($visitColumns, $orderedVisit));
+
+                $spec = [
+                    ...array_map(fn (string $column): array => ['alias' => "patient__{$column}", 'select' => "p.{$column}", 'heading' => $patientComments[$column] ?? $column], $orderedPatient),
+                    ...array_map(fn (string $column): array => ['alias' => $column, 'select' => "patient_visits.{$column}", 'heading' => $visitComments[$column] ?? $column], [...$orderedVisit, ...$tailVisit]),
+                ];
 
                 $query = PatientVisit::query()
                     ->join('patients as p', 'patient_visits.patient_id', '=', 'p.id')
-                    ->select(['patient_visits.*', ...array_map(fn (string $column): string => "p.{$column}", $patientColumns)])
+                    ->select(array_map(fn (array $column): Expression => DB::raw("{$column['select']} as `{$column['alias']}`"), $spec))
                     ->whereIn('patient_visits.id', $livewire->getFilteredTableQuery()->reorder()->select('patient_visits.id'))
                     ->orderBy('patient_visits.id');
 
-                $columns = [...$visitColumns, ...$patientColumns];
                 $path = tempnam(sys_get_temp_dir(), 'export_full_').'.xlsx';
 
                 $writer = new XlsxWriter;
                 $writer->openToFile($path);
-                $writer->addRow(Row::fromValues(array_map(fn (string $column): string => $comments[$column] ?? $column, $columns)));
+                $writer->addRow(Row::fromValues(array_column($spec, 'heading')));
 
                 foreach ($query->toBase()->cursor() as $record) {
-                    $writer->addRow(Row::fromValues(array_map(fn (string $column): mixed => $record->{$column} ?? null, $columns)));
+                    $writer->addRow(Row::fromValues(array_map(fn (array $column): mixed => $record->{$column['alias']} ?? null, $spec)));
                 }
 
                 $writer->close();
 
                 return response()->download($path, 'visite_pazienti_'.now()->format('Ymd_His').'.xlsx')->deleteFileAfterSend();
             });
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    private static function columnComments(string $table): array
+    {
+        return collect(Schema::getColumns($table))
+            ->filter(fn (array $column): bool => filled($column['comment']))
+            ->pluck('comment', 'name')
+            ->all();
     }
 
     /**
