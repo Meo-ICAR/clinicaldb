@@ -11,5 +11,9 @@
       "Bash(php -l app/Models/PatientVisit.php)",
       "Bash(php -l app/Filament/Resources/Patients/Schemas/PatientForm.php)"
     ]
+  },
+  "enabledPlugins": {
+    "laravel-boost@claude-plugins-official": true,
+    "laraclaude@edulazaro": true
   }
 }
