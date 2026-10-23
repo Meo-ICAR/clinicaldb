@@ -11,6 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
+        // Su un database nuovo la tabella la crea più tardi la migration di schema idempotente.
+        if (! Schema::hasTable('patient_visits')) {
+            return;
+        }
+
         Schema::table('patient_visits', function (Blueprint $table) {
             $table->string('ident', 8)->nullable()->charset('ascii')->collation('ascii_general_ci');
             $table->string('repeatpaz', 50)->nullable()->charset('ascii')->collation('ascii_general_ci');
@@ -89,6 +94,11 @@ return new class extends Migration
      */
     public function down(): void
     {
+        // Su un database nuovo la tabella la crea più tardi la migration di schema idempotente.
+        if (! Schema::hasTable('patient_visits')) {
+            return;
+        }
+
         Schema::table('patient_visits', function (Blueprint $table) {
             $table->dropColumn([
                 'ident',
