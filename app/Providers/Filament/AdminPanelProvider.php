@@ -60,8 +60,9 @@ class AdminPanelProvider extends PanelProvider
             ->navigationGroups([
                 NavigationGroup::make('Amministrazione'),
                 NavigationGroup::make('Documentazione'),
-                NavigationGroup::make('Tabelle di lookup')
+                NavigationGroup::make('Configurazioni')
                     ->collapsed(),
+                NavigationGroup::make('Manuali'),
             ])
             ->navigationItems([
                 NavigationItem::make('Dashboard')

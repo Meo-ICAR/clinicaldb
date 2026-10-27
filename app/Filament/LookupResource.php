@@ -20,7 +20,7 @@ use UnitEnum;
 
 abstract class LookupResource extends Resource
 {
-    protected static UnitEnum|string|null $navigationGroup = 'Tabelle di lookup';
+    protected static UnitEnum|string|null $navigationGroup = 'Configurazioni';
 
     public static function getNavigationLabel(): string
     {
