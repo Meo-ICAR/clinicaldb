@@ -11,6 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
+        // Su un database nuovo la tabella la crea più tardi la migration di schema idempotente.
+        if (! Schema::hasTable('sessions')) {
+            return;
+        }
+
         Schema::table('sessions', function (Blueprint $table) {
             $table->char('user_id', 36)->nullable()->change();
         });
@@ -21,6 +26,10 @@ return new class extends Migration
      */
     public function down(): void
     {
+        if (! Schema::hasTable('sessions')) {
+            return;
+        }
+
         Schema::table('sessions', function (Blueprint $table) {
             $table->unsignedBigInteger('user_id')->nullable()->change();
         });
