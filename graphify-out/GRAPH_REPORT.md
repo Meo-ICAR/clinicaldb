@@ -1,20 +1,25 @@
-# Graph Report - clinicaldb  (2026-10-05)
+# Graph Report - clinicaldb  (2026-10-24)
 
 ## Corpus Check
-- 605 files · ~73,196 words
+- 606 files · ~235,860 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 126 file(s) not represented in the graph (top: .2026-09-21-06-28-32 104, (none) 16, .css 2)
+- Unclassified: 125 file(s) not represented in the graph (top: .2026-09-21-06-28-32 104, (none) 16, .css 2)
 
 ## Summary
-- 2229 nodes · 3630 edges · 454 communities (94 shown, 360 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 10 edges (avg confidence: 0.95)
+- 2234 nodes · 3591 edges · 489 communities (72 shown, 417 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 15 edges (avg confidence: 0.92)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `b70c7e38`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - Filament\Schemas\Schema
 - Filament\Tables\Table
 - PatientVisitsTable.php
-- AppSwitcherWidget.php
+- SsoTokenBroker
 - AdminPanelProvider.php
 - User
 - FieldReferenceRangesTable.php
@@ -28,10 +33,10 @@
 - PatientVisitResource
 - Illuminate\Database\Schema\Blueprint
 - ArchiprevaleatSyncService
-- PatientResource.php
+- BackedEnum
 - Filament\Tables\Columns\TextColumn
 - Patient
-- Illuminate\Support\Facades\DB
+- AppSwitcherWidget.php
 - Filament\Forms\Components\TextInput
 - Illuminate\Support\Facades\Schema
 - PatientVisitsTable
@@ -42,31 +47,31 @@
 - FieldReferenceRangeResource
 - PatientResource
 - testing-best-practices/SKILL.md
-- AlcoolResource
-- AntidiabeticoResource
-- ArtAltroResource
-- ArtTerapiaResource
-- CardiopatiaResource
-- DislipidemiaResource
-- DrogaResource
-- EcogenicitaResource
-- EpatiteResource
-- FarmacoResource
-- FumoResource
-- InfezioneHivResource
-- InfezioneResource
-- IniResource
-- InsuffrenaleResource
-- IpolipemizzanteResource
-- LipodistrofiaResource
-- NnrtiResource
-- NrtiResource
-- OsteoporosiResource
-- RischioResource
-- SinoResource
-- StatoCivileResource
-- TipResource
-- TrattamentoCausaAbbandonoResource
+- AlcoolResource.php
+- ListAntidiabeticos
+- ArtAltroResource.php
+- EditArtTerapia
+- CardiopatiaResource.php
+- DislipidemiaResource.php
+- DrogaResource.php
+- Filament\Resources\Pages\EditRecord
+- EpatiteResource.php
+- ListFarmacos
+- FumoResource.php
+- LookupResource
+- EditInfezione
+- .form
+- InsuffrenaleResource.php
+- IpolipemizzanteResource.php
+- CreateLipodistrofia.php
+- NnrtiResource.php
+- EditNrti
+- OsteoporosiResource.php
+- ListRischios
+- ListSinos
+- StatoCivileResource.php
+- TipResource.php
+- EditTrattamentoCausaAbbandono
 - UserResource
 - PatientForm.php
 - Filament\Resources\Pages\ListRecords
@@ -99,7 +104,7 @@
 - UserFactory.php
 - README.md
 - EndolumialeResource
-- PatientVisitForm
+- PatientVisit.php
 - laravel-best-practices/SKILL.md
 - Collection Best Practices
 - HTTP Client Best Practices
@@ -139,17 +144,17 @@
 - ListInis
 - ListInsuffrenales
 - EditIpertensione
-- ListIpertensiones
+- Filament\Actions\CreateAction
 - EditIpolipemizzante
 - EditLavoro
 - ListLavoros
-- EditLipodistrofia
+- EditProfile.php
 - EditNaive
 - ListNaives
 - EditNeoplasia
 - ListNeoplasias
 - ListNnrtis
-- ListNrtis
+- AdminPanelProvider
 - ListOsteoporosis
 - EditPatient
 - ListPatients
@@ -173,7 +178,7 @@
 - DatabaseSeeder.php
 - Prompt di contesto per vibe coding — ClinicalDB
 - Laravel Application
-- Alcool35Resource
+- ExternalAppResolver
 - CenterResource
 - CirrosiResource
 - DiabeteResource
@@ -181,16 +186,16 @@
 - IctusResource
 - IpertensioneResource
 - LavoroResource
-- NaiveResource
-- NeoplasiaResource
+- AppSwitcherWidgetTest.php
+- ListAlcools
 - PiResource
 - StatogenResource
-- StenosiResource
-- TrattamentoResource
-- Patient.php
+- ListArtAltros
+- ListCardiopatias
+- Illuminate\Database\Eloquent\Relations\HasMany
 - ExampleTest
 - CardiopatiasTable.php
-- .getPages
+- ListDislipidemias
 - CentersTable.php
 - .getPages
 - CirrosisTable.php
@@ -198,7 +203,7 @@
 - DislipidemiasTable.php
 - DrogasTable.php
 - EndolumialesTable.php
-- .getPages
+- EditDroga
 - EtniasTable.php
 - FumosTable.php
 - IctusesTable.php
@@ -207,12 +212,12 @@
 - InsuffrenalesTable.php
 - IpertensionesTable.php
 - IpolipemizzantesTable.php
-- .getPages
+- EditEpatite
 - NeoplasiasTable.php
 - NnrtisTable.php
 - NrtisTable.php
 - OsteoporosisTable.php
-- CreatePi
+- FieldReferenceRangeForm.php
 - PisTable.php
 - RischiosTable.php
 - CreateStatogen
@@ -259,18 +264,53 @@
 - Trattamento
 - TrattamentoCausaAbbandono
 - app-switcher-widget.blade.php
+- EditFumo
+- ListInfezioneHivs
+- EditIni
+- EditInsuffrenale
+- ListIpolipemizzantes
+- EditNnrti
+- EditOsteoporosi
+- EditStatoCivile
+- ListTips
+- ListUsers
+- AppServiceProvider
+- CreateAlcool.php
+- CreateAntidiabetico.php
+- CreateArtAltro.php
+- CreateArtTerapia.php
+- CreateCardiopatia.php
+- CreateDiabete.php
+- CreateDislipidemia.php
+- CreateEcogenicita.php
+- CreateEndolumiale.php
+- CreateEpatite.php
+- CreateFarmaco.php
+- CreateIctus.php
+- CreateInsuffrenale.php
+- CreateIpertensione.php
+- CreateLavoro.php
+- CreateNaive.php
+- CreateNnrti.php
+- CreateNrti.php
+- CreateOsteoporosi.php
+- CreatePatient.php
+- CreateRischio.php
+- CreateTip.php
+- CreateTrattamentoCausaAbbandono.php
+- CreateUser.php
 
 ## God Nodes (most connected - your core abstractions)
 1. `LookupResource` - 87 edges
-2. `User` - 52 edges
+2. `User` - 49 edges
 3. `LookupModel` - 42 edges
-4. `PatientVisit` - 22 edges
-5. `Patient` - 19 edges
-6. `FieldReferenceRange` - 18 edges
-7. `PatientResource` - 17 edges
-8. `PatientVisitResource` - 16 edges
-9. `UserResource` - 15 edges
-10. `FieldReferenceRangeResource` - 14 edges
+4. `PatientVisit` - 19 edges
+5. `FieldReferenceRange` - 16 edges
+6. `Patient` - 16 edges
+7. `PatientResource` - 15 edges
+8. `UserResource` - 15 edges
+9. `FieldReferenceRangeResource` - 14 edges
+10. `PatientVisitResource` - 14 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Follow Project Naming Conventions` --references--> `User`  [INFERRED]
@@ -287,47 +327,47 @@
 ## Import Cycles
 - None detected.
 
-## Communities (454 total, 360 thin omitted)
+## Communities (489 total, 417 thin omitted)
 
 ### Community 0 - "Filament\Schemas\Schema"
-Cohesion: 0.02
+Cohesion: 0.03
 Nodes (35): Alcool35Form, AlcoolForm, AntidiabeticoForm, ArtAltroForm, ArtTerapiaForm, CardiopatiaForm, CirrosiForm, DiabeteForm (+27 more)
+
+### Community 1 - "Filament\Tables\Table"
+Cohesion: 0.07
+Nodes (6): ArtTerapiaResource, FarmacoResource, NaiveResource, NeoplasiaResource, SinoResource, TrattamentoResource
 
 ### Community 2 - "PatientVisitsTable.php"
 Cohesion: 0.09
-Nodes (4): {closure#4}(), {closure#1}(), {closure#14}(), {closure#4}()
+Nodes (3): {closure#4}(), {closure#14}(), {closure#4}()
 
-### Community 3 - "AppSwitcherWidget.php"
-Cohesion: 0.05
-Nodes (10): AppSwitcherWidget, {closure#1}(), SsoTokenApiController, Controller, SaveSentEmailToImap, ExternalAppResolver, SsoTokenBroker, {closure#1}() (+2 more)
-
-### Community 4 - "AdminPanelProvider.php"
-Cohesion: 0.06
-Nodes (4): EditProfile, AppServiceProvider, AdminPanelProvider, {closure#1}()
+### Community 3 - "SsoTokenBroker"
+Cohesion: 0.12
+Nodes (6): SsoTokenApiController, Controller, SsoTokenBroker, {closure#1}(), {closure#2}(), {closure#3}()
 
 ### Community 5 - "User"
-Cohesion: 0.10
-Nodes (4): {closure#1}(), User, 3. Authenticate and store the user, AppSwitcherWidgetTest
+Cohesion: 0.13
+Nodes (4): {closure#1}(), {closure#1}(), User, 3. Authenticate and store the user
 
 ### Community 6 - "FieldReferenceRangesTable.php"
-Cohesion: 0.12
+Cohesion: 0.15
 Nodes (8): {closure#1}(), {closure#2}(), {closure#3}(), {closure#4}(), {closure#5}(), {closure#6}(), FieldReferenceRangesTable, FieldReferenceRange
 
 ### Community 7 - "UsersTable.php"
-Cohesion: 0.13
+Cohesion: 0.11
 Nodes (15): {closure#1}(), {closure#2}(), {closure#3}(), {closure#4}(), {closure#1}(), {closure#10}(), {closure#3}(), {closure#4}() (+7 more)
 
 ### Community 8 - "LookupResource.php"
-Cohesion: 0.15
-Nodes (4): {closure#3}(), {closure#4}(), TreatmentAnnotationsRelationManager, VisitsRelationManager
+Cohesion: 0.17
+Nodes (3): TreatmentAnnotationsRelationManager, VisitsRelationManager, PatientVisitForm
 
 ### Community 9 - "PatientVisitForm.php"
 Cohesion: 0.19
 Nodes (3): {closure#1}(), {closure#7}(), {closure#9}()
 
 ### Community 10 - "Filament\Resources\Pages\CreateRecord"
-Cohesion: 0.13
-Nodes (7): CreateAlcool35, CreateDiabete, CreateIctus, CreateIpertensione, CreateLavoro, CreateNaive, CreateUser
+Cohesion: 0.11
+Nodes (13): CreateAlcool35, CreateCenter, CreateDroga, CreateEtnia, CreateFumo, CreateInfezioneHiv, CreateInfezione, CreateIni (+5 more)
 
 ### Community 11 - "Cloud CLI"
 Cohesion: 0.06
@@ -337,32 +377,28 @@ Nodes (30): Adding a cache to an existing environment, Adding a database to an e
 Cohesion: 0.10
 Nodes (20): devDependencies, concurrently, laravel-vite-plugin, tailwindcss, @tailwindcss/vite, vite, optionalDependencies, @laravel/multiplex (+12 more)
 
-### Community 13 - "PatientVisit"
-Cohesion: 0.16
-Nodes (5): {closure#1}(), {closure#2}(), {closure#3}(), PatientVisit, PatientVisitPolicy
-
 ### Community 14 - "PatientVisitResource"
-Cohesion: 0.12
-Nodes (9): PatientVisitResource, {closure#1}(), {closure#2}(), {closure#3}(), RecentlyModifiedPatients, {closure#1}(), {closure#2}(), {closure#3}() (+1 more)
+Cohesion: 0.13
+Nodes (10): {closure#3}(), {closure#4}(), {closure#1}(), {closure#2}(), {closure#3}(), RecentlyModifiedPatients, {closure#1}(), {closure#2}() (+2 more)
 
 ### Community 15 - "Illuminate\Database\Schema\Blueprint"
 Cohesion: 0.18
 Nodes (6): {closure#1}(), {closure#2}(), {closure#1}(), {closure#2}(), {closure#1}(), {closure#2}()
 
-### Community 17 - "PatientResource.php"
-Cohesion: 0.10
-Nodes (5): UserManual, VibeCodingPrompt, FieldReferenceRangeForm, UserForm, UsersTable
+### Community 16 - "ArchiprevaleatSyncService"
+Cohesion: 0.07
+Nodes (10): ArchiprevaleatSyncCommand, CreatePatientBaselineVisits, SeedFieldReferenceRanges, SaveSentEmailToImap, ArchiprevaleatSyncService, {closure#1}(), getConnection(), tables() (+2 more)
+
+### Community 17 - "BackedEnum"
+Cohesion: 0.09
+Nodes (5): UserManual, VibeCodingPrompt, EcogenicitaResource, InfezioneResource, NrtiResource
 
 ### Community 18 - "Filament\Tables\Columns\TextColumn"
 Cohesion: 0.12
 Nodes (5): Alcool35sTable, EcogenicitasTable, LavorosTable, NaivesTable, StenosisTable
 
-### Community 20 - "Illuminate\Support\Facades\DB"
-Cohesion: 0.20
-Nodes (3): ArchiprevaleatSyncCommand, CreatePatientBaselineVisits, SeedFieldReferenceRanges
-
 ### Community 21 - "Filament\Forms\Components\TextInput"
-Cohesion: 0.11
+Cohesion: 0.12
 Nodes (5): CenterForm, EcogenicitaForm, EndolumialeForm, StenosiForm, TipForm
 
 ### Community 24 - "Filament\Actions\BulkActionGroup"
@@ -381,125 +417,37 @@ Nodes (4): ArtTerapiasTable, FarmacosTable, InfezioneHivsTable, LipodistrofiasTa
 Cohesion: 0.14
 Nodes (14): require, dutchcodingcompany/filament-socialite, filament/filament, laravel/framework, laravel/socialite, laravel/tinker, league/oauth1-client, owenvoke/blade-fontawesome (+6 more)
 
-### Community 28 - "FieldReferenceRangeResource"
-Cohesion: 0.18
-Nodes (3): FieldReferenceRangeResource, CreateFieldReferenceRange, EditFieldReferenceRange
-
-### Community 29 - "PatientResource"
-Cohesion: 0.17
-Nodes (3): CreatePatient, PatientResource, PatientsTable
-
 ### Community 30 - "testing-best-practices/SKILL.md"
 Cohesion: 0.15
 Nodes (7): Built-in Laravel Assertion Methods, How to Find Test Framework Features, Security Tests, Data Providers, Each Test Makes Its Own Data, Factories and Test Data, Record Construction
 
-### Community 31 - "AlcoolResource"
-Cohesion: 0.20
-Nodes (3): AlcoolResource, CreateAlcool, ListAlcools
+### Community 38 - "Filament\Resources\Pages\EditRecord"
+Cohesion: 0.18
+Nodes (3): EditEcogenicita, EditFieldReferenceRange, EditUser
 
-### Community 32 - "AntidiabeticoResource"
-Cohesion: 0.20
-Nodes (3): AntidiabeticoResource, CreateAntidiabetico, ListAntidiabeticos
+### Community 42 - "LookupResource"
+Cohesion: 0.08
+Nodes (6): LookupResource, AntidiabeticoResource, InfezioneHivResource, LipodistrofiaResource, RischioResource, TrattamentoCausaAbbandonoResource
 
-### Community 33 - "ArtAltroResource"
-Cohesion: 0.20
-Nodes (3): ArtAltroResource, CreateArtAltro, ListArtAltros
+### Community 44 - ".form"
+Cohesion: 0.10
+Nodes (3): Alcool35Resource, IniResource, StenosiResource
 
-### Community 34 - "ArtTerapiaResource"
-Cohesion: 0.20
-Nodes (3): ArtTerapiaResource, CreateArtTerapia, EditArtTerapia
-
-### Community 35 - "CardiopatiaResource"
-Cohesion: 0.20
-Nodes (3): CardiopatiaResource, CreateCardiopatia, ListCardiopatias
-
-### Community 36 - "DislipidemiaResource"
-Cohesion: 0.20
-Nodes (3): DislipidemiaResource, CreateDislipidemia, ListDislipidemias
-
-### Community 37 - "DrogaResource"
-Cohesion: 0.20
-Nodes (3): DrogaResource, CreateDroga, EditDroga
-
-### Community 38 - "EcogenicitaResource"
-Cohesion: 0.20
-Nodes (3): EcogenicitaResource, CreateEcogenicita, EditEcogenicita
-
-### Community 39 - "EpatiteResource"
-Cohesion: 0.20
-Nodes (3): EpatiteResource, CreateEpatite, EditEpatite
-
-### Community 40 - "FarmacoResource"
-Cohesion: 0.20
-Nodes (3): FarmacoResource, CreateFarmaco, ListFarmacos
-
-### Community 41 - "FumoResource"
-Cohesion: 0.20
-Nodes (3): FumoResource, CreateFumo, EditFumo
-
-### Community 42 - "InfezioneHivResource"
-Cohesion: 0.20
-Nodes (3): InfezioneHivResource, CreateInfezioneHiv, ListInfezioneHivs
-
-### Community 43 - "InfezioneResource"
-Cohesion: 0.20
-Nodes (3): InfezioneResource, CreateInfezione, EditInfezione
-
-### Community 44 - "IniResource"
-Cohesion: 0.20
-Nodes (3): IniResource, CreateIni, EditIni
-
-### Community 45 - "InsuffrenaleResource"
-Cohesion: 0.20
-Nodes (3): InsuffrenaleResource, CreateInsuffrenale, EditInsuffrenale
-
-### Community 46 - "IpolipemizzanteResource"
-Cohesion: 0.20
-Nodes (3): IpolipemizzanteResource, CreateIpolipemizzante, ListIpolipemizzantes
-
-### Community 47 - "LipodistrofiaResource"
-Cohesion: 0.20
-Nodes (3): LipodistrofiaResource, CreateLipodistrofia, ListLipodistrofias
-
-### Community 48 - "NnrtiResource"
-Cohesion: 0.20
-Nodes (3): NnrtiResource, CreateNnrti, EditNnrti
-
-### Community 49 - "NrtiResource"
-Cohesion: 0.20
-Nodes (3): NrtiResource, CreateNrti, EditNrti
-
-### Community 50 - "OsteoporosiResource"
-Cohesion: 0.20
-Nodes (3): OsteoporosiResource, CreateOsteoporosi, EditOsteoporosi
-
-### Community 51 - "RischioResource"
-Cohesion: 0.20
-Nodes (3): CreateRischio, ListRischios, RischioResource
-
-### Community 52 - "SinoResource"
-Cohesion: 0.20
-Nodes (3): CreateSino, ListSinos, SinoResource
-
-### Community 53 - "StatoCivileResource"
-Cohesion: 0.20
-Nodes (3): CreateStatoCivile, EditStatoCivile, StatoCivileResource
-
-### Community 54 - "TipResource"
-Cohesion: 0.20
-Nodes (3): CreateTip, ListTips, TipResource
-
-### Community 55 - "TrattamentoCausaAbbandonoResource"
-Cohesion: 0.20
-Nodes (3): CreateTrattamentoCausaAbbandono, EditTrattamentoCausaAbbandono, TrattamentoCausaAbbandonoResource
+### Community 56 - "UserResource"
+Cohesion: 0.15
+Nodes (3): UserForm, UsersTable, UserResource
 
 ### Community 57 - "PatientForm.php"
-Cohesion: 0.18
+Cohesion: 0.21
 Nodes (3): {closure#2}(), {closure#6}(), {closure#2}()
+
+### Community 58 - "Filament\Resources\Pages\ListRecords"
+Cohesion: 0.15
+Nodes (3): ListCenters, ListLipodistrofias, ListNrtis
 
 ### Community 59 - "WelcomeNewVersion"
 Cohesion: 0.05
-Nodes (36): {closure#11}(), WelcomeNewVersion, APIs & Eloquent Resources, Application Structure & Architecture, Artisan, Conventions, Deployment, Do Things the Laravel Way (+28 more)
+Nodes (35): {closure#11}(), WelcomeNewVersion, APIs & Eloquent Resources, Application Structure & Architecture, Artisan, Conventions, Deployment, Do Things the Laravel Way (+27 more)
 
 ### Community 60 - "Detection Checklist"
 Cohesion: 0.17
@@ -593,6 +541,10 @@ Nodes (7): Endpoint Coverage, Endpoint Tests, How to Write the Test, Tenant Isol
 Cohesion: 0.25
 Nodes (7): About Laravel, Agentic Development, Code of Conduct, Contributing, Learning Laravel, License, Security Vulnerabilities
 
+### Community 88 - "PatientVisit.php"
+Cohesion: 0.33
+Nodes (3): {closure#1}(), {closure#2}(), {closure#3}()
+
 ### Community 89 - "laravel-best-practices/SKILL.md"
 Cohesion: 0.29
 Nodes (5): Consistency First, Decision Rules, How to Apply, Laravel Best Practices, Rule Index
@@ -666,24 +618,24 @@ Cohesion: 0.67
 Nodes (3): extra, laravel, dont-discover
 
 ## Knowledge Gaps
-- **319 isolated node(s):** `wsl.exe`, `$schema`, `name`, `type`, `description` (+314 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 1019 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **360 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **5 isolated node(s):** `php`, `concurrently`, `tailwindcss`, `@laravel/multiplex`, `switchTo(`
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 1057 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **417 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `User` connect `User` to `DatabaseSeeder.php`, `Prompt di contesto per vibe coding — ClinicalDB`, `AppSwitcherWidget.php`, `AdminPanelProvider.php`, `UsersTable.php`, `PatientVisit`, `PatientResource.php`, `Patient`, `UserFactory.php`, `WelcomeNewVersion`, `Convention and Style Best Practices`?**
-  _High betweenness centrality (0.189) - this node is a cross-community bridge._
-- **What connects `wsl.exe`, `$schema`, `name` to the rest of the system?**
-  _319 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `User` connect `User` to `DatabaseSeeder.php`, `Prompt di contesto per vibe coding — ClinicalDB`, `AdminPanelProvider.php`, `UsersTable.php`, `AdminPanelProvider`, `AppSwitcherWidgetTest.php`, `PatientVisit`, `BackedEnum`, `Illuminate\Database\Eloquent\Relations\HasMany`, `Patient`, `UserFactory.php`, `WelcomeNewVersion`, `Convention and Style Best Practices`?**
+  _High betweenness centrality (0.169) - this node is a cross-community bridge._
+- **What connects `php`, `concurrently`, `tailwindcss` to the rest of the system?**
+  _5 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Filament\Schemas\Schema` be split into smaller, more focused modules?**
-  _Cohesion score 0.024863339798977254 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.025157232704402517 - nodes in this community are weakly interconnected._
 - **Why does `Follow Project Naming Conventions` connect `Convention and Style Best Practices` to `User`?**
-  _High betweenness centrality (0.100) - this node is a cross-community bridge._
+  _High betweenness centrality (0.098) - this node is a cross-community bridge._
+- **Should `Filament\Tables\Table` be split into smaller, more focused modules?**
+  _Cohesion score 0.07112375533428165 - nodes in this community are weakly interconnected._
 - **Should `PatientVisitsTable.php` be split into smaller, more focused modules?**
-  _Cohesion score 0.0855614973262032 - nodes in this community are weakly interconnected._
-- **Should `AppSwitcherWidget.php` be split into smaller, more focused modules?**
-  _Cohesion score 0.05272108843537415 - nodes in this community are weakly interconnected._
-- **Should `AdminPanelProvider.php` be split into smaller, more focused modules?**
-  _Cohesion score 0.06306306306306306 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0907258064516129 - nodes in this community are weakly interconnected._
+- **Should `SsoTokenBroker` be split into smaller, more focused modules?**
+  _Cohesion score 0.1225296442687747 - nodes in this community are weakly interconnected._

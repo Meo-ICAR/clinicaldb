@@ -1,3716 +1,3974 @@
 {
   ".claude/settings.json": {
-    "mtime": 1791179590.3007808,
-    "seen": 1791216662.4100554,
-    "ast_hash": "7e47659025fe3b2e22711319c6f40d3c",
+    "mtime": 1792425012.362866,
+    "seen": 1792842487.9791822,
+    "ast_hash": "e311b632f492d97350db35501bc2c21c",
     "semantic_hash": ""
   },
   ".mcp.json": {
-    "mtime": 1791179590.3067808,
-    "seen": 1791216662.4100661,
-    "ast_hash": "d572167a1132cabf4c8d31bc571ed25b",
+    "mtime": 1792433772.5102289,
+    "seen": 1792842487.9791923,
+    "ast_hash": "e9aa1f8c50e06cc1a7764cb08654183d",
     "semantic_hash": ""
   },
   "app/Console/Commands/ArchiprevaleatSyncCommand.php": {
-    "mtime": 1791179590.3087807,
-    "seen": 1791216662.410071,
+    "mtime": 1792425012.3725564,
+    "seen": 1792842487.9791975,
     "ast_hash": "aea23a69c41fab05886f95ef9f3bc41f",
     "semantic_hash": ""
   },
   "app/Console/Commands/CreatePatientBaselineVisits.php": {
-    "mtime": 1791179590.3087807,
-    "seen": 1791216662.410074,
+    "mtime": 1792425012.372796,
+    "seen": 1792842487.9792004,
     "ast_hash": "af26c3f5cef7efb8ae450c430d76ac9a",
     "semantic_hash": ""
   },
   "app/Console/Commands/SeedFieldReferenceRanges.php": {
-    "mtime": 1791179590.3087807,
-    "seen": 1791216662.410077,
+    "mtime": 1792425012.3728662,
+    "seen": 1792842487.9792032,
     "ast_hash": "14f7d17ca361c5ecd8607240b90aa645",
     "semantic_hash": ""
   },
   "app/Filament/LookupResource.php": {
-    "mtime": 1791179590.3097808,
-    "seen": 1791216662.4100797,
+    "mtime": 1792425012.3728662,
+    "seen": 1792842487.9792056,
     "ast_hash": "2b73e54cdc050b0d5aaafeb272f6e3f8",
     "semantic_hash": ""
   },
   "app/Filament/Pages/Auth/EditProfile.php": {
-    "mtime": 1791179590.3097808,
-    "seen": 1791216662.410084,
+    "mtime": 1792425012.3734121,
+    "seen": 1792842487.979208,
     "ast_hash": "1cbc6c01720f2b104433ad511f1f8b39",
     "semantic_hash": ""
   },
   "app/Filament/Pages/Dashboard.php": {
-    "mtime": 1791179590.3107808,
-    "seen": 1791216662.4100869,
+    "mtime": 1792425012.3734121,
+    "seen": 1792842487.9792106,
     "ast_hash": "8e41d309a4b4dc2a49b688d0b24dea29",
     "semantic_hash": ""
   },
   "app/Filament/Pages/Documentation/UserManual.php": {
-    "mtime": 1791179590.3127806,
-    "seen": 1791216662.41009,
+    "mtime": 1792425012.3734121,
+    "seen": 1792842487.9792128,
     "ast_hash": "cf18420821895d39af04ef62d8587f97",
     "semantic_hash": ""
   },
   "app/Filament/Pages/Documentation/VibeCodingPrompt.php": {
-    "mtime": 1791179590.3127806,
-    "seen": 1791216662.4100928,
+    "mtime": 1792425012.3739548,
+    "seen": 1792842487.979215,
     "ast_hash": "40a85e3967d3d6840625fc839d4a05ab",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Alcool35s/Alcool35Resource.php": {
-    "mtime": 1791179590.3127806,
-    "seen": 1791216662.4100957,
+    "mtime": 1792425012.374294,
+    "seen": 1792842487.979217,
     "ast_hash": "88d7bc37e8ee98526aa3583452c29450",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Alcool35s/Pages/CreateAlcool35.php": {
-    "mtime": 1791179590.3127806,
-    "seen": 1791216662.4100995,
+    "mtime": 1792425012.3745077,
+    "seen": 1792842487.97922,
     "ast_hash": "2b818974c97223e0f35ff3752c9deae4",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Alcool35s/Pages/EditAlcool35.php": {
-    "mtime": 1791179590.3137808,
-    "seen": 1791216662.4101024,
+    "mtime": 1792425012.3747015,
+    "seen": 1792842487.979222,
     "ast_hash": "fa4717913b16fcafd3283d0f773f9468",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Alcool35s/Pages/ListAlcool35s.php": {
-    "mtime": 1791179590.3137808,
-    "seen": 1791216662.4101048,
+    "mtime": 1792425012.3747015,
+    "seen": 1792842487.9792242,
     "ast_hash": "3b760ec27cb132f7f8a5b63d38f503d1",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Alcool35s/Schemas/Alcool35Form.php": {
-    "mtime": 1791179590.3137808,
-    "seen": 1791216662.4101076,
+    "mtime": 1792425012.374866,
+    "seen": 1792842487.9792264,
     "ast_hash": "f8cb95bc148601cf1627153acf5bd301",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Alcool35s/Tables/Alcool35sTable.php": {
-    "mtime": 1791179590.3147807,
-    "seen": 1791216662.4101102,
+    "mtime": 1792425012.374866,
+    "seen": 1792842487.9792285,
     "ast_hash": "6d8dd3547a8e1877e1592827e1cd9f59",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Alcools/AlcoolResource.php": {
-    "mtime": 1791179590.3147807,
-    "seen": 1791216662.4101126,
+    "mtime": 1792425012.374866,
+    "seen": 1792842487.9792304,
     "ast_hash": "b214fd965177700c4b84b957212e3e39",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Alcools/Pages/CreateAlcool.php": {
-    "mtime": 1791179590.3147807,
-    "seen": 1791216662.410115,
+    "mtime": 1792425012.375946,
+    "seen": 1792842487.9792325,
     "ast_hash": "c119c4283daab6ffc658321b33280f4d",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Alcools/Pages/EditAlcool.php": {
-    "mtime": 1791179590.3147807,
-    "seen": 1791216662.4101171,
+    "mtime": 1792425012.376142,
+    "seen": 1792842487.9792345,
     "ast_hash": "4c7e0dd5e286356cec13528dd811a6a8",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Alcools/Pages/ListAlcools.php": {
-    "mtime": 1791179590.3147807,
-    "seen": 1791216662.4101198,
+    "mtime": 1792425012.376142,
+    "seen": 1792842487.9792366,
     "ast_hash": "be63ac1de89a8e6ab583d7c6ea51c0de",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Alcools/Schemas/AlcoolForm.php": {
-    "mtime": 1791179590.3157806,
-    "seen": 1791216662.4101224,
+    "mtime": 1792425012.376142,
+    "seen": 1792842487.9792387,
     "ast_hash": "12a142880842076ccf8287a635154308",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Alcools/Tables/AlcoolsTable.php": {
-    "mtime": 1791179590.3157806,
-    "seen": 1791216662.4101245,
+    "mtime": 1792425012.376142,
+    "seen": 1792842487.979241,
     "ast_hash": "8bbe468ecd4f0f6aa052947bc8230580",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Antidiabeticos/AntidiabeticoResource.php": {
-    "mtime": 1791179590.3157806,
-    "seen": 1791216662.4101284,
+    "mtime": 1792425012.376142,
+    "seen": 1792842487.979243,
     "ast_hash": "36a4535b4e9e70d96b5fbf12ad677475",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Antidiabeticos/Pages/CreateAntidiabetico.php": {
-    "mtime": 1791179590.3157806,
-    "seen": 1791216662.4101303,
+    "mtime": 1792425012.376866,
+    "seen": 1792842487.979245,
     "ast_hash": "a5427eefadb03e37f2d7194dd361e308",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Antidiabeticos/Pages/EditAntidiabetico.php": {
-    "mtime": 1791179590.3157806,
-    "seen": 1791216662.4101326,
+    "mtime": 1792425012.3771474,
+    "seen": 1792842487.979247,
     "ast_hash": "5ab408386ceb34ad692e6ada8720a8e2",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Antidiabeticos/Pages/ListAntidiabeticos.php": {
-    "mtime": 1791179590.3157806,
-    "seen": 1791216662.4101348,
+    "mtime": 1792425012.3771474,
+    "seen": 1792842487.9792497,
     "ast_hash": "cdb45db94cb885b4c79919cfe5cfa16c",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Antidiabeticos/Schemas/AntidiabeticoForm.php": {
-    "mtime": 1791179590.3167806,
-    "seen": 1791216662.4101374,
+    "mtime": 1792425012.3771474,
+    "seen": 1792842487.9792526,
     "ast_hash": "1afcd3b58353c26bfa30c2de1721eebf",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Antidiabeticos/Tables/AntidiabeticosTable.php": {
-    "mtime": 1791179590.3167806,
-    "seen": 1791216662.4101396,
+    "mtime": 1792425012.3771474,
+    "seen": 1792842487.9792545,
     "ast_hash": "02b32d90c8b6428c3ea536e04e77ac84",
     "semantic_hash": ""
   },
   "app/Filament/Resources/ArtAltros/ArtAltroResource.php": {
-    "mtime": 1791179590.3167806,
-    "seen": 1791216662.410142,
+    "mtime": 1792425012.3771474,
+    "seen": 1792842487.9792569,
     "ast_hash": "610ace2c37fc73fcdcaac24b60e2e0ba",
     "semantic_hash": ""
   },
   "app/Filament/Resources/ArtAltros/Pages/CreateArtAltro.php": {
-    "mtime": 1791179590.3167806,
-    "seen": 1791216662.410144,
+    "mtime": 1792425012.377923,
+    "seen": 1792842487.9792593,
     "ast_hash": "f3340804be1f7a15682ba569e5fc03d9",
     "semantic_hash": ""
   },
   "app/Filament/Resources/ArtAltros/Pages/EditArtAltro.php": {
-    "mtime": 1791179590.3167806,
-    "seen": 1791216662.4101472,
+    "mtime": 1792425012.3780785,
+    "seen": 1792842487.9792614,
     "ast_hash": "9009dd9fbb01e54e4edb824daef4a6d8",
     "semantic_hash": ""
   },
   "app/Filament/Resources/ArtAltros/Pages/ListArtAltros.php": {
-    "mtime": 1791179590.3177807,
-    "seen": 1791216662.4101493,
+    "mtime": 1792425012.3780785,
+    "seen": 1792842487.9792638,
     "ast_hash": "f671b07386d9218ea489522be66f648f",
     "semantic_hash": ""
   },
   "app/Filament/Resources/ArtAltros/Schemas/ArtAltroForm.php": {
-    "mtime": 1791179590.3177807,
-    "seen": 1791216662.410152,
+    "mtime": 1792425012.3780785,
+    "seen": 1792842487.9792662,
     "ast_hash": "53a4200bc1d1bd798abee607773fea3d",
     "semantic_hash": ""
   },
   "app/Filament/Resources/ArtAltros/Tables/ArtAltrosTable.php": {
-    "mtime": 1791179590.3177807,
-    "seen": 1791216662.4101548,
+    "mtime": 1792425012.3780785,
+    "seen": 1792842487.979268,
     "ast_hash": "9824c6e5bcf9cb527c31de44890e88f8",
     "semantic_hash": ""
   },
   "app/Filament/Resources/ArtTerapias/ArtTerapiaResource.php": {
-    "mtime": 1791179590.3177807,
-    "seen": 1791216662.410158,
+    "mtime": 1792425012.3780785,
+    "seen": 1792842487.9792702,
     "ast_hash": "ca83b76169ea45eb15ec7fbf1f5b9cf0",
     "semantic_hash": ""
   },
   "app/Filament/Resources/ArtTerapias/Pages/CreateArtTerapia.php": {
-    "mtime": 1791179590.3177807,
-    "seen": 1791216662.4101603,
+    "mtime": 1792425012.37897,
+    "seen": 1792842487.9792721,
     "ast_hash": "101facf29f7c1d56a0660b87076d42b9",
     "semantic_hash": ""
   },
   "app/Filament/Resources/ArtTerapias/Pages/EditArtTerapia.php": {
-    "mtime": 1791179590.3177807,
-    "seen": 1791216662.4101632,
+    "mtime": 1792425012.3791168,
+    "seen": 1792842487.9792745,
     "ast_hash": "bb38868b9669b61b73e0bc0be9bb406e",
     "semantic_hash": ""
   },
   "app/Filament/Resources/ArtTerapias/Pages/ListArtTerapias.php": {
-    "mtime": 1791179590.3187807,
-    "seen": 1791216662.4101663,
+    "mtime": 1792425012.3791168,
+    "seen": 1792842487.9792767,
     "ast_hash": "4acbb4c8aaacca9d887904b69651dc70",
     "semantic_hash": ""
   },
   "app/Filament/Resources/ArtTerapias/Schemas/ArtTerapiaForm.php": {
-    "mtime": 1791179590.3187807,
-    "seen": 1791216662.4101691,
+    "mtime": 1792425012.3791168,
+    "seen": 1792842487.9792786,
     "ast_hash": "5ce107434bb2578613503a80763ea1a6",
     "semantic_hash": ""
   },
   "app/Filament/Resources/ArtTerapias/Tables/ArtTerapiasTable.php": {
-    "mtime": 1791179590.3187807,
-    "seen": 1791216662.4101717,
+    "mtime": 1792425012.3791168,
+    "seen": 1792842487.979281,
     "ast_hash": "42c99170b02e97d18b099fe395c60fad",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Cardiopatias/CardiopatiaResource.php": {
-    "mtime": 1791179590.3187807,
-    "seen": 1791216662.4101746,
+    "mtime": 1792425012.3791168,
+    "seen": 1792842487.9792829,
     "ast_hash": "a85965b55c5cc43e78b90c267ecb8006",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Cardiopatias/Pages/CreateCardiopatia.php": {
-    "mtime": 1791179590.3187807,
-    "seen": 1791216662.4101775,
+    "mtime": 1792425012.3799062,
+    "seen": 1792842487.9792848,
     "ast_hash": "22a4ffdc5e488ee9ee6fc20b3d7a3560",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Cardiopatias/Pages/EditCardiopatia.php": {
-    "mtime": 1791179590.3187807,
-    "seen": 1791216662.4101806,
+    "mtime": 1792425012.380051,
+    "seen": 1792842487.9792871,
     "ast_hash": "bc9167558d41779ea132a07b6fb971e8",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Cardiopatias/Pages/ListCardiopatias.php": {
-    "mtime": 1791179590.3197806,
-    "seen": 1791216662.410186,
+    "mtime": 1792425012.380051,
+    "seen": 1792842487.9792886,
     "ast_hash": "87945245f189005496218e6a3ac4d975",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Cardiopatias/Schemas/CardiopatiaForm.php": {
-    "mtime": 1791179590.3197806,
-    "seen": 1791216662.410189,
+    "mtime": 1792425012.380051,
+    "seen": 1792842487.979291,
     "ast_hash": "b9483c8f363aa0d306f9dca4c589bd63",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Cardiopatias/Tables/CardiopatiasTable.php": {
-    "mtime": 1791179590.3197806,
-    "seen": 1791216662.4101918,
+    "mtime": 1792425012.380051,
+    "seen": 1792842487.9792929,
     "ast_hash": "4ea1cf83f969b5ce48e4caa5042f8ed7",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Centers/CenterResource.php": {
-    "mtime": 1791179590.3197806,
-    "seen": 1791216662.4101949,
+    "mtime": 1792425012.380051,
+    "seen": 1792842487.979295,
     "ast_hash": "a1897c6f4e56d593ad111cf734dd2959",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Centers/Pages/CreateCenter.php": {
-    "mtime": 1791179590.3197806,
-    "seen": 1791216662.4101977,
+    "mtime": 1792425012.3808506,
+    "seen": 1792842487.9792967,
     "ast_hash": "fec7797781fc1196242c67c67a4feea3",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Centers/Pages/EditCenter.php": {
-    "mtime": 1791179590.3207805,
-    "seen": 1791216662.4102006,
+    "mtime": 1792425012.3808663,
+    "seen": 1792842487.979299,
     "ast_hash": "3f5e80fa4cf00e67578f3f611859c1e9",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Centers/Pages/ListCenters.php": {
-    "mtime": 1791179590.3207805,
-    "seen": 1791216662.410203,
+    "mtime": 1792425012.3808663,
+    "seen": 1792842487.9793012,
     "ast_hash": "174372f2a8bbae869fe7622ea601789b",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Centers/Schemas/CenterForm.php": {
-    "mtime": 1791179590.3207805,
-    "seen": 1791216662.4102056,
+    "mtime": 1792425012.3808663,
+    "seen": 1792842487.9793031,
     "ast_hash": "12d1b8bf6622a8d54a5d5bfff4818289",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Centers/Tables/CentersTable.php": {
-    "mtime": 1791179590.3207805,
-    "seen": 1791216662.4102085,
+    "mtime": 1792425012.3808663,
+    "seen": 1792842487.9793055,
     "ast_hash": "8c0ad13813fb75d4e56d8bbd581e4194",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Cirrosis/CirrosiResource.php": {
-    "mtime": 1791179590.3207805,
-    "seen": 1791216662.4102113,
+    "mtime": 1792425012.3818662,
+    "seen": 1792842487.9793074,
     "ast_hash": "b98e24a8ce1423d71f06a386576ec526",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Cirrosis/Pages/CreateCirrosi.php": {
-    "mtime": 1791179590.3217804,
-    "seen": 1791216662.410214,
+    "mtime": 1792425012.3822165,
+    "seen": 1792842487.9793098,
     "ast_hash": "f90f7b49053876ea1c60e2c86fd85e3b",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Cirrosis/Pages/EditCirrosi.php": {
-    "mtime": 1791179590.3217804,
-    "seen": 1791216662.410217,
+    "mtime": 1792425012.3823287,
+    "seen": 1792842487.9793122,
     "ast_hash": "476ae3ed1cb783087a96a062b2abd3cc",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Cirrosis/Pages/ListCirrosis.php": {
-    "mtime": 1791179590.3217804,
-    "seen": 1791216662.4102192,
+    "mtime": 1792425012.3823287,
+    "seen": 1792842487.979314,
     "ast_hash": "7169079af73d5113c7afa5512da33a73",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Cirrosis/Schemas/CirrosiForm.php": {
-    "mtime": 1791179590.3217804,
-    "seen": 1791216662.4102223,
+    "mtime": 1792425012.3823287,
+    "seen": 1792842487.979316,
     "ast_hash": "75208fc1c91c7757d1fd4afff4539e32",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Cirrosis/Tables/CirrosisTable.php": {
-    "mtime": 1791179590.3217804,
-    "seen": 1791216662.4102256,
+    "mtime": 1792425012.3823287,
+    "seen": 1792842487.9793186,
     "ast_hash": "2b7d1d9c387611b2ceb81c576afec4f2",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Diabetes/DiabeteResource.php": {
-    "mtime": 1791179590.3217804,
-    "seen": 1791216662.4102287,
+    "mtime": 1792425012.3828661,
+    "seen": 1792842487.9793208,
     "ast_hash": "2fb8056e54480dde8d7e4a4794a14464",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Diabetes/Pages/CreateDiabete.php": {
-    "mtime": 1791179590.3227806,
-    "seen": 1791216662.4102314,
+    "mtime": 1792425012.3828661,
+    "seen": 1792842487.979323,
     "ast_hash": "a48d515d903c8d62599779d4ffb38857",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Diabetes/Pages/EditDiabete.php": {
-    "mtime": 1791179590.3227806,
-    "seen": 1791216662.4102335,
+    "mtime": 1792425012.383196,
+    "seen": 1792842487.9793248,
     "ast_hash": "4a2522af86d7fd4abf48b49166046e00",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Diabetes/Pages/ListDiabetes.php": {
-    "mtime": 1791179590.3227806,
-    "seen": 1791216662.4102361,
+    "mtime": 1792425012.383196,
+    "seen": 1792842487.979327,
     "ast_hash": "9b17042433ccb708cc095bb37fa2ac66",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Diabetes/Schemas/DiabeteForm.php": {
-    "mtime": 1791179590.3227806,
-    "seen": 1791216662.4102397,
+    "mtime": 1792425012.383196,
+    "seen": 1792842487.979329,
     "ast_hash": "d01c596afe3578d41c4ba3d2c041a48c",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Diabetes/Tables/DiabetesTable.php": {
-    "mtime": 1791179590.3227806,
-    "seen": 1791216662.4102426,
+    "mtime": 1792425012.383196,
+    "seen": 1792842487.9793308,
     "ast_hash": "90457abb4d3e4e3ba85bb4a5ce583291",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Dislipidemias/DislipidemiaResource.php": {
-    "mtime": 1791179590.3237805,
-    "seen": 1791216662.410245,
+    "mtime": 1792425012.383196,
+    "seen": 1792842487.979333,
     "ast_hash": "6cf5026b25bc3b94a4bc6930d5959a18",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Dislipidemias/Pages/CreateDislipidemia.php": {
-    "mtime": 1791179590.3237805,
-    "seen": 1791216662.4102476,
+    "mtime": 1792425012.3838952,
+    "seen": 1792842487.9793346,
     "ast_hash": "16a0f0852cedf1d3f2919338ec65a86b",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Dislipidemias/Pages/EditDislipidemia.php": {
-    "mtime": 1791179590.3237805,
-    "seen": 1791216662.4102504,
+    "mtime": 1792425012.3840246,
+    "seen": 1792842487.9793367,
     "ast_hash": "bb702de9460e2941d0ef4eeb11178539",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Dislipidemias/Pages/ListDislipidemias.php": {
-    "mtime": 1791179590.3237805,
-    "seen": 1791216662.4102533,
+    "mtime": 1792425012.3840246,
+    "seen": 1792842487.9793384,
     "ast_hash": "644f07306f0e7a2a47d71bad8d7cb874",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Dislipidemias/Schemas/DislipidemiaForm.php": {
-    "mtime": 1791179590.3237805,
-    "seen": 1791216662.4102564,
+    "mtime": 1792425012.3840246,
+    "seen": 1792842487.9793406,
     "ast_hash": "69d53a2a53d33bdb2a3e78ed9f0f03f3",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Dislipidemias/Tables/DislipidemiasTable.php": {
-    "mtime": 1791179590.3237805,
-    "seen": 1791216662.4102588,
+    "mtime": 1792425012.3840246,
+    "seen": 1792842487.9793427,
     "ast_hash": "facc5d0da763ddb57c5881867fe6ffa0",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Drogas/DrogaResource.php": {
-    "mtime": 1791179590.3247805,
-    "seen": 1791216662.410261,
+    "mtime": 1792425012.3840246,
+    "seen": 1792842487.9793446,
     "ast_hash": "b8b312dbefca918c1cbf492b68e85113",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Drogas/Pages/CreateDroga.php": {
-    "mtime": 1791179590.3247805,
-    "seen": 1791216662.410264,
+    "mtime": 1792425012.3847382,
+    "seen": 1792842487.9793465,
     "ast_hash": "3f69af2407851cb663359ee7be3a1ace",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Drogas/Pages/EditDroga.php": {
-    "mtime": 1791179590.3247805,
-    "seen": 1791216662.4102664,
+    "mtime": 1792425012.384851,
+    "seen": 1792842487.9793484,
     "ast_hash": "f090ade3c78661d43db7eb8f0cf3368f",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Drogas/Pages/ListDrogas.php": {
-    "mtime": 1791179590.3247805,
-    "seen": 1791216662.4102695,
+    "mtime": 1792425012.3848662,
+    "seen": 1792842487.9793508,
     "ast_hash": "7fd22c2c18c8b26954324d4cbceae18c",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Drogas/Schemas/DrogaForm.php": {
-    "mtime": 1791179590.3247805,
-    "seen": 1791216662.4102716,
+    "mtime": 1792425012.3848662,
+    "seen": 1792842487.9793532,
     "ast_hash": "7245cd6796b4dad2019f814ac0db9d0d",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Drogas/Tables/DrogasTable.php": {
-    "mtime": 1791179590.3247805,
-    "seen": 1791216662.4102743,
+    "mtime": 1792425012.3848662,
+    "seen": 1792842487.9793553,
     "ast_hash": "4967659960158fb65f685a7da24fc916",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ecogenicitas/EcogenicitaResource.php": {
-    "mtime": 1791179590.3257804,
-    "seen": 1791216662.4102767,
+    "mtime": 1792425012.3848662,
+    "seen": 1792842487.9793575,
     "ast_hash": "7bfcdb9bcc2e0edb0885f73d71c0ba68",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ecogenicitas/Pages/CreateEcogenicita.php": {
-    "mtime": 1791179590.3257804,
-    "seen": 1791216662.4102793,
+    "mtime": 1792425012.385557,
+    "seen": 1792842487.9793603,
     "ast_hash": "b836cc0712e35123225725054e7fdb7e",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ecogenicitas/Pages/EditEcogenicita.php": {
-    "mtime": 1791179590.3257804,
-    "seen": 1791216662.4102817,
+    "mtime": 1792425012.3856544,
+    "seen": 1792842487.9793625,
     "ast_hash": "5c340f01646d3156e33e3991ee496c39",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ecogenicitas/Pages/ListEcogenicitas.php": {
-    "mtime": 1791179590.3257804,
-    "seen": 1791216662.410284,
+    "mtime": 1792425012.3856544,
+    "seen": 1792842487.9793646,
     "ast_hash": "d046adb8ca988a8e37974f34d14efccc",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ecogenicitas/Schemas/EcogenicitaForm.php": {
-    "mtime": 1791179590.3257804,
-    "seen": 1791216662.4102867,
+    "mtime": 1792425012.3856544,
+    "seen": 1792842487.9793665,
     "ast_hash": "93124d00c190e173d99b356d27a8f18d",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ecogenicitas/Tables/EcogenicitasTable.php": {
-    "mtime": 1791179590.3257804,
-    "seen": 1791216662.4102888,
+    "mtime": 1792425012.3858662,
+    "seen": 1792842487.979369,
     "ast_hash": "5cc9b751866ffb1b87280b9294305a16",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Endolumiales/EndolumialeResource.php": {
-    "mtime": 1791179590.3257804,
-    "seen": 1791216662.4102914,
+    "mtime": 1792425012.3858662,
+    "seen": 1792842487.9793713,
     "ast_hash": "ecebda9609e7043fbf34b4b764d55546",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Endolumiales/Pages/CreateEndolumiale.php": {
-    "mtime": 1791179590.3267806,
-    "seen": 1791216662.4102938,
+    "mtime": 1792425012.386378,
+    "seen": 1792842487.979373,
     "ast_hash": "9617f91e8ed41c1edc17202dd70e18d5",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Endolumiales/Pages/EditEndolumiale.php": {
-    "mtime": 1791179590.3267806,
-    "seen": 1791216662.4102962,
+    "mtime": 1792425012.386486,
+    "seen": 1792842487.9793754,
     "ast_hash": "ea88625507e4f59a7fa913b031decae6",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Endolumiales/Pages/ListEndolumiales.php": {
-    "mtime": 1791179590.3267806,
-    "seen": 1791216662.4102988,
+    "mtime": 1792425012.386486,
+    "seen": 1792842487.9793775,
     "ast_hash": "3ca9ba50e569c9bc0f01beb96b626ed9",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Endolumiales/Schemas/EndolumialeForm.php": {
-    "mtime": 1791179590.3267806,
-    "seen": 1791216662.410305,
+    "mtime": 1792425012.386486,
+    "seen": 1792842487.9793794,
     "ast_hash": "97988df7a77f19b5b82749e3242ae93c",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Endolumiales/Tables/EndolumialesTable.php": {
-    "mtime": 1791179590.3267806,
-    "seen": 1791216662.410308,
+    "mtime": 1792425012.386486,
+    "seen": 1792842487.9793818,
     "ast_hash": "50ad804786b28967551669189f838fb7",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Epatites/EpatiteResource.php": {
-    "mtime": 1791179590.3277805,
-    "seen": 1791216662.4103107,
+    "mtime": 1792425012.3868663,
+    "seen": 1792842487.979384,
     "ast_hash": "c5a3ec0c7536cd5faa225440ddd8bd7f",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Epatites/Pages/CreateEpatite.php": {
-    "mtime": 1791179590.3277805,
-    "seen": 1791216662.4103134,
+    "mtime": 1792425012.3872051,
+    "seen": 1792842487.979386,
     "ast_hash": "af1935e1f41ecfde3227c4e131977cab",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Epatites/Pages/EditEpatite.php": {
-    "mtime": 1791179590.3277805,
-    "seen": 1791216662.410316,
+    "mtime": 1792425012.3873181,
+    "seen": 1792842487.9793894,
     "ast_hash": "f98a726b771776684012d55948448b13",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Epatites/Pages/ListEpatites.php": {
-    "mtime": 1791179590.3277805,
-    "seen": 1791216662.4103184,
+    "mtime": 1792425012.3873181,
+    "seen": 1792842487.9793932,
     "ast_hash": "80fb2ecce419bb70e4e9547f1eb28037",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Epatites/Schemas/EpatiteForm.php": {
-    "mtime": 1791179590.3277805,
-    "seen": 1791216662.410321,
+    "mtime": 1792425012.3873181,
+    "seen": 1792842487.9793966,
     "ast_hash": "87d26b9d9655a110c936f4d456286036",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Epatites/Tables/EpatitesTable.php": {
-    "mtime": 1791179590.3277805,
-    "seen": 1791216662.4103231,
+    "mtime": 1792425012.3873181,
+    "seen": 1792842487.979401,
     "ast_hash": "96d0f4947bfb5772ca5b18132d0c00ab",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Etnias/EtniaResource.php": {
-    "mtime": 1791179590.3287804,
-    "seen": 1791216662.4103258,
+    "mtime": 1792425012.3873181,
+    "seen": 1792842487.9794047,
     "ast_hash": "b5b28e84d31ddb59fa54eca6c681d603",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Etnias/Pages/CreateEtnia.php": {
-    "mtime": 1791179590.3287804,
-    "seen": 1791216662.4103284,
+    "mtime": 1792425012.3879557,
+    "seen": 1792842487.979408,
     "ast_hash": "37bade53cce2e18b5b6cceda26c33537",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Etnias/Pages/EditEtnia.php": {
-    "mtime": 1791179590.3287804,
-    "seen": 1791216662.4103305,
+    "mtime": 1792425012.3880875,
+    "seen": 1792842487.9794114,
     "ast_hash": "09436dd17e75fa4a370cb5c2b5096948",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Etnias/Pages/ListEtnias.php": {
-    "mtime": 1791179590.3287804,
-    "seen": 1791216662.4103332,
+    "mtime": 1792425012.3880875,
+    "seen": 1792842487.979415,
     "ast_hash": "9f7fd878849aa5a865e4ddee4fc8fbdc",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Etnias/Schemas/EtniaForm.php": {
-    "mtime": 1791179590.3287804,
-    "seen": 1791216662.4103358,
+    "mtime": 1792425012.3880875,
+    "seen": 1792842487.9794185,
     "ast_hash": "1262a297400c44f4c34f572a83ec6e88",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Etnias/Tables/EtniasTable.php": {
-    "mtime": 1791179590.3287804,
-    "seen": 1791216662.4103384,
+    "mtime": 1792425012.3880875,
+    "seen": 1792842487.979422,
     "ast_hash": "69577fe88c0702a9c5bea9dd1a11e8b8",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Farmacos/FarmacoResource.php": {
-    "mtime": 1791179590.3297803,
-    "seen": 1791216662.4103408,
+    "mtime": 1792425012.3880875,
+    "seen": 1792842487.9794252,
     "ast_hash": "eb4347fda99ded66573801c44ddcd940",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Farmacos/Pages/CreateFarmaco.php": {
-    "mtime": 1791179590.3297803,
-    "seen": 1791216662.410343,
+    "mtime": 1792425012.3887465,
+    "seen": 1792842487.9794283,
     "ast_hash": "0c1f489819b14e8b590cad0528761910",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Farmacos/Pages/EditFarmaco.php": {
-    "mtime": 1791179590.3297803,
-    "seen": 1791216662.4103458,
+    "mtime": 1792425012.388852,
+    "seen": 1792842487.9794319,
     "ast_hash": "2e3ce349f08a63d836cee5ec8a86a43f",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Farmacos/Pages/ListFarmacos.php": {
-    "mtime": 1791179590.3297803,
-    "seen": 1791216662.4103482,
+    "mtime": 1792425012.3888664,
+    "seen": 1792842487.9794347,
     "ast_hash": "87828ca62b4c454fd5a953fb0205d063",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Farmacos/Schemas/FarmacoForm.php": {
-    "mtime": 1791179590.3297803,
-    "seen": 1791216662.4103508,
+    "mtime": 1792425012.3888664,
+    "seen": 1792842487.9794378,
     "ast_hash": "f4bd3131d6f328d03370e7cc8340fced",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Farmacos/Tables/FarmacosTable.php": {
-    "mtime": 1791179590.3297803,
-    "seen": 1791216662.4103532,
+    "mtime": 1792425012.3888664,
+    "seen": 1792842487.9794412,
     "ast_hash": "589b525081bf6e6bccb1bab43ce40dbc",
     "semantic_hash": ""
   },
   "app/Filament/Resources/FieldReferenceRanges/FieldReferenceRangeResource.php": {
-    "mtime": 1791179590.3307805,
-    "seen": 1791216662.4103556,
+    "mtime": 1792425012.3888664,
+    "seen": 1792842487.9794447,
     "ast_hash": "1e5a4631445b84ee05959ebedab11fdc",
     "semantic_hash": ""
   },
   "app/Filament/Resources/FieldReferenceRanges/Pages/CreateFieldReferenceRange.php": {
-    "mtime": 1791179590.3307805,
-    "seen": 1791216662.4103584,
+    "mtime": 1792425012.3895383,
+    "seen": 1792842487.9794483,
     "ast_hash": "91ab45725049a0825f7c8e9ac82c5e2b",
     "semantic_hash": ""
   },
   "app/Filament/Resources/FieldReferenceRanges/Pages/EditFieldReferenceRange.php": {
-    "mtime": 1791179590.3307805,
-    "seen": 1791216662.4103608,
+    "mtime": 1792425012.389745,
+    "seen": 1792842487.9794521,
     "ast_hash": "eb08269038992cd2f16e8011607a24ea",
     "semantic_hash": ""
   },
   "app/Filament/Resources/FieldReferenceRanges/Pages/ListFieldReferenceRanges.php": {
-    "mtime": 1791179590.3307805,
-    "seen": 1791216662.4103625,
+    "mtime": 1792425012.389745,
+    "seen": 1792842487.9794548,
     "ast_hash": "50d883d6aa8e8ea4942201cbf5553b72",
     "semantic_hash": ""
   },
   "app/Filament/Resources/FieldReferenceRanges/Schemas/FieldReferenceRangeForm.php": {
-    "mtime": 1791179590.3307805,
-    "seen": 1791216662.4103642,
+    "mtime": 1792425012.3898664,
+    "seen": 1792842487.9794567,
     "ast_hash": "efc69453f272c00d626304ee3d489d65",
     "semantic_hash": ""
   },
   "app/Filament/Resources/FieldReferenceRanges/Tables/FieldReferenceRangesTable.php": {
-    "mtime": 1791179590.3317804,
-    "seen": 1791216662.4103656,
+    "mtime": 1792425012.390207,
+    "seen": 1792842487.979459,
     "ast_hash": "8188dec2de68492085e805816d32d8b6",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Fumos/FumoResource.php": {
-    "mtime": 1791179590.3317804,
-    "seen": 1791216662.4103823,
+    "mtime": 1792425012.390492,
+    "seen": 1792842487.9794614,
     "ast_hash": "9c2c1ba69a8e12d214ca58dac204139b",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Fumos/Pages/CreateFumo.php": {
-    "mtime": 1791179590.3317804,
-    "seen": 1791216662.4103851,
+    "mtime": 1792425012.3907034,
+    "seen": 1792842487.9794636,
     "ast_hash": "7078821ff0f3f5e9a14e9e4cf71b3010",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Fumos/Pages/EditFumo.php": {
-    "mtime": 1791179590.3317804,
-    "seen": 1791216662.410388,
+    "mtime": 1792425012.3908236,
+    "seen": 1792842487.9794657,
     "ast_hash": "7989b2a33fca38501d1cf1f71de5048e",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Fumos/Pages/ListFumos.php": {
-    "mtime": 1791179590.3327804,
-    "seen": 1791216662.4103904,
+    "mtime": 1792425012.3908663,
+    "seen": 1792842487.9794679,
     "ast_hash": "bbe7af20640634598c14e7db9e55da4e",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Fumos/Schemas/FumoForm.php": {
-    "mtime": 1791179590.3327804,
-    "seen": 1791216662.410393,
+    "mtime": 1792425012.3908663,
+    "seen": 1792842487.9794698,
     "ast_hash": "2ffc99283564ee7cfa382449609d7f18",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Fumos/Tables/FumosTable.php": {
-    "mtime": 1791179590.3327804,
-    "seen": 1791216662.4103959,
+    "mtime": 1792425012.3908663,
+    "seen": 1792842487.9794722,
     "ast_hash": "35f91e773e38ec34a73667191c1c0778",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ictuses/IctusResource.php": {
-    "mtime": 1791179590.3327804,
-    "seen": 1791216662.4103987,
+    "mtime": 1792425012.3908663,
+    "seen": 1792842487.979474,
     "ast_hash": "3ac08d5af30533c1843c89fabe208fd0",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ictuses/Pages/CreateIctus.php": {
-    "mtime": 1791179590.3327804,
-    "seen": 1791216662.4104016,
+    "mtime": 1792425012.3915877,
+    "seen": 1792842487.9794765,
     "ast_hash": "c194ac33d5f6fa8fe36f5d6cb0a3d0be",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ictuses/Pages/EditIctus.php": {
-    "mtime": 1791179590.3327804,
-    "seen": 1791216662.4104047,
+    "mtime": 1792425012.3916829,
+    "seen": 1792842487.9794805,
     "ast_hash": "237cfa0b148057ac9ecf90e51c637d52",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ictuses/Pages/ListIctuses.php": {
-    "mtime": 1791179590.3337803,
-    "seen": 1791216662.4104078,
+    "mtime": 1792425012.3916829,
+    "seen": 1792842487.9794853,
     "ast_hash": "f47d42bd8e57230de8168e26ad2e95bd",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ictuses/Schemas/IctusForm.php": {
-    "mtime": 1791179590.3337803,
-    "seen": 1791216662.4104106,
+    "mtime": 1792425012.3918664,
+    "seen": 1792842487.9794886,
     "ast_hash": "87a8288330748101f06ae346c31f2342",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ictuses/Tables/IctusesTable.php": {
-    "mtime": 1791179590.3337803,
-    "seen": 1791216662.4104133,
+    "mtime": 1792425012.3918664,
+    "seen": 1792842487.9794924,
     "ast_hash": "f1f656a664dfc6228ebf0d041cb2973f",
     "semantic_hash": ""
   },
   "app/Filament/Resources/InfezioneHivs/InfezioneHivResource.php": {
-    "mtime": 1791179590.3337803,
-    "seen": 1791216662.410416,
+    "mtime": 1792425012.3918664,
+    "seen": 1792842487.9794962,
     "ast_hash": "c27b68118f65ea00aaaa7b1819671116",
     "semantic_hash": ""
   },
   "app/Filament/Resources/InfezioneHivs/Pages/CreateInfezioneHiv.php": {
-    "mtime": 1791179590.3337803,
-    "seen": 1791216662.4104187,
+    "mtime": 1792425012.3923266,
+    "seen": 1792842487.9794996,
     "ast_hash": "a83228946619e384a1cd0a3095f28b43",
     "semantic_hash": ""
   },
   "app/Filament/Resources/InfezioneHivs/Pages/EditInfezioneHiv.php": {
-    "mtime": 1791179590.3347805,
-    "seen": 1791216662.4104211,
+    "mtime": 1792425012.3924224,
+    "seen": 1792842487.9795034,
     "ast_hash": "8a4aa607ed5f4be5f9981e546e93c6f4",
     "semantic_hash": ""
   },
   "app/Filament/Resources/InfezioneHivs/Pages/ListInfezioneHivs.php": {
-    "mtime": 1791179590.3347805,
-    "seen": 1791216662.4104235,
+    "mtime": 1792425012.3924224,
+    "seen": 1792842487.979507,
     "ast_hash": "ca8a45c71a2a25d22200b4ee3d228ada",
     "semantic_hash": ""
   },
   "app/Filament/Resources/InfezioneHivs/Schemas/InfezioneHivForm.php": {
-    "mtime": 1791179590.3347805,
-    "seen": 1791216662.410426,
+    "mtime": 1792425012.3924224,
+    "seen": 1792842487.9795105,
     "ast_hash": "8a4fd5a051f680b47dfef57dd008a1a9",
     "semantic_hash": ""
   },
   "app/Filament/Resources/InfezioneHivs/Tables/InfezioneHivsTable.php": {
-    "mtime": 1791179590.3347805,
-    "seen": 1791216662.410428,
+    "mtime": 1792425012.3924224,
+    "seen": 1792842487.979514,
     "ast_hash": "e4e7ecd69b375bb7ba4c1a7948b63c60",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Infeziones/InfezioneResource.php": {
-    "mtime": 1791179590.3347805,
-    "seen": 1791216662.4104304,
+    "mtime": 1792425012.3924224,
+    "seen": 1792842487.9795177,
     "ast_hash": "e33ac5d124f9a2ed44d774c3156cf444",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Infeziones/Pages/CreateInfezione.php": {
-    "mtime": 1791179590.3347805,
-    "seen": 1791216662.4104328,
+    "mtime": 1792425012.3928664,
+    "seen": 1792842487.97952,
     "ast_hash": "d1c88d1231a59f41f7b11688837564ad",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Infeziones/Pages/EditInfezione.php": {
-    "mtime": 1791179590.3357804,
-    "seen": 1791216662.410435,
+    "mtime": 1792425012.3939695,
+    "seen": 1792842487.9795222,
     "ast_hash": "4c87f63e3d43b0f9d4cc1c828b7c5535",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Infeziones/Pages/ListInfeziones.php": {
-    "mtime": 1791179590.3357804,
-    "seen": 1791216662.4104373,
+    "mtime": 1792425012.3939695,
+    "seen": 1792842487.9795244,
     "ast_hash": "ea6f21fd3af402e9eb676c45664b47bf",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Infeziones/Schemas/InfezioneForm.php": {
-    "mtime": 1791179590.3357804,
-    "seen": 1791216662.4104397,
+    "mtime": 1792425012.3939695,
+    "seen": 1792842487.9795263,
     "ast_hash": "f860c9267c6e549c4544c6c064a9022f",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Infeziones/Tables/InfezionesTable.php": {
-    "mtime": 1791179590.3357804,
-    "seen": 1791216662.4104424,
+    "mtime": 1792425012.3939695,
+    "seen": 1792842487.9795282,
     "ast_hash": "427d76cdf171c9836f7fa3828ac24ff8",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Inis/IniResource.php": {
-    "mtime": 1791179590.3357804,
-    "seen": 1791216662.4104452,
+    "mtime": 1792425012.3939695,
+    "seen": 1792842487.9795308,
     "ast_hash": "2ec9daf5fa2c0bb78e3f3463e9278f10",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Inis/Pages/CreateIni.php": {
-    "mtime": 1791179590.3357804,
-    "seen": 1791216662.410447,
+    "mtime": 1792425012.3945386,
+    "seen": 1792842487.9795325,
     "ast_hash": "5205efbf9d938b51ea2a2c525fd1a4ae",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Inis/Pages/EditIni.php": {
-    "mtime": 1791179590.3367803,
-    "seen": 1791216662.4104486,
+    "mtime": 1792425012.3946333,
+    "seen": 1792842487.9795349,
     "ast_hash": "a5c0d042e3c751b9d6dbbbc196c1ddd6",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Inis/Pages/ListInis.php": {
-    "mtime": 1791179590.3367803,
-    "seen": 1791216662.41045,
+    "mtime": 1792425012.3946333,
+    "seen": 1792842487.979537,
     "ast_hash": "83e6dd2fff6b4dde55601fc6b455b4f4",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Inis/Schemas/IniForm.php": {
-    "mtime": 1791179590.3367803,
-    "seen": 1791216662.4104517,
+    "mtime": 1792425012.3946333,
+    "seen": 1792842487.9795392,
     "ast_hash": "b280f32c30d2d74a33fd794252b8394c",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Inis/Tables/InisTable.php": {
-    "mtime": 1791179590.3367803,
-    "seen": 1791216662.4104533,
+    "mtime": 1792425012.3948665,
+    "seen": 1792842487.9795413,
     "ast_hash": "6659d50978bcce19d5e4da650b40e148",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Insuffrenales/InsuffrenaleResource.php": {
-    "mtime": 1791179590.3367803,
-    "seen": 1791216662.4104548,
+    "mtime": 1792425012.3948665,
+    "seen": 1792842487.9795432,
     "ast_hash": "e780e4aac82168e86149fe4400890bba",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Insuffrenales/Pages/CreateInsuffrenale.php": {
-    "mtime": 1791179590.3367803,
-    "seen": 1791216662.4104564,
+    "mtime": 1792425012.3952343,
+    "seen": 1792842487.9795456,
     "ast_hash": "90946c3461a34de802b3c2c3e6e1395c",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Insuffrenales/Pages/EditInsuffrenale.php": {
-    "mtime": 1791179590.3377802,
-    "seen": 1791216662.4104578,
+    "mtime": 1792425012.3953314,
+    "seen": 1792842487.979548,
     "ast_hash": "493891ffbd4aae98765362679ab2bc96",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Insuffrenales/Pages/ListInsuffrenales.php": {
-    "mtime": 1791179590.3377802,
-    "seen": 1791216662.4104593,
+    "mtime": 1792425012.3953314,
+    "seen": 1792842487.97955,
     "ast_hash": "7689c677b5adf5f2c01ed74abcb0e0e2",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Insuffrenales/Schemas/InsuffrenaleForm.php": {
-    "mtime": 1791179590.3377802,
-    "seen": 1791216662.4104612,
+    "mtime": 1792425012.3953314,
+    "seen": 1792842487.9795518,
     "ast_hash": "285f719b469adc0016bd759286c85e58",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Insuffrenales/Tables/InsuffrenalesTable.php": {
-    "mtime": 1791179590.3377802,
-    "seen": 1791216662.4104626,
+    "mtime": 1792425012.3953314,
+    "seen": 1792842487.979554,
     "ast_hash": "f0f5dace9d59015e38f0a4e24bdcf15a",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ipertensiones/IpertensioneResource.php": {
-    "mtime": 1791179590.3377802,
-    "seen": 1791216662.4104648,
+    "mtime": 1792425012.3953314,
+    "seen": 1792842487.979556,
     "ast_hash": "6bd1485c3e1ff85d5122e5bf59aa6562",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ipertensiones/Pages/CreateIpertensione.php": {
-    "mtime": 1791179590.3377802,
-    "seen": 1791216662.4104662,
+    "mtime": 1792425012.3958664,
+    "seen": 1792842487.9795582,
     "ast_hash": "22a72cfaf007df1d5545b580f6733dfa",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ipertensiones/Pages/EditIpertensione.php": {
-    "mtime": 1791179590.3377802,
-    "seen": 1791216662.410468,
+    "mtime": 1792425012.3961437,
+    "seen": 1792842487.9795601,
     "ast_hash": "d33c7f35212ebf64502fe878fdef181a",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ipertensiones/Pages/ListIpertensiones.php": {
-    "mtime": 1791179590.3387802,
-    "seen": 1791216662.4104695,
+    "mtime": 1792425012.3961437,
+    "seen": 1792842487.9795623,
     "ast_hash": "7af09ea85d1f0ae7701d2be0b1a3024d",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ipertensiones/Schemas/IpertensioneForm.php": {
-    "mtime": 1791179590.3387802,
-    "seen": 1791216662.4104712,
+    "mtime": 1792425012.3961437,
+    "seen": 1792842487.979564,
     "ast_hash": "875330f5417e479f7593c568c0d22890",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ipertensiones/Tables/IpertensionesTable.php": {
-    "mtime": 1791179590.3387802,
-    "seen": 1791216662.4104724,
+    "mtime": 1792425012.3961437,
+    "seen": 1792842487.979566,
     "ast_hash": "e3fbd03077ed8abbe24dd5c618f535fb",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ipolipemizzantes/IpolipemizzanteResource.php": {
-    "mtime": 1791179590.3387802,
-    "seen": 1791216662.410474,
+    "mtime": 1792425012.3961437,
+    "seen": 1792842487.9795678,
     "ast_hash": "f92e23fcb58292a4873d0b3e1d855c80",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ipolipemizzantes/Pages/CreateIpolipemizzante.php": {
-    "mtime": 1791179590.3387802,
-    "seen": 1791216662.4104757,
+    "mtime": 1792425012.3967783,
+    "seen": 1792842487.9795697,
     "ast_hash": "437dab74b8bd4758f0567250f115e11b",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ipolipemizzantes/Pages/EditIpolipemizzante.php": {
-    "mtime": 1791179590.3387802,
-    "seen": 1791216662.4104774,
+    "mtime": 1792425012.3968952,
+    "seen": 1792842487.9795718,
     "ast_hash": "e73bc23d079a5a869ae321c246bb7d18",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ipolipemizzantes/Pages/ListIpolipemizzantes.php": {
-    "mtime": 1791179590.3397803,
-    "seen": 1791216662.410479,
+    "mtime": 1792425012.3968952,
+    "seen": 1792842487.9795737,
     "ast_hash": "5db67ebc3151ae522cfbf0abed2fdfe7",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ipolipemizzantes/Schemas/IpolipemizzanteForm.php": {
-    "mtime": 1791179590.3397803,
-    "seen": 1791216662.410481,
+    "mtime": 1792425012.3968952,
+    "seen": 1792842487.9795759,
     "ast_hash": "b20f6846b659c72bbd0c34c49ada362d",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Ipolipemizzantes/Tables/IpolipemizzantesTable.php": {
-    "mtime": 1791179590.3397803,
-    "seen": 1791216662.4104824,
+    "mtime": 1792425012.3968952,
+    "seen": 1792842487.9795775,
     "ast_hash": "aece6c6d46cfe077894cd784266089b3",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Lavoros/LavoroResource.php": {
-    "mtime": 1791179590.3397803,
-    "seen": 1791216662.410484,
+    "mtime": 1792425012.3968952,
+    "seen": 1792842487.97958,
     "ast_hash": "5b4edbcdf1d69074b7e9aa454570033e",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Lavoros/Pages/CreateLavoro.php": {
-    "mtime": 1791179590.3397803,
-    "seen": 1791216662.4104855,
+    "mtime": 1792425012.3975432,
+    "seen": 1792842487.9795818,
     "ast_hash": "995b2b5ae932a072ea81f8c7c9d38aad",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Lavoros/Pages/EditLavoro.php": {
-    "mtime": 1791179590.3397803,
-    "seen": 1791216662.4104877,
+    "mtime": 1792425012.3976555,
+    "seen": 1792842487.979584,
     "ast_hash": "f045ecceda86180ef3177cdd0815fc03",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Lavoros/Pages/ListLavoros.php": {
-    "mtime": 1791179590.3407803,
-    "seen": 1791216662.4104888,
+    "mtime": 1792425012.3976555,
+    "seen": 1792842487.979586,
     "ast_hash": "1a121117be91fdef14471c74d2d49869",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Lavoros/Schemas/LavoroForm.php": {
-    "mtime": 1791179590.3407803,
-    "seen": 1791216662.4104903,
+    "mtime": 1792425012.3978665,
+    "seen": 1792842487.9795876,
     "ast_hash": "c3ac4ffabc2e8a671c57050f978981df",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Lavoros/Tables/LavorosTable.php": {
-    "mtime": 1791179590.3407803,
-    "seen": 1791216662.4104922,
+    "mtime": 1792425012.3978665,
+    "seen": 1792842487.9795895,
     "ast_hash": "4c2c055664b17d2a22862fc94e4beec7",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Lipodistrofias/LipodistrofiaResource.php": {
-    "mtime": 1791179590.3407803,
-    "seen": 1791216662.4104936,
+    "mtime": 1792425012.3978665,
+    "seen": 1792842487.9795911,
     "ast_hash": "ac88bc63a445a879fe06e930261e1115",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Lipodistrofias/Pages/CreateLipodistrofia.php": {
-    "mtime": 1791179590.3407803,
-    "seen": 1791216662.4104953,
+    "mtime": 1792425012.3982608,
+    "seen": 1792842487.9795933,
     "ast_hash": "7789aeaa0ef4cc833246ffb7697ac75f",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Lipodistrofias/Pages/EditLipodistrofia.php": {
-    "mtime": 1791179590.3407803,
-    "seen": 1791216662.4104967,
+    "mtime": 1792425012.3983474,
+    "seen": 1792842487.979595,
     "ast_hash": "08723aca8b9f417a2a06a890a2ff492c",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Lipodistrofias/Pages/ListLipodistrofias.php": {
-    "mtime": 1791179590.3417802,
-    "seen": 1791216662.4104984,
+    "mtime": 1792425012.3983474,
+    "seen": 1792842487.9795969,
     "ast_hash": "ce085bf3718d6b06654bb2e285e6e0e8",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Lipodistrofias/Schemas/LipodistrofiaForm.php": {
-    "mtime": 1791179590.3417802,
-    "seen": 1791216662.4105,
+    "mtime": 1792425012.3983474,
+    "seen": 1792842487.9795988,
     "ast_hash": "5e424606da88861067116529ef62ac8f",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Lipodistrofias/Tables/LipodistrofiasTable.php": {
-    "mtime": 1791179590.3417802,
-    "seen": 1791216662.4105048,
+    "mtime": 1792425012.3983474,
+    "seen": 1792842487.9796007,
     "ast_hash": "7d468ea57e7ce2e96fdacc2a4a44f4c6",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Naives/NaiveResource.php": {
-    "mtime": 1791179590.3417802,
-    "seen": 1791216662.4105062,
+    "mtime": 1792425012.3983474,
+    "seen": 1792842487.9796026,
     "ast_hash": "291032223e4aab22cbf8b066c37bbd7f",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Naives/Pages/CreateNaive.php": {
-    "mtime": 1791179590.3417802,
-    "seen": 1791216662.4105077,
+    "mtime": 1792425012.3988771,
+    "seen": 1792842487.9796047,
     "ast_hash": "bb0c4bc851296a2a12d72b37cef75bd4",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Naives/Pages/EditNaive.php": {
-    "mtime": 1791179590.3417802,
-    "seen": 1791216662.4105096,
+    "mtime": 1792425012.3989718,
+    "seen": 1792842487.9796069,
     "ast_hash": "1a6b08b568317e9d8cc9e08c10c49e32",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Naives/Pages/ListNaives.php": {
-    "mtime": 1791179590.34278,
-    "seen": 1791216662.4105108,
+    "mtime": 1792425012.3989718,
+    "seen": 1792842487.9796088,
     "ast_hash": "bb3cec87b4bb7bfe66fd3b0f0a0da714",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Naives/Schemas/NaiveForm.php": {
-    "mtime": 1791179590.34278,
-    "seen": 1791216662.4105127,
+    "mtime": 1792425012.3989718,
+    "seen": 1792842487.9796112,
     "ast_hash": "11bf70f8b78e84e0f48be52fec717ae4",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Naives/Tables/NaivesTable.php": {
-    "mtime": 1791179590.34278,
-    "seen": 1791216662.410514,
+    "mtime": 1792425012.3989718,
+    "seen": 1792842487.9796128,
     "ast_hash": "441c6cd4a13cbffd6b68b1dedadc01a6",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Neoplasias/NeoplasiaResource.php": {
-    "mtime": 1791179590.34278,
-    "seen": 1791216662.4105158,
+    "mtime": 1792425012.3989718,
+    "seen": 1792842487.9796157,
     "ast_hash": "4af52d131a799801c92904ff86b7ca2f",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Neoplasias/Pages/CreateNeoplasia.php": {
-    "mtime": 1791179590.34278,
-    "seen": 1791216662.4105172,
+    "mtime": 1792425012.3995275,
+    "seen": 1792842487.9796178,
     "ast_hash": "f518c38cd4a56acb8d52941be03366b5",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Neoplasias/Pages/EditNeoplasia.php": {
-    "mtime": 1791179590.34278,
-    "seen": 1791216662.410519,
+    "mtime": 1792425012.3996165,
+    "seen": 1792842487.9796197,
     "ast_hash": "4436c72ffc2f8682fb6f1925f5bb3b84",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Neoplasias/Pages/ListNeoplasias.php": {
-    "mtime": 1791179590.34278,
-    "seen": 1791216662.4105203,
+    "mtime": 1792425012.3996165,
+    "seen": 1792842487.979622,
     "ast_hash": "348e1ca8c7b7b73122c82e5050e29402",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Neoplasias/Schemas/NeoplasiaForm.php": {
-    "mtime": 1791179590.3437803,
-    "seen": 1791216662.4105222,
+    "mtime": 1792425012.3996165,
+    "seen": 1792842487.979624,
     "ast_hash": "1797f3807e480b56918906d887fac680",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Neoplasias/Tables/NeoplasiasTable.php": {
-    "mtime": 1791179590.3437803,
-    "seen": 1791216662.4105237,
+    "mtime": 1792425012.3998666,
+    "seen": 1792842487.9796262,
     "ast_hash": "970ccf8a233f1a3c9256a73ef219bcb7",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Nnrtis/NnrtiResource.php": {
-    "mtime": 1791179590.3437803,
-    "seen": 1791216662.410525,
+    "mtime": 1792425012.3998666,
+    "seen": 1792842487.9796283,
     "ast_hash": "816e9d30abb69ebd291cfb70a4f0f77b",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Nnrtis/Pages/CreateNnrti.php": {
-    "mtime": 1791179590.3437803,
-    "seen": 1791216662.4105272,
+    "mtime": 1792425012.400164,
+    "seen": 1792842487.9796302,
     "ast_hash": "babd815b016baa8449b6dd29d5295ebc",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Nnrtis/Pages/EditNnrti.php": {
-    "mtime": 1791179590.3437803,
-    "seen": 1791216662.4105287,
+    "mtime": 1792425012.4002562,
+    "seen": 1792842487.9796326,
     "ast_hash": "4556c05e47125e3ecb8ef6fc5f4a4abc",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Nnrtis/Pages/ListNnrtis.php": {
-    "mtime": 1791179590.3437803,
-    "seen": 1791216662.4105303,
+    "mtime": 1792425012.4002562,
+    "seen": 1792842487.9796348,
     "ast_hash": "c182593a97dd4b11a38bb66db34bdc39",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Nnrtis/Schemas/NnrtiForm.php": {
-    "mtime": 1791179590.3447802,
-    "seen": 1791216662.4105315,
+    "mtime": 1792425012.4002562,
+    "seen": 1792842487.9796364,
     "ast_hash": "10b0dea9e5a1c79747471a2560de7c7e",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Nnrtis/Tables/NnrtisTable.php": {
-    "mtime": 1791179590.3447802,
-    "seen": 1791216662.4105332,
+    "mtime": 1792425012.4002562,
+    "seen": 1792842487.9796386,
     "ast_hash": "8793158251e82c23a19c4af577533628",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Nrtis/NrtiResource.php": {
-    "mtime": 1791179590.3447802,
-    "seen": 1791216662.4105349,
+    "mtime": 1792425012.4002562,
+    "seen": 1792842487.9796405,
     "ast_hash": "def90b0f22324cc83a85d33100708b32",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Nrtis/Pages/CreateNrti.php": {
-    "mtime": 1791179590.3447802,
-    "seen": 1791216662.4105363,
+    "mtime": 1792425012.4008033,
+    "seen": 1792842487.9796424,
     "ast_hash": "7ae2ac199aba230a533822ec29bd9f91",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Nrtis/Pages/EditNrti.php": {
-    "mtime": 1791179590.3447802,
-    "seen": 1791216662.4105377,
+    "mtime": 1792425012.4008882,
+    "seen": 1792842487.979644,
     "ast_hash": "e9f54a31a719d1e7974d110adbaf0565",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Nrtis/Pages/ListNrtis.php": {
-    "mtime": 1791179590.3447802,
-    "seen": 1791216662.4105392,
+    "mtime": 1792425012.4008882,
+    "seen": 1792842487.9796462,
     "ast_hash": "33070a57b467456093ddebc7285f5510",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Nrtis/Schemas/NrtiForm.php": {
-    "mtime": 1791179590.3457801,
-    "seen": 1791216662.4105408,
+    "mtime": 1792425012.4008882,
+    "seen": 1792842487.9796484,
     "ast_hash": "d61a37896bb99fd8d547a8e6e157faba",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Nrtis/Tables/NrtisTable.php": {
-    "mtime": 1791179590.3457801,
-    "seen": 1791216662.410542,
+    "mtime": 1792425012.4008882,
+    "seen": 1792842487.97965,
     "ast_hash": "f6f0df193e449587d99a1b24d845566c",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Osteoporosis/OsteoporosiResource.php": {
-    "mtime": 1791179590.3457801,
-    "seen": 1791216662.4105437,
+    "mtime": 1792425012.4008882,
+    "seen": 1792842487.9796517,
     "ast_hash": "937f1f9171cf1f6354b314520b523570",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Osteoporosis/Pages/CreateOsteoporosi.php": {
-    "mtime": 1791179590.3457801,
-    "seen": 1791216662.4105449,
+    "mtime": 1792425012.401501,
+    "seen": 1792842487.9796536,
     "ast_hash": "920fa321d93d238fa79fa74b87a049a6",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Osteoporosis/Pages/EditOsteoporosi.php": {
-    "mtime": 1791179590.3457801,
-    "seen": 1791216662.4105465,
+    "mtime": 1792425012.4015849,
+    "seen": 1792842487.979656,
     "ast_hash": "dce169f6d4efc5f67774452804767e95",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Osteoporosis/Pages/ListOsteoporosis.php": {
-    "mtime": 1791179590.3457801,
-    "seen": 1791216662.410548,
+    "mtime": 1792425012.4015849,
+    "seen": 1792842487.979658,
     "ast_hash": "b7416cd0c8310866f93d201e82daf446",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Osteoporosis/Schemas/OsteoporosiForm.php": {
-    "mtime": 1791179590.34678,
-    "seen": 1791216662.4105492,
+    "mtime": 1792425012.4015849,
+    "seen": 1792842487.9796598,
     "ast_hash": "6f5d37cb799f93e2a541c6f03680bbc4",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Osteoporosis/Tables/OsteoporosisTable.php": {
-    "mtime": 1791179590.34678,
-    "seen": 1791216662.4105508,
+    "mtime": 1792425012.4015849,
+    "seen": 1792842487.979662,
     "ast_hash": "92a801266623fbe2277cd18c1ce335a2",
     "semantic_hash": ""
   },
   "app/Filament/Resources/PatientVisits/Pages/EditPatientVisit.php": {
-    "mtime": 1791179590.34678,
-    "seen": 1791216662.410552,
+    "mtime": 1792425012.4018667,
+    "seen": 1792842487.9796638,
     "ast_hash": "242b9971c13108ee89c404372487af8d",
     "semantic_hash": ""
   },
   "app/Filament/Resources/PatientVisits/Pages/ListPatientVisits.php": {
-    "mtime": 1791179590.34678,
-    "seen": 1791216662.4105537,
+    "mtime": 1792425012.4021614,
+    "seen": 1792842487.979666,
     "ast_hash": "06c6f723b2223ed69f21e54a50679762",
     "semantic_hash": ""
   },
   "app/Filament/Resources/PatientVisits/PatientVisitResource.php": {
-    "mtime": 1791179590.34678,
-    "seen": 1791216662.4105551,
+    "mtime": 1792425012.4021614,
+    "seen": 1792842487.9796677,
     "ast_hash": "27a75c5b9ca4fbed63796d58ea42ef42",
     "semantic_hash": ""
   },
   "app/Filament/Resources/PatientVisits/Schemas/PatientVisitForm.php": {
-    "mtime": 1791179590.3477802,
-    "seen": 1791216662.4105563,
+    "mtime": 1792425012.4021614,
+    "seen": 1792842487.9796698,
     "ast_hash": "8f072fa4a6d359e0c96061bfb311c4b6",
     "semantic_hash": ""
   },
   "app/Filament/Resources/PatientVisits/Tables/PatientVisitsTable.php": {
-    "mtime": 1791179590.34978,
-    "seen": 1791216662.4105582,
+    "mtime": 1792425012.4028666,
+    "seen": 1792842487.9796715,
     "ast_hash": "5beb65a7b143fb36c2696c44df29137d",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Patients/Pages/CreatePatient.php": {
-    "mtime": 1791179590.34978,
-    "seen": 1791216662.4105597,
+    "mtime": 1792425012.4034216,
+    "seen": 1792842487.9796734,
     "ast_hash": "ba89899aab3f598a320d716307f06abb",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Patients/Pages/EditPatient.php": {
-    "mtime": 1791179590.34978,
-    "seen": 1791216662.4105613,
+    "mtime": 1792425012.4035108,
+    "seen": 1792842487.979675,
     "ast_hash": "6a7f81df69c15f835e5ef2772c42fa3d",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Patients/Pages/ListPatients.php": {
-    "mtime": 1791179590.35078,
-    "seen": 1791216662.4105625,
+    "mtime": 1792425012.4035108,
+    "seen": 1792842487.9796774,
     "ast_hash": "c8d4488cfb0faa15b2ccc41ea6159977",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Patients/PatientResource.php": {
-    "mtime": 1791179590.35078,
-    "seen": 1791216662.4105642,
+    "mtime": 1792425012.4035108,
+    "seen": 1792842487.9796798,
     "ast_hash": "1339bca8e00d0af0c757c16de08fa382",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Patients/RelationManagers/TreatmentAnnotationsRelationManager.php": {
-    "mtime": 1791179590.35078,
-    "seen": 1791216662.4105656,
+    "mtime": 1792425012.4035108,
+    "seen": 1792842487.9796817,
     "ast_hash": "72519f4adad00971f5dfefe818b15635",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Patients/RelationManagers/VisitsRelationManager.php": {
-    "mtime": 1791179590.35078,
-    "seen": 1791216662.4105668,
+    "mtime": 1792425012.4039524,
+    "seen": 1792842487.979684,
     "ast_hash": "eccc0ada0e2beb7faa20e3ca6efa174e",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Patients/Schemas/PatientForm.php": {
-    "mtime": 1791179590.3517802,
-    "seen": 1791216662.4105687,
+    "mtime": 1792425012.4039524,
+    "seen": 1792842487.9796863,
     "ast_hash": "252f8f7be2c864c5c08e6f4c4101b4fd",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Patients/Tables/PatientsTable.php": {
-    "mtime": 1791179590.35278,
-    "seen": 1791216662.4105704,
+    "mtime": 1792425012.404427,
+    "seen": 1792842487.979688,
     "ast_hash": "e026d809af0474bce6729a7352f3dfdb",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Pis/Pages/CreatePi.php": {
-    "mtime": 1791179590.35278,
-    "seen": 1791216662.4105718,
+    "mtime": 1792425012.404729,
+    "seen": 1792842487.9796903,
     "ast_hash": "a4bad6ed7b866d8264b9acfac3cff8b0",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Pis/Pages/EditPi.php": {
-    "mtime": 1791179590.35278,
-    "seen": 1791216662.4105732,
+    "mtime": 1792425012.4048302,
+    "seen": 1792842487.9796922,
     "ast_hash": "969b55cfa1a75f6f539cb144481dca26",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Pis/Pages/ListPis.php": {
-    "mtime": 1791179590.35278,
-    "seen": 1791216662.4105752,
+    "mtime": 1792425012.4048302,
+    "seen": 1792842487.9796946,
     "ast_hash": "fa0127b402b096a5e36406d8ba2b3434",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Pis/PiResource.php": {
-    "mtime": 1791179590.35378,
-    "seen": 1791216662.4105763,
+    "mtime": 1792425012.4048667,
+    "seen": 1792842487.979697,
     "ast_hash": "1f4d72521397d8c5b3dcbc248d65a868",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Pis/Schemas/PiForm.php": {
-    "mtime": 1791179590.35378,
-    "seen": 1791216662.410578,
+    "mtime": 1792425012.4048667,
+    "seen": 1792842487.979699,
     "ast_hash": "f475696cba50bf778e81499563dfe65d",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Pis/Tables/PisTable.php": {
-    "mtime": 1791179590.35378,
-    "seen": 1791216662.4105794,
+    "mtime": 1792425012.4048667,
+    "seen": 1792842487.9797013,
     "ast_hash": "a96b0aaa46e7a6adeb0adaf632d8ecc9",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Rischios/Pages/CreateRischio.php": {
-    "mtime": 1791179590.35378,
-    "seen": 1791216662.4105814,
+    "mtime": 1792425012.405329,
+    "seen": 1792842487.9797037,
     "ast_hash": "48c1ee9533d2aef05c5562aa6fde79b3",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Rischios/Pages/EditRischio.php": {
-    "mtime": 1791179590.35378,
-    "seen": 1791216662.4105828,
+    "mtime": 1792425012.4054158,
+    "seen": 1792842487.9797053,
     "ast_hash": "248cbed3d94ecafaaf578da24dc34792",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Rischios/Pages/ListRischios.php": {
-    "mtime": 1791179590.35378,
-    "seen": 1791216662.4105847,
+    "mtime": 1792425012.4054158,
+    "seen": 1792842487.9797082,
     "ast_hash": "cb61158461929254e790b79f9b0cd866",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Rischios/RischioResource.php": {
-    "mtime": 1791179590.35478,
-    "seen": 1791216662.410586,
+    "mtime": 1792425012.4054158,
+    "seen": 1792842487.97971,
     "ast_hash": "546e6976288c711fa6efadcd4afb8eef",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Rischios/Schemas/RischioForm.php": {
-    "mtime": 1791179590.35478,
-    "seen": 1791216662.4105875,
+    "mtime": 1792425012.4054158,
+    "seen": 1792842487.9797125,
     "ast_hash": "11b3cca1084abac360480aa4ce4951cb",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Rischios/Tables/RischiosTable.php": {
-    "mtime": 1791179590.35478,
-    "seen": 1791216662.4105892,
+    "mtime": 1792425012.4054158,
+    "seen": 1792842487.9797146,
     "ast_hash": "5abb3c39eef96dafc0957f911160aa2e",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Sinos/Pages/CreateSino.php": {
-    "mtime": 1791179590.35478,
-    "seen": 1791216662.4105906,
+    "mtime": 1792425012.40589,
+    "seen": 1792842487.979717,
     "ast_hash": "55d1ffc4a24686626c35a9386fd384d3",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Sinos/Pages/EditSino.php": {
-    "mtime": 1791179590.35478,
-    "seen": 1791216662.4105923,
+    "mtime": 1792425012.4059982,
+    "seen": 1792842487.9797192,
     "ast_hash": "63dc57d6e6b02a2e20fe2023a28f6347",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Sinos/Pages/ListSinos.php": {
-    "mtime": 1791179590.3557801,
-    "seen": 1791216662.4105935,
+    "mtime": 1792425012.4059982,
+    "seen": 1792842487.979721,
     "ast_hash": "f6fb88ce0c40db9d873a6bde79cfd048",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Sinos/Schemas/SinoForm.php": {
-    "mtime": 1791179590.3557801,
-    "seen": 1791216662.4105952,
+    "mtime": 1792425012.4059982,
+    "seen": 1792842487.979723,
     "ast_hash": "5ac7c616b46ff64a4cc2e5f012b89f18",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Sinos/SinoResource.php": {
-    "mtime": 1791179590.3557801,
-    "seen": 1791216662.4105968,
+    "mtime": 1792425012.4059982,
+    "seen": 1792842487.9797251,
     "ast_hash": "43739b8a4bed78630b31878b80f35df1",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Sinos/Tables/SinosTable.php": {
-    "mtime": 1791179590.3557801,
-    "seen": 1791216662.4105985,
+    "mtime": 1792425012.4059982,
+    "seen": 1792842487.979727,
     "ast_hash": "313c4430cd8f518607074123736ae99c",
     "semantic_hash": ""
   },
   "app/Filament/Resources/StatoCiviles/Pages/CreateStatoCivile.php": {
-    "mtime": 1791179590.3557801,
-    "seen": 1791216662.4106,
+    "mtime": 1792425012.4064705,
+    "seen": 1792842487.9797294,
     "ast_hash": "e82e83e02cb24bf668d947b295145555",
     "semantic_hash": ""
   },
   "app/Filament/Resources/StatoCiviles/Pages/EditStatoCivile.php": {
-    "mtime": 1791179590.35678,
-    "seen": 1791216662.4106016,
+    "mtime": 1792425012.4065502,
+    "seen": 1792842487.9797316,
     "ast_hash": "f0c441800287974a03b1c4c106649842",
     "semantic_hash": ""
   },
   "app/Filament/Resources/StatoCiviles/Pages/ListStatoCiviles.php": {
-    "mtime": 1791179590.35678,
-    "seen": 1791216662.410603,
+    "mtime": 1792425012.4065502,
+    "seen": 1792842487.979734,
     "ast_hash": "37516ccd00ba69d62333377e0e2389b2",
     "semantic_hash": ""
   },
   "app/Filament/Resources/StatoCiviles/Schemas/StatoCivileForm.php": {
-    "mtime": 1791179590.35678,
-    "seen": 1791216662.4106045,
+    "mtime": 1792425012.4065502,
+    "seen": 1792842487.979736,
     "ast_hash": "54a415f6d2ad0d6f5ac942e49bb1a4f0",
     "semantic_hash": ""
   },
   "app/Filament/Resources/StatoCiviles/StatoCivileResource.php": {
-    "mtime": 1791179590.35678,
-    "seen": 1791216662.410606,
+    "mtime": 1792425012.4065502,
+    "seen": 1792842487.979738,
     "ast_hash": "d7d9a5feb927ff23942e5ce838460801",
     "semantic_hash": ""
   },
   "app/Filament/Resources/StatoCiviles/Tables/StatoCivilesTable.php": {
-    "mtime": 1791179590.35678,
-    "seen": 1791216662.4106073,
+    "mtime": 1792425012.4065502,
+    "seen": 1792842487.9797401,
     "ast_hash": "6514978d958f93ca2051c98d2dfaf0f6",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Statogens/Pages/CreateStatogen.php": {
-    "mtime": 1791179590.35778,
-    "seen": 1791216662.4106085,
+    "mtime": 1792425012.4068666,
+    "seen": 1792842487.979743,
     "ast_hash": "04b31d2069e350decf3e09d0252e9c64",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Statogens/Pages/EditStatogen.php": {
-    "mtime": 1791179590.35778,
-    "seen": 1791216662.4106104,
+    "mtime": 1792425012.407126,
+    "seen": 1792842487.979745,
     "ast_hash": "3d1b0f2eb08886682dd0be1589aa243b",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Statogens/Pages/ListStatogens.php": {
-    "mtime": 1791179590.35778,
-    "seen": 1791216662.4106116,
+    "mtime": 1792425012.407126,
+    "seen": 1792842487.979747,
     "ast_hash": "76bbc161d0f73b00efe45c635c69f802",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Statogens/Schemas/StatogenForm.php": {
-    "mtime": 1791179590.35878,
-    "seen": 1791216662.4106133,
+    "mtime": 1792425012.407126,
+    "seen": 1792842487.9797494,
     "ast_hash": "3b514fe539b9859862996b6029c4be8a",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Statogens/StatogenResource.php": {
-    "mtime": 1791179590.35878,
-    "seen": 1791216662.4106147,
+    "mtime": 1792425012.407126,
+    "seen": 1792842487.9797516,
     "ast_hash": "ce28131c655411d56de388f8f6d5604f",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Statogens/Tables/StatogensTable.php": {
-    "mtime": 1791179590.35878,
-    "seen": 1791216662.4106166,
+    "mtime": 1792425012.407126,
+    "seen": 1792842487.9797535,
     "ast_hash": "9ce5bbd1aaa8c747d8a404dc8baa0204",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Stenosis/Pages/CreateStenosi.php": {
-    "mtime": 1791179590.35878,
-    "seen": 1791216662.410618,
+    "mtime": 1792425012.4075813,
+    "seen": 1792842487.9797564,
     "ast_hash": "fc45eb4d34b99893c6e627cbf1f4ae4d",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Stenosis/Pages/EditStenosi.php": {
-    "mtime": 1791179590.35878,
-    "seen": 1791216662.41062,
+    "mtime": 1792425012.407659,
+    "seen": 1792842487.9797583,
     "ast_hash": "bcf6fad9185566d88921d5a2549a27f3",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Stenosis/Pages/ListStenosis.php": {
-    "mtime": 1791179590.35878,
-    "seen": 1791216662.4106214,
+    "mtime": 1792425012.407659,
+    "seen": 1792842487.9797606,
     "ast_hash": "e58989e8725329128e2e6f9e8c20cb73",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Stenosis/Schemas/StenosiForm.php": {
-    "mtime": 1791179590.35878,
-    "seen": 1791216662.410623,
+    "mtime": 1792425012.407659,
+    "seen": 1792842487.9797628,
     "ast_hash": "0ed6d310d88ce18acc7b5b2937cc3393",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Stenosis/StenosiResource.php": {
-    "mtime": 1791179590.3597798,
-    "seen": 1791216662.4106247,
+    "mtime": 1792425012.4078667,
+    "seen": 1792842487.979765,
     "ast_hash": "af99835cbb69a880b21c4f7269af3374",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Stenosis/Tables/StenosisTable.php": {
-    "mtime": 1791179590.3597798,
-    "seen": 1791216662.4106264,
+    "mtime": 1792425012.4078667,
+    "seen": 1792842487.979767,
     "ast_hash": "323f72008f914ee6b1e1df82c7b00204",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Tips/Pages/CreateTip.php": {
-    "mtime": 1791179590.3597798,
-    "seen": 1791216662.4106276,
+    "mtime": 1792425012.408295,
+    "seen": 1792842487.979769,
     "ast_hash": "d66be5459a924097bec66475f06f204e",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Tips/Pages/EditTip.php": {
-    "mtime": 1791179590.3597798,
-    "seen": 1791216662.4106288,
+    "mtime": 1792425012.4083862,
+    "seen": 1792842487.9797711,
     "ast_hash": "de7d2c62dd0ee18137e4a70ece0e9d02",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Tips/Pages/ListTips.php": {
-    "mtime": 1791179590.3597798,
-    "seen": 1791216662.4106305,
+    "mtime": 1792425012.4083862,
+    "seen": 1792842487.9797733,
     "ast_hash": "2f25957d12bf45e4dec8bafd0a7da8ab",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Tips/Schemas/TipForm.php": {
-    "mtime": 1791179590.36078,
-    "seen": 1791216662.410632,
+    "mtime": 1792425012.4083862,
+    "seen": 1792842487.9797752,
     "ast_hash": "a1fbadd02ab2194931c39a2ff67c42b2",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Tips/Tables/TipsTable.php": {
-    "mtime": 1791179590.36078,
-    "seen": 1791216662.4106333,
+    "mtime": 1792425012.4083862,
+    "seen": 1792842487.979777,
     "ast_hash": "89560f01f5e36fd299d1cce088026d52",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Tips/TipResource.php": {
-    "mtime": 1791179590.36078,
-    "seen": 1791216662.4106348,
+    "mtime": 1792425012.4083862,
+    "seen": 1792842487.979779,
     "ast_hash": "704aaeb641a0582a9f2e77f1c68bddb1",
     "semantic_hash": ""
   },
   "app/Filament/Resources/TrattamentoCausaAbbandonos/Pages/CreateTrattamentoCausaAbbandono.php": {
-    "mtime": 1791179590.36078,
-    "seen": 1791216662.410636,
+    "mtime": 1792425012.408918,
+    "seen": 1792842487.9797812,
     "ast_hash": "c35f06afd5ce792a2db5027cc20454ad",
     "semantic_hash": ""
   },
   "app/Filament/Resources/TrattamentoCausaAbbandonos/Pages/EditTrattamentoCausaAbbandono.php": {
-    "mtime": 1791179590.36078,
-    "seen": 1791216662.4106379,
+    "mtime": 1792425012.409027,
+    "seen": 1792842487.979783,
     "ast_hash": "7064519bda22b79bd9cde98a708878e4",
     "semantic_hash": ""
   },
   "app/Filament/Resources/TrattamentoCausaAbbandonos/Pages/ListTrattamentoCausaAbbandonos.php": {
-    "mtime": 1791179590.36078,
-    "seen": 1791216662.4106393,
+    "mtime": 1792425012.409027,
+    "seen": 1792842487.9797857,
     "ast_hash": "53e038ff8b915fe5b403b552c76c92bb",
     "semantic_hash": ""
   },
   "app/Filament/Resources/TrattamentoCausaAbbandonos/Schemas/TrattamentoCausaAbbandonoForm.php": {
-    "mtime": 1791179590.36178,
-    "seen": 1791216662.410641,
+    "mtime": 1792425012.409027,
+    "seen": 1792842487.9797878,
     "ast_hash": "fcf0ba75ba777350712de94557b5fcf6",
     "semantic_hash": ""
   },
   "app/Filament/Resources/TrattamentoCausaAbbandonos/Tables/TrattamentoCausaAbbandonosTable.php": {
-    "mtime": 1791179590.36178,
-    "seen": 1791216662.4106424,
+    "mtime": 1792425012.409027,
+    "seen": 1792842487.9797897,
     "ast_hash": "867de10b25d873c34ee32ef9182476be",
     "semantic_hash": ""
   },
   "app/Filament/Resources/TrattamentoCausaAbbandonos/TrattamentoCausaAbbandonoResource.php": {
-    "mtime": 1791179590.36178,
-    "seen": 1791216662.410644,
+    "mtime": 1792425012.409027,
+    "seen": 1792842487.9797919,
     "ast_hash": "956d4e5a013227f7c956f28b0d363d07",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Trattamentos/Pages/CreateTrattamento.php": {
-    "mtime": 1791179590.36178,
-    "seen": 1791216662.4106452,
+    "mtime": 1792425012.4094753,
+    "seen": 1792842487.979794,
     "ast_hash": "970fd4a851ea0740a68f1502be5cb510",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Trattamentos/Pages/EditTrattamento.php": {
-    "mtime": 1791179590.36178,
-    "seen": 1791216662.4106467,
+    "mtime": 1792425012.4095497,
+    "seen": 1792842487.9797962,
     "ast_hash": "5ad7dfa58e39bfd2383c8dfcdc1e5929",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Trattamentos/Pages/ListTrattamentos.php": {
-    "mtime": 1791179590.36178,
-    "seen": 1791216662.410648,
+    "mtime": 1792425012.4095497,
+    "seen": 1792842487.9797988,
     "ast_hash": "560aa7a0d84407aa91bc36fa9fbd8244",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Trattamentos/Schemas/TrattamentoForm.php": {
-    "mtime": 1791179590.36178,
-    "seen": 1791216662.4106495,
+    "mtime": 1792425012.4095497,
+    "seen": 1792842487.979801,
     "ast_hash": "b049162ba1d01fe1de1bec3938d4ba77",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Trattamentos/Tables/TrattamentosTable.php": {
-    "mtime": 1791179590.3627799,
-    "seen": 1791216662.410651,
+    "mtime": 1792425012.4095497,
+    "seen": 1792842487.9798028,
     "ast_hash": "db2887c4a153a8fa5925c0d90485331b",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Trattamentos/TrattamentoResource.php": {
-    "mtime": 1791179590.3627799,
-    "seen": 1791216662.4106524,
+    "mtime": 1792425012.4095497,
+    "seen": 1792842487.9798048,
     "ast_hash": "ac1fa3ef106db309ca5902e2fbc20629",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Users/Pages/CreateUser.php": {
-    "mtime": 1791179590.3627799,
-    "seen": 1791216662.410654,
+    "mtime": 1792425012.4099689,
+    "seen": 1792842487.9798064,
     "ast_hash": "27a1576c8105b4b309c407a9772b85ae",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Users/Pages/EditUser.php": {
-    "mtime": 1791179590.3627799,
-    "seen": 1791216662.4106557,
+    "mtime": 1792425012.4100666,
+    "seen": 1792842487.9798088,
     "ast_hash": "da13ea68342a72782b71fa4042ccd76a",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Users/Pages/ListUsers.php": {
-    "mtime": 1791179590.3627799,
-    "seen": 1791216662.410657,
+    "mtime": 1792425012.4100666,
+    "seen": 1792842487.979811,
     "ast_hash": "2f8fc448f21483f61e74efea4c212983",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Users/Schemas/UserForm.php": {
-    "mtime": 1791179590.3627799,
-    "seen": 1791216662.410659,
+    "mtime": 1792425012.4100666,
+    "seen": 1792842487.979813,
     "ast_hash": "43da519fa1d597827ed4caac5550fc8e",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Users/Tables/UsersTable.php": {
-    "mtime": 1791179590.3637798,
-    "seen": 1791216662.4106605,
+    "mtime": 1792425012.4103553,
+    "seen": 1792842487.9798155,
     "ast_hash": "3af14843c79dc95649cf45a0398f2b01",
     "semantic_hash": ""
   },
   "app/Filament/Resources/Users/UserResource.php": {
-    "mtime": 1791179590.3637798,
-    "seen": 1791216662.4106622,
+    "mtime": 1792425012.4105747,
+    "seen": 1792842487.9798174,
     "ast_hash": "a65af955c3db12e899b5599d5854bafe",
     "semantic_hash": ""
   },
   "app/Filament/Widgets/AppSwitcherWidget.php": {
-    "mtime": 1791179590.36478,
-    "seen": 1791216662.4106634,
+    "mtime": 1792425012.4105747,
+    "seen": 1792842487.9798195,
     "ast_hash": "2fd664e08ec7cfefc6fc7bde06b6e0bf",
     "semantic_hash": ""
   },
   "app/Filament/Widgets/RecentlyModifiedPatients.php": {
-    "mtime": 1791179590.36478,
-    "seen": 1791216662.4106653,
+    "mtime": 1792425012.4108496,
+    "seen": 1792842487.979822,
     "ast_hash": "38610a853f86df0be118655b413d39ba",
     "semantic_hash": ""
   },
   "app/Filament/Widgets/RecentlyModifiedVisits.php": {
-    "mtime": 1791179590.36478,
-    "seen": 1791216662.4106667,
+    "mtime": 1792425012.4108496,
+    "seen": 1792842487.9798238,
     "ast_hash": "7e296f4ebc1b7f555ddde0043afd22da",
     "semantic_hash": ""
   },
   "app/Http/Controllers/Api/SsoTokenApiController.php": {
-    "mtime": 1791179590.3657799,
-    "seen": 1791216662.4106684,
+    "mtime": 1792425012.4110565,
+    "seen": 1792842487.979826,
     "ast_hash": "69b727c8041fb54bd49298bf04e85fff",
     "semantic_hash": ""
   },
   "app/Http/Controllers/Controller.php": {
-    "mtime": 1791179590.3657799,
-    "seen": 1791216662.4106698,
+    "mtime": 1792425012.4110565,
+    "seen": 1792842487.979828,
     "ast_hash": "25a307335c0719bc9a91b3f7babd186d",
     "semantic_hash": ""
   },
   "app/Listeners/SaveSentEmailToImap.php": {
-    "mtime": 1791179590.3667798,
-    "seen": 1791216662.4106717,
+    "mtime": 1792425012.4110565,
+    "seen": 1792842487.9798303,
     "ast_hash": "6ce7d30ec98df8d383051392af9166c5",
     "semantic_hash": ""
   },
   "app/Models/Alcool.php": {
-    "mtime": 1791179590.3667798,
-    "seen": 1791216662.410673,
+    "mtime": 1792425012.4110565,
+    "seen": 1792842487.9798324,
     "ast_hash": "968e5d9501ea9bdf78ccb9a31c11a348",
     "semantic_hash": ""
   },
   "app/Models/Alcool35.php": {
-    "mtime": 1791179590.3667798,
-    "seen": 1791216662.4106743,
+    "mtime": 1792425012.4114625,
+    "seen": 1792842487.9798346,
     "ast_hash": "afa6254ebdb54993f371e626f1ff4e72",
     "semantic_hash": ""
   },
   "app/Models/Antidiabetico.php": {
-    "mtime": 1791179590.3667798,
-    "seen": 1791216662.410676,
+    "mtime": 1792425012.4114625,
+    "seen": 1792842487.9798367,
     "ast_hash": "a136fbeeeb5fad25b379efa34c9f32b9",
     "semantic_hash": ""
   },
   "app/Models/ArtAltro.php": {
-    "mtime": 1791179590.3667798,
-    "seen": 1791216662.4106777,
+    "mtime": 1792425012.4114625,
+    "seen": 1792842487.9798384,
     "ast_hash": "927251e6636f5d44f241b72a9b634289",
     "semantic_hash": ""
   },
   "app/Models/ArtTerapia.php": {
-    "mtime": 1791179590.3667798,
-    "seen": 1791216662.4106793,
+    "mtime": 1792425012.4114625,
+    "seen": 1792842487.9798408,
     "ast_hash": "acc17d763058023ae2feb3d1086ee19e",
     "semantic_hash": ""
   },
   "app/Models/Cardiopatia.php": {
-    "mtime": 1791179590.3667798,
-    "seen": 1791216662.4106808,
+    "mtime": 1792425012.4114625,
+    "seen": 1792842487.979843,
     "ast_hash": "6f5f93a9d38148c546c64cb87744a379",
     "semantic_hash": ""
   },
   "app/Models/Center.php": {
-    "mtime": 1791179590.3667798,
-    "seen": 1791216662.4106824,
+    "mtime": 1792425012.4114625,
+    "seen": 1792842487.9798448,
     "ast_hash": "848f055307b597aec5e134e8e3f2d185",
     "semantic_hash": ""
   },
   "app/Models/Cirrosi.php": {
-    "mtime": 1791179590.3667798,
-    "seen": 1791216662.4106839,
+    "mtime": 1792425012.4114625,
+    "seen": 1792842487.9798467,
     "ast_hash": "d647ba8798c32b35f4ae3d28ebf6c2b2",
     "semantic_hash": ""
   },
   "app/Models/Diabete.php": {
-    "mtime": 1791179590.3677797,
-    "seen": 1791216662.4106853,
+    "mtime": 1792425012.4114625,
+    "seen": 1792842487.9798484,
     "ast_hash": "ea396043dd2d226f3a7f26528534918c",
     "semantic_hash": ""
   },
   "app/Models/Dislipidemia.php": {
-    "mtime": 1791179590.3677797,
-    "seen": 1791216662.4106867,
+    "mtime": 1792425012.4114625,
+    "seen": 1792842487.9798508,
     "ast_hash": "ff0d494d40dd3e3804f4e78c7eb5c925",
     "semantic_hash": ""
   },
   "app/Models/Droga.php": {
-    "mtime": 1791179590.3677797,
-    "seen": 1791216662.4106882,
+    "mtime": 1792425012.4114625,
+    "seen": 1792842487.9798524,
     "ast_hash": "9debc9937df3b9fb819550e539d7cb67",
     "semantic_hash": ""
   },
   "app/Models/Ecogenicita.php": {
-    "mtime": 1791179590.3677797,
-    "seen": 1791216662.4106898,
+    "mtime": 1792425012.4114625,
+    "seen": 1792842487.9798543,
     "ast_hash": "ec38b2ebc415e30cb552483a9a9485de",
     "semantic_hash": ""
   },
   "app/Models/Endolumiale.php": {
-    "mtime": 1791179590.3677797,
-    "seen": 1791216662.4106913,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.9798558,
     "ast_hash": "434149edf804ca924af17d094ee9458d",
     "semantic_hash": ""
   },
   "app/Models/Epatite.php": {
-    "mtime": 1791179590.3677797,
-    "seen": 1791216662.410693,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.9798577,
     "ast_hash": "df3bbd5cd467551605148800da5795a2",
     "semantic_hash": ""
   },
   "app/Models/Etnia.php": {
-    "mtime": 1791179590.3677797,
-    "seen": 1791216662.4106941,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.9798598,
     "ast_hash": "1c7093be5ccf6264e78d0f0e2fa800bc",
     "semantic_hash": ""
   },
   "app/Models/Farmaco.php": {
-    "mtime": 1791179590.3677797,
-    "seen": 1791216662.4106958,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.9798615,
     "ast_hash": "4969b24d20aff2ffa88a3478ed4433b6",
     "semantic_hash": ""
   },
   "app/Models/FieldReferenceRange.php": {
-    "mtime": 1791179590.3677797,
-    "seen": 1791216662.4106972,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.979864,
     "ast_hash": "c0c233657939e2dde6770b069f93ad47",
     "semantic_hash": ""
   },
   "app/Models/Fumo.php": {
-    "mtime": 1791179590.3677797,
-    "seen": 1791216662.4106987,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.9798658,
     "ast_hash": "d913d70048da2b28d1d6d3771acbd9dd",
     "semantic_hash": ""
   },
   "app/Models/Ictus.php": {
-    "mtime": 1791179590.3677797,
-    "seen": 1791216662.4107003,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.979868,
     "ast_hash": "ab8093e8adad4ef07d2cb47672dd4cd5",
     "semantic_hash": ""
   },
   "app/Models/Infezione.php": {
-    "mtime": 1791179590.3677797,
-    "seen": 1791216662.4107018,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.9798694,
     "ast_hash": "581b681689fed3c13a6c0c4038ca2155",
     "semantic_hash": ""
   },
   "app/Models/InfezioneHiv.php": {
-    "mtime": 1791179590.36878,
-    "seen": 1791216662.4107034,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.9798715,
     "ast_hash": "48c64001a592194384df893acf590a47",
     "semantic_hash": ""
   },
   "app/Models/Ini.php": {
-    "mtime": 1791179590.36878,
-    "seen": 1791216662.410705,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.9798734,
     "ast_hash": "38fe55a9e3d00f7d215b203d1b2e282b",
     "semantic_hash": ""
   },
   "app/Models/Insuffrenale.php": {
-    "mtime": 1791179590.36878,
-    "seen": 1791216662.4107068,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.9798756,
     "ast_hash": "87c162df65e7dcd3b2dccdeca871d771",
     "semantic_hash": ""
   },
   "app/Models/Ipertensione.php": {
-    "mtime": 1791179590.36878,
-    "seen": 1791216662.410708,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.9798777,
     "ast_hash": "c36965e0e14c577acac341829dd122af",
     "semantic_hash": ""
   },
   "app/Models/Ipolipemizzante.php": {
-    "mtime": 1791179590.36878,
-    "seen": 1791216662.4107096,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.9798796,
     "ast_hash": "bedba258ac75de77f318bddaa2faa6bf",
     "semantic_hash": ""
   },
   "app/Models/Lavoro.php": {
-    "mtime": 1791179590.36878,
-    "seen": 1791216662.410711,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.9798818,
     "ast_hash": "4f699a933b5a0cd1e2e11840ab524915",
     "semantic_hash": ""
   },
   "app/Models/Lipodistrofia.php": {
-    "mtime": 1791179590.36878,
-    "seen": 1791216662.4107122,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.9798834,
     "ast_hash": "363a0c2a3eec27598798989caffdd515",
     "semantic_hash": ""
   },
   "app/Models/LookupModel.php": {
-    "mtime": 1791179590.36878,
-    "seen": 1791216662.410714,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.9798856,
     "ast_hash": "8061b823b79b3a0a018337f9c3f3761f",
     "semantic_hash": ""
   },
   "app/Models/Naive.php": {
-    "mtime": 1791179590.36878,
-    "seen": 1791216662.4107153,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.9799001,
     "ast_hash": "45027b7a0b86736581d60c6db7e2c849",
     "semantic_hash": ""
   },
   "app/Models/Neoplasia.php": {
-    "mtime": 1791179590.36878,
-    "seen": 1791216662.4107172,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.979903,
     "ast_hash": "bef826c8efdd3349f21889f218a43b64",
     "semantic_hash": ""
   },
   "app/Models/Nnrti.php": {
-    "mtime": 1791179590.36878,
-    "seen": 1791216662.4107187,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.9799047,
     "ast_hash": "0a3778d7b3c999297d2ee49de39a12ae",
     "semantic_hash": ""
   },
   "app/Models/Nrti.php": {
-    "mtime": 1791179590.3697798,
-    "seen": 1791216662.41072,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.9799066,
     "ast_hash": "615c76bca568ae9a36e4efc0fe77372c",
     "semantic_hash": ""
   },
   "app/Models/Osteoporosi.php": {
-    "mtime": 1791179590.3697798,
-    "seen": 1791216662.4107215,
+    "mtime": 1792425012.4118667,
+    "seen": 1792842487.9799085,
     "ast_hash": "e6ce54e27f7138ca542ebbeb5c26dc08",
     "semantic_hash": ""
   },
   "app/Models/Patient.php": {
-    "mtime": 1791179590.3697798,
-    "seen": 1791216662.410723,
+    "mtime": 1792425012.4128668,
+    "seen": 1792842487.9799104,
     "ast_hash": "8ade2c86f0c25798e868d3c6f5d33075",
     "semantic_hash": ""
   },
   "app/Models/PatientVisit.php": {
-    "mtime": 1791179590.3697798,
-    "seen": 1791216662.4107244,
+    "mtime": 1792425012.4128668,
+    "seen": 1792842487.979913,
     "ast_hash": "6aeddbe6f9943655a30b5c5455a693f4",
     "semantic_hash": ""
   },
   "app/Models/Pi.php": {
-    "mtime": 1791179590.3707798,
-    "seen": 1791216662.4107258,
+    "mtime": 1792425012.4128668,
+    "seen": 1792842487.9799147,
     "ast_hash": "73ce271ba554ade4fea7795e04013570",
     "semantic_hash": ""
   },
   "app/Models/Rischio.php": {
-    "mtime": 1791179590.3707798,
-    "seen": 1791216662.4107275,
+    "mtime": 1792425012.4128668,
+    "seen": 1792842487.9799166,
     "ast_hash": "3f863de022e9e6119d2f99d5f2db2095",
     "semantic_hash": ""
   },
   "app/Models/Sino.php": {
-    "mtime": 1791179590.3707798,
-    "seen": 1791216662.410729,
+    "mtime": 1792425012.4128668,
+    "seen": 1792842487.9799185,
     "ast_hash": "32e1ceebd444aa4dba2019b676ba0d84",
     "semantic_hash": ""
   },
   "app/Models/StatoCivile.php": {
-    "mtime": 1791179590.3707798,
-    "seen": 1791216662.4107301,
+    "mtime": 1792425012.4128668,
+    "seen": 1792842487.9799206,
     "ast_hash": "20d91ba17af25260065e914c94934d90",
     "semantic_hash": ""
   },
   "app/Models/Statogen.php": {
-    "mtime": 1791179590.3707798,
-    "seen": 1791216662.4107318,
+    "mtime": 1792425012.4128668,
+    "seen": 1792842487.9799225,
     "ast_hash": "3e81ccd6320826c6b72b53a5f9c47020",
     "semantic_hash": ""
   },
   "app/Models/Stenosi.php": {
-    "mtime": 1791179590.3707798,
-    "seen": 1791216662.410733,
+    "mtime": 1792425012.4128668,
+    "seen": 1792842487.9799242,
     "ast_hash": "c1bd4c26ff9f5e531f918c3480665398",
     "semantic_hash": ""
   },
   "app/Models/Tip.php": {
-    "mtime": 1791179590.3707798,
-    "seen": 1791216662.410735,
+    "mtime": 1792425012.4128668,
+    "seen": 1792842487.9799263,
     "ast_hash": "e3d7a7a0fbeac893718deff9a72ee230",
     "semantic_hash": ""
   },
   "app/Models/Trattamento.php": {
-    "mtime": 1791179590.3707798,
-    "seen": 1791216662.410736,
+    "mtime": 1792425012.4128668,
+    "seen": 1792842487.9799278,
     "ast_hash": "c70c3c8ec66619f4ca1461c7f0361e71",
     "semantic_hash": ""
   },
   "app/Models/TrattamentoCausaAbbandono.php": {
-    "mtime": 1791179590.3707798,
-    "seen": 1791216662.4107378,
+    "mtime": 1792425012.4128668,
+    "seen": 1792842487.9799304,
     "ast_hash": "4c97361382c609e64878f854df38820b",
     "semantic_hash": ""
   },
   "app/Models/User.php": {
-    "mtime": 1791179590.3717797,
-    "seen": 1791216662.410739,
+    "mtime": 1792425012.4128668,
+    "seen": 1792842487.9799323,
     "ast_hash": "e9dad8a7d6a4ebc21de606963a2f59bd",
     "semantic_hash": ""
   },
   "app/Notifications/WelcomeNewVersion.php": {
-    "mtime": 1791179590.3717797,
-    "seen": 1791216662.4107409,
+    "mtime": 1792425012.4128668,
+    "seen": 1792842487.9799345,
     "ast_hash": "bb70f05358deb59c485bd68c6d6cc83c",
     "semantic_hash": ""
   },
   "app/Policies/PatientPolicy.php": {
-    "mtime": 1791179590.3717797,
-    "seen": 1791216662.410742,
+    "mtime": 1792425012.4128668,
+    "seen": 1792842487.9799366,
     "ast_hash": "b4ae215c5c70a0f717d0ff8e5c6ea17a",
     "semantic_hash": ""
   },
   "app/Policies/PatientVisitPolicy.php": {
-    "mtime": 1791179590.3717797,
-    "seen": 1791216662.4107435,
+    "mtime": 1792425012.4138424,
+    "seen": 1792842487.9799385,
     "ast_hash": "ca8c222dbb4d57b55a5fb10da8847ec2",
     "semantic_hash": ""
   },
   "app/Providers/AppServiceProvider.php": {
-    "mtime": 1791179590.3717797,
-    "seen": 1791216662.410745,
+    "mtime": 1792425012.4138424,
+    "seen": 1792842487.979941,
     "ast_hash": "c0094f35cad6bba7636002a62186dae4",
     "semantic_hash": ""
   },
   "app/Providers/Filament/AdminPanelProvider.php": {
-    "mtime": 1791179590.3727798,
-    "seen": 1791216662.4107466,
-    "ast_hash": "72775f7af55a6755f04be2307e88e7be",
+    "mtime": 1792511922.605791,
+    "seen": 1792842487.9799428,
+    "ast_hash": "fdfe31c430325173c9b59a22173ccde6",
     "semantic_hash": ""
   },
   "app/Services/ArchiprevaleatSyncService.php": {
-    "mtime": 1791179590.3737798,
-    "seen": 1791216662.410748,
+    "mtime": 1792425012.4138668,
+    "seen": 1792842487.979945,
     "ast_hash": "82e8d164b92b9b1d99db94024106f2a1",
     "semantic_hash": ""
   },
   "app/Services/ExternalAppResolver.php": {
-    "mtime": 1791179590.3747797,
-    "seen": 1791216662.4107494,
+    "mtime": 1792425012.4144635,
+    "seen": 1792842487.9799469,
     "ast_hash": "a24075812de64c916714ac3ab0d9ac53",
     "semantic_hash": ""
   },
   "app/Services/SsoTokenBroker.php": {
-    "mtime": 1791179590.3747797,
-    "seen": 1791216662.4107509,
+    "mtime": 1792425012.4144635,
+    "seen": 1792842487.979949,
     "ast_hash": "890b2e47b8526a75cb162d36ce0841ab",
     "semantic_hash": ""
   },
   "artisan": {
-    "mtime": 1791179590.3747797,
-    "seen": 1791216662.4107525,
+    "mtime": 1792425012.4388673,
+    "seen": 1792842487.979951,
     "ast_hash": "e66bb13691f6184c762c196427d8e685",
     "semantic_hash": ""
   },
   "boost.json": {
-    "mtime": 1791179590.3747797,
-    "seen": 1791216662.4107542,
+    "mtime": 1792433772.5127344,
+    "seen": 1792842487.9799528,
     "ast_hash": "ce678b3196ed7e61acee2e42eceba778",
     "semantic_hash": ""
   },
   "bootstrap/app.php": {
-    "mtime": 1791179590.3757796,
-    "seen": 1791216662.410756,
+    "mtime": 1792425012.4388673,
+    "seen": 1792842487.979955,
     "ast_hash": "9729b86c51a24732bfacdeb7396a96e8",
     "semantic_hash": ""
   },
   "bootstrap/providers.php": {
-    "mtime": 1791179590.3757796,
-    "seen": 1791216662.4107575,
+    "mtime": 1792425012.439502,
+    "seen": 1792842487.9799573,
     "ast_hash": "bea08e0b0504475478ce44b4bc16369b",
     "semantic_hash": ""
   },
   "composer.json": {
-    "mtime": 1791179590.3767796,
-    "seen": 1791216662.4107594,
+    "mtime": 1792425012.439502,
+    "seen": 1792842487.9799595,
     "ast_hash": "704dd4988bea620ae11a3f7942b3aa32",
     "semantic_hash": ""
   },
   "config/app.php": {
-    "mtime": 1791179590.3817797,
-    "seen": 1791216662.4107609,
+    "mtime": 1792425012.4418674,
+    "seen": 1792842487.9799614,
     "ast_hash": "83176511b66e2cb388a5f466e09f5e1e",
     "semantic_hash": ""
   },
   "config/auth.php": {
-    "mtime": 1791179590.3817797,
-    "seen": 1791216662.4107628,
+    "mtime": 1792425012.442134,
+    "seen": 1792842487.9799633,
     "ast_hash": "26354511ab860b301f2a3554bc388b91",
     "semantic_hash": ""
   },
   "config/cache.php": {
-    "mtime": 1791179590.3817797,
-    "seen": 1791216662.4107642,
+    "mtime": 1792425012.442134,
+    "seen": 1792842487.9799652,
     "ast_hash": "399c7a3b4bca7e3cb9b622828682ab56",
     "semantic_hash": ""
   },
   "config/database.php": {
-    "mtime": 1791179590.3827796,
-    "seen": 1791216662.4107707,
-    "ast_hash": "11f72d8182cb2fd02580bca9f4eb3801",
+    "mtime": 1792578766.3414397,
+    "seen": 1792842487.979967,
+    "ast_hash": "77d841a0d5da64bdd032559f6501c42a",
     "semantic_hash": ""
   },
   "config/filament-localization.php": {
-    "mtime": 1791179590.3827796,
-    "seen": 1791216662.4107726,
+    "mtime": 1792425012.442134,
+    "seen": 1792842487.9799695,
     "ast_hash": "46dfd55aa37aa760244028d1d3c61be6",
     "semantic_hash": ""
   },
   "config/filesystems.php": {
-    "mtime": 1791179590.3827796,
-    "seen": 1791216662.410774,
+    "mtime": 1792425012.442134,
+    "seen": 1792842487.9799716,
     "ast_hash": "bde1aa1027f0448f17348dbd93f3d7ea",
     "semantic_hash": ""
   },
   "config/logging.php": {
-    "mtime": 1791179590.3837795,
-    "seen": 1791216662.4107752,
+    "mtime": 1792425012.442134,
+    "seen": 1792842487.9799736,
     "ast_hash": "57cabdaa04bc44810fedbea9ce77b052",
     "semantic_hash": ""
   },
   "config/mail.php": {
-    "mtime": 1791179590.3837795,
-    "seen": 1791216662.4107769,
+    "mtime": 1792425012.442134,
+    "seen": 1792842487.9799757,
     "ast_hash": "18601a927b48d38337ba2077426a7d60",
     "semantic_hash": ""
   },
   "config/queue.php": {
-    "mtime": 1791179590.3837795,
-    "seen": 1791216662.4107783,
+    "mtime": 1792425012.442134,
+    "seen": 1792842487.9799774,
     "ast_hash": "f98ce92e7bf51db1fabaf8a30e12fc5a",
     "semantic_hash": ""
   },
   "config/services.php": {
-    "mtime": 1791179590.3837795,
-    "seen": 1791216662.4107797,
+    "mtime": 1792425012.442134,
+    "seen": 1792842487.9799795,
     "ast_hash": "97e140b9385580671f3435a2a768c13a",
     "semantic_hash": ""
   },
   "config/session.php": {
-    "mtime": 1791179590.3847795,
-    "seen": 1791216662.4107811,
+    "mtime": 1792425012.442134,
+    "seen": 1792842487.9799814,
     "ast_hash": "5ea7169252ec3cc7fad471f5cd0d7678",
     "semantic_hash": ""
   },
   "database/factories/UserFactory.php": {
-    "mtime": 1791179590.3847795,
-    "seen": 1791216662.4107828,
+    "mtime": 1792425012.4428358,
+    "seen": 1792842487.9799838,
     "ast_hash": "1c9f381f9c2bc3027971a3bfdbe99164",
     "semantic_hash": ""
   },
   "database/migrations/2026_09_21_140027_fix_sessions_user_id_to_uuid.php": {
-    "mtime": 1789999302.63896,
-    "seen": 1791216662.4107842,
-    "ast_hash": "25daafdd8d2a4596766a300bbbd6fa64",
+    "mtime": 1792661966.6645184,
+    "seen": 1792842487.979986,
+    "ast_hash": "9ea47fd923d26ccf1da09e3e1a9ac708",
     "semantic_hash": ""
   },
   "database/migrations/2026_10_02_150826_add_sas_columns_to_patient_visits_table.php": {
-    "mtime": 1791179590.3857796,
-    "seen": 1791216662.4107857,
-    "ast_hash": "e804514b77c13653b2f82678f6c158c0",
+    "mtime": 1792661980.408068,
+    "seen": 1792842487.9799876,
+    "ast_hash": "288bfb55a967fe039770b1fd35b0f23d",
     "semantic_hash": ""
   },
   "database/migrations/2026_10_02_151755_drop_duplicate_columns_from_patient_visits_table.php": {
-    "mtime": 1791179590.3857796,
-    "seen": 1791216662.4107873,
-    "ast_hash": "274b0d0038b55597989bfed365ca606d",
+    "mtime": 1792661980.4084346,
+    "seen": 1792842487.97999,
+    "ast_hash": "4c95e1dd5e1286ca00fccc0dce6080a1",
     "semantic_hash": ""
   },
   "database/seeders/DatabaseSeeder.php": {
-    "mtime": 1791179590.3857796,
-    "seen": 1791216662.4107885,
+    "mtime": 1792425012.4428673,
+    "seen": 1792842487.9799953,
     "ast_hash": "ab1e985d74209458e33e0f4eb89fb77e",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/dashboard.php": {
-    "mtime": 1791179590.3867795,
-    "seen": 1791216662.4107902,
+    "mtime": 1792425012.4633315,
+    "seen": 1792842487.9799972,
     "ast_hash": "51670c1317a947498825ee5bb31ccee0",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_alcool.php": {
-    "mtime": 1791179590.3867795,
-    "seen": 1791216662.4107916,
+    "mtime": 1792425012.4634273,
+    "seen": 1792842487.9799993,
     "ast_hash": "45aa6bd654a338fa3e1033dcbcbc4102",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_alcool35.php": {
-    "mtime": 1791179590.3867795,
-    "seen": 1791216662.410793,
+    "mtime": 1792425012.4634273,
+    "seen": 1792842487.9800014,
     "ast_hash": "8b5fafaf488fa1440ed57600076f97bc",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_antidiabetico.php": {
-    "mtime": 1791179590.3867795,
-    "seen": 1791216662.4107947,
+    "mtime": 1792425012.4634273,
+    "seen": 1792842487.9800038,
     "ast_hash": "5baed01c59379d2f3f3cda4e9a440e2f",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_art_altro.php": {
-    "mtime": 1791179590.3867795,
-    "seen": 1791216662.410796,
+    "mtime": 1792425012.4634273,
+    "seen": 1792842487.980006,
     "ast_hash": "2cd0957ce5879541814fdf04950ad90c",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_art_terapia.php": {
-    "mtime": 1791179590.3867795,
-    "seen": 1791216662.4107976,
+    "mtime": 1792425012.4634273,
+    "seen": 1792842487.9800081,
     "ast_hash": "c594b348af9c10448ea5e9c66b61a4b6",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_cardiopatia.php": {
-    "mtime": 1791179590.3867795,
-    "seen": 1791216662.410799,
+    "mtime": 1792425012.4634273,
+    "seen": 1792842487.9800105,
     "ast_hash": "b2f37988b394f5a350fab93f4211157c",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_center.php": {
-    "mtime": 1791179590.3867795,
-    "seen": 1791216662.4108007,
+    "mtime": 1792425012.4634273,
+    "seen": 1792842487.9800127,
     "ast_hash": "bb5b7ab021f358cb2fb4c16d813f6f66",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_cirrosi.php": {
-    "mtime": 1791179590.3867795,
-    "seen": 1791216662.4108021,
+    "mtime": 1792425012.4634273,
+    "seen": 1792842487.9800146,
     "ast_hash": "e071cc0703e753f583e3915ce6671851",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_diabete.php": {
-    "mtime": 1791179590.3867795,
-    "seen": 1791216662.410804,
+    "mtime": 1792425012.4634273,
+    "seen": 1792842487.980017,
     "ast_hash": "5ceff575a44529586824ca395bf92bd7",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_dislipidemia.php": {
-    "mtime": 1791179590.3867795,
-    "seen": 1791216662.4108055,
+    "mtime": 1792425012.4634273,
+    "seen": 1792842487.9800189,
     "ast_hash": "cc7ddb30aebe5950efa8bf5fc760dbeb",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_droga.php": {
-    "mtime": 1791179590.3867795,
-    "seen": 1791216662.4108071,
+    "mtime": 1792425012.4634273,
+    "seen": 1792842487.9800212,
     "ast_hash": "c43ace7b89299c486a9216d060779b0a",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_ecogenicita.php": {
-    "mtime": 1791179590.3867795,
-    "seen": 1791216662.4108086,
+    "mtime": 1792425012.4634273,
+    "seen": 1792842487.9800236,
     "ast_hash": "130b8530d05ef38bb4be899a22ba6fe9",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_endolumiale.php": {
-    "mtime": 1791179590.3877795,
-    "seen": 1791216662.41081,
+    "mtime": 1792425012.4634273,
+    "seen": 1792842487.9800253,
     "ast_hash": "0e7d22be9405e806d8ae32207ab08cd9",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_epatite.php": {
-    "mtime": 1791179590.3877795,
-    "seen": 1791216662.4108117,
+    "mtime": 1792425012.4634273,
+    "seen": 1792842487.9800277,
     "ast_hash": "57fd29b3b30a960f95b916a40d808aea",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_etnia.php": {
-    "mtime": 1791179590.3877795,
-    "seen": 1791216662.4108133,
+    "mtime": 1792425012.4634273,
+    "seen": 1792842487.9800303,
     "ast_hash": "6612018fba353a6e46a24a0aa551a6e7",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_farmaco.php": {
-    "mtime": 1791179590.3877795,
-    "seen": 1791216662.4108148,
+    "mtime": 1792425012.4634273,
+    "seen": 1792842487.9800324,
     "ast_hash": "913c9fd29b49da9da49386c253a561b3",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_field_reference_range.php": {
-    "mtime": 1791179590.3877795,
-    "seen": 1791216662.4108164,
+    "mtime": 1792425012.4634273,
+    "seen": 1792842487.9800346,
     "ast_hash": "fb6a8453a982a66df8dc977fabd6937e",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_fumo.php": {
-    "mtime": 1791179590.3877795,
-    "seen": 1791216662.4108179,
+    "mtime": 1792425012.4634273,
+    "seen": 1792842487.980037,
     "ast_hash": "a56fb399fa4d7faf0538d9bd540e4ebb",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_ictus.php": {
-    "mtime": 1791179590.3877795,
-    "seen": 1791216662.4108195,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800394,
     "ast_hash": "c81947806db387727564c53a1b9bcdf3",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_infezione.php": {
-    "mtime": 1791179590.3877795,
-    "seen": 1791216662.410821,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800415,
     "ast_hash": "9697f80d54cb33da62b882c988f0cf5a",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_infezione_hiv.php": {
-    "mtime": 1791179590.3877795,
-    "seen": 1791216662.4108226,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800434,
     "ast_hash": "11b27e1ac5cfce6b841bfab999ae99d9",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_ini.php": {
-    "mtime": 1791179590.3877795,
-    "seen": 1791216662.4108238,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800458,
     "ast_hash": "e03fb27bf70d6bebf6c89159571ab548",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_insuffrenale.php": {
-    "mtime": 1791179590.3877795,
-    "seen": 1791216662.4108255,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800482,
     "ast_hash": "8dd4deb9b6c80588a583df6015b38d38",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_ipertensione.php": {
-    "mtime": 1791179590.3877795,
-    "seen": 1791216662.4108267,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.98005,
     "ast_hash": "a6b5a769e918e33414031398ea2183be",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_ipolipemizzante.php": {
-    "mtime": 1791179590.3887794,
-    "seen": 1791216662.4108284,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800522,
     "ast_hash": "48b5df2aae489fa13ca1af5372cabe82",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_lavoro.php": {
-    "mtime": 1791179590.3887794,
-    "seen": 1791216662.4108295,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800549,
     "ast_hash": "d4238335cf165acc802aa0d1f1fa5e78",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_lipodistrofia.php": {
-    "mtime": 1791179590.3887794,
-    "seen": 1791216662.4108312,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800568,
     "ast_hash": "52ef664a22ccef2d2e23d3e2ac73d55d",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_naive.php": {
-    "mtime": 1791179590.3887794,
-    "seen": 1791216662.4108326,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.980059,
     "ast_hash": "6988ef9422267b3d8717eaad9769c367",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_neoplasia.php": {
-    "mtime": 1791179590.3887794,
-    "seen": 1791216662.410834,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800613,
     "ast_hash": "b76dc655765d8ba192258f682aec3747",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_nnrti.php": {
-    "mtime": 1791179590.3887794,
-    "seen": 1791216662.4108355,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800634,
     "ast_hash": "9b5cf906433c09d0bfb33a9e0bc0ccde",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_nrti.php": {
-    "mtime": 1791179590.3887794,
-    "seen": 1791216662.410837,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800658,
     "ast_hash": "a137b05093b81c328cc300c8c53044f3",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_osteoporosi.php": {
-    "mtime": 1791179590.3887794,
-    "seen": 1791216662.4108384,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800675,
     "ast_hash": "66301387c1b0703012e6cd5c16409b28",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_patient.php": {
-    "mtime": 1791179590.3887794,
-    "seen": 1791216662.4108398,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800699,
     "ast_hash": "d594cd8bb929c1b79bed2c180bfe8229",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_patient_visit.php": {
-    "mtime": 1791179590.3887794,
-    "seen": 1791216662.410841,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800718,
     "ast_hash": "1ae97c4c7d4a97752f2f6a95918bbcf5",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_pi.php": {
-    "mtime": 1791179590.3887794,
-    "seen": 1791216662.4108427,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.980074,
     "ast_hash": "ec41bf86f6bc5774b991eecb7f46f595",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_rischio.php": {
-    "mtime": 1791179590.3887794,
-    "seen": 1791216662.410844,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.980076,
     "ast_hash": "8c34212a1d7bdafd0ddf282af6b2b089",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_sino.php": {
-    "mtime": 1791179590.3897796,
-    "seen": 1791216662.4108458,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.980078,
     "ast_hash": "088ebe19d70c682139c58215051a479a",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_stato_civile.php": {
-    "mtime": 1791179590.3897796,
-    "seen": 1791216662.4108472,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800806,
     "ast_hash": "2a907723e5937a81ffe82ac1488031d0",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_statogen.php": {
-    "mtime": 1791179590.3897796,
-    "seen": 1791216662.4108636,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.980083,
     "ast_hash": "2b8041edd070b22ef811dcd09674a783",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_stenosi.php": {
-    "mtime": 1791179590.3897796,
-    "seen": 1791216662.4108653,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800851,
     "ast_hash": "671557b57904d7ae63b53fc7da9ee981",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_tip.php": {
-    "mtime": 1791179590.3897796,
-    "seen": 1791216662.410867,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800873,
     "ast_hash": "7658d758e4bd568a35e9bec817c98ace",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_trattamento.php": {
-    "mtime": 1791179590.3897796,
-    "seen": 1791216662.4108682,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800894,
     "ast_hash": "ed80ed120a93109cfbde32386bd2fc37",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/edit_trattamento_causa_abbandono.php": {
-    "mtime": 1791179590.3897796,
-    "seen": 1791216662.4108703,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800916,
     "ast_hash": "a1b2f65a09356f0a924e5f8a3b104afb",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/field_reference_range_resource.php": {
-    "mtime": 1791179590.3897796,
-    "seen": 1791216662.4108717,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800937,
     "ast_hash": "73ec14ec0e9043c4224f58df2d1336cd",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_alcool35s.php": {
-    "mtime": 1791179590.3897796,
-    "seen": 1791216662.4108737,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.980096,
     "ast_hash": "ab830250f985213027f7c6efa20cdc49",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_alcools.php": {
-    "mtime": 1791179590.3897796,
-    "seen": 1791216662.4108748,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9800985,
     "ast_hash": "59ba9887a7c84cf8f59f80495d2a6411",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_antidiabeticos.php": {
-    "mtime": 1791179590.3897796,
-    "seen": 1791216662.4108765,
+    "mtime": 1792425012.4638677,
+    "seen": 1792842487.9801009,
     "ast_hash": "0ce40486ef79344c794864ab2c3a1041",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_art_altros.php": {
-    "mtime": 1791179590.3907795,
-    "seen": 1791216662.410878,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.980103,
     "ast_hash": "37bfc2464cf8a0a63423dc77d3554ecc",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_art_terapias.php": {
-    "mtime": 1791179590.3907795,
-    "seen": 1791216662.4108799,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801052,
     "ast_hash": "fd0d931d4056d71abb46a90631d2167c",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_cardiopatias.php": {
-    "mtime": 1791179590.3907795,
-    "seen": 1791216662.410881,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801075,
     "ast_hash": "64ce0fea9663607fc09c72e6e1887063",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_centers.php": {
-    "mtime": 1791179590.3907795,
-    "seen": 1791216662.4108827,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.98011,
     "ast_hash": "8fecf78306f8d4176fdbf4c313862244",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_cirrosis.php": {
-    "mtime": 1791179590.3907795,
-    "seen": 1791216662.4108841,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801118,
     "ast_hash": "17e5e29459d7b9e0340dd91796bea486",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_diabetes.php": {
-    "mtime": 1791179590.3907795,
-    "seen": 1791216662.4108856,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801142,
     "ast_hash": "0c3d72ff6158a851c10801991e714de9",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_dislipidemias.php": {
-    "mtime": 1791179590.3907795,
-    "seen": 1791216662.4108872,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801164,
     "ast_hash": "f3fa3d9787bec28da3ee033b050b1a4f",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_drogas.php": {
-    "mtime": 1791179590.3907795,
-    "seen": 1791216662.4108884,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801185,
     "ast_hash": "8d1b398702b879f3ab224251b4374cb6",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_ecogenicitas.php": {
-    "mtime": 1791179590.3907795,
-    "seen": 1791216662.41089,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801204,
     "ast_hash": "3a8d203e3584abf55455bcc0259f5abb",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_endolumiales.php": {
-    "mtime": 1791179590.3907795,
-    "seen": 1791216662.4108913,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.980122,
     "ast_hash": "a8626b5b8ecb024173967dd2a6a0b993",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_epatites.php": {
-    "mtime": 1791179590.3907795,
-    "seen": 1791216662.4108927,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801245,
     "ast_hash": "f248290817941c812d48e3e00ad73b4e",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_etnias.php": {
-    "mtime": 1791179590.3907795,
-    "seen": 1791216662.4108946,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801264,
     "ast_hash": "3abf90178c135f7399c6e1906c4182eb",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_farmacos.php": {
-    "mtime": 1791179590.3917794,
-    "seen": 1791216662.410896,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801283,
     "ast_hash": "957b3a17016b41b825bd1204417f3588",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_field_reference_ranges.php": {
-    "mtime": 1791179590.3917794,
-    "seen": 1791216662.4108977,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.98013,
     "ast_hash": "4967ce749aa9328b3236af5ec1420714",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_fumos.php": {
-    "mtime": 1791179590.3917794,
-    "seen": 1791216662.410899,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801328,
     "ast_hash": "9db859af193b496bb6a7c9e5f05f8333",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_ictuses.php": {
-    "mtime": 1791179590.3917794,
-    "seen": 1791216662.4109008,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801352,
     "ast_hash": "e13f3521f494724b199c78e8f52b7e95",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_infezione_hivs.php": {
-    "mtime": 1791179590.3917794,
-    "seen": 1791216662.4109023,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.980137,
     "ast_hash": "c687125c1faa41665944eeff5ff414c4",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_infeziones.php": {
-    "mtime": 1791179590.3917794,
-    "seen": 1791216662.4109037,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.980139,
     "ast_hash": "23c3b0ab0e13d0db6a5539f6ac26246f",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_inis.php": {
-    "mtime": 1791179590.3917794,
-    "seen": 1791216662.4109051,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801416,
     "ast_hash": "9bced242df92f0f0067f26b16fbb8a9e",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_insuffrenales.php": {
-    "mtime": 1791179590.3917794,
-    "seen": 1791216662.4109068,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801438,
     "ast_hash": "2c79211e25c317ff40bdd48666ed2d0c",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_ipertensiones.php": {
-    "mtime": 1791179590.3917794,
-    "seen": 1791216662.4109085,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801476,
     "ast_hash": "64a25a27ed9f5d31bce32ebdef3aa392",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_ipolipemizzantes.php": {
-    "mtime": 1791179590.3917794,
-    "seen": 1791216662.41091,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801514,
     "ast_hash": "2094d51085ed1add16cc711999d38642",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_lavoros.php": {
-    "mtime": 1791179590.3917794,
-    "seen": 1791216662.4109116,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801567,
     "ast_hash": "d9d1d64e0cb8925a40bda8fea01e5086",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_lipodistrofias.php": {
-    "mtime": 1791179590.3917794,
-    "seen": 1791216662.410913,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.98016,
     "ast_hash": "3a95680ba21da3d53ba83b3792392b73",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_naives.php": {
-    "mtime": 1791179590.3927794,
-    "seen": 1791216662.4109144,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801633,
     "ast_hash": "def238b9bb24a66627236386715fbc70",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_neoplasias.php": {
-    "mtime": 1791179590.3927794,
-    "seen": 1791216662.410916,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801667,
     "ast_hash": "d7f561171c01c4a8114521b6da902424",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_nnrtis.php": {
-    "mtime": 1791179590.3927794,
-    "seen": 1791216662.4109173,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.98017,
     "ast_hash": "d3fb1f69e3a4450b6820f008eaac1c60",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_nrtis.php": {
-    "mtime": 1791179590.3927794,
-    "seen": 1791216662.4109192,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.9801738,
     "ast_hash": "74d8ebc284e2cf6a6872c983760a0922",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_osteoporosis.php": {
-    "mtime": 1791179590.3927794,
-    "seen": 1791216662.4109206,
+    "mtime": 1792425012.4648676,
+    "seen": 1792842487.980177,
     "ast_hash": "81b296ac2f8de95bd1f0217e51a0a90a",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_patient_visits.php": {
-    "mtime": 1791179590.3927794,
-    "seen": 1791216662.4109223,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.9801803,
     "ast_hash": "fd9458cd804e9cfd8beceae2b9f20b59",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_patients.php": {
-    "mtime": 1791179590.3927794,
-    "seen": 1791216662.4109237,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.9801836,
     "ast_hash": "9eee8c25e26c3fc55034100545e5344e",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_pis.php": {
-    "mtime": 1791179590.3927794,
-    "seen": 1791216662.4109256,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.980188,
     "ast_hash": "bc12a7751c52bb221787caf2d5995512",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_rischios.php": {
-    "mtime": 1791179590.3927794,
-    "seen": 1791216662.410927,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.9801912,
     "ast_hash": "faae233548e03eb7c835065b155e4655",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_sinos.php": {
-    "mtime": 1791179590.3927794,
-    "seen": 1791216662.410929,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.9801953,
     "ast_hash": "822d484bde449735bc0eb2620610ccce",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_stato_civiles.php": {
-    "mtime": 1791179590.3927794,
-    "seen": 1791216662.4109304,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.9801989,
     "ast_hash": "04d1ca2cf52fb5b5b8bead6501cb42a5",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_statogens.php": {
-    "mtime": 1791179590.3937793,
-    "seen": 1791216662.410932,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.9802024,
     "ast_hash": "04ae4d522ec3cfa34ccd2d9f3be9df00",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_stenosis.php": {
-    "mtime": 1791179590.3937793,
-    "seen": 1791216662.4109335,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.980207,
     "ast_hash": "382d09bd179244d1f41f7e5b785712ef",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_tips.php": {
-    "mtime": 1791179590.3937793,
-    "seen": 1791216662.410935,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.980211,
     "ast_hash": "a533a10075c4626c659d0365a761fcda",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_trattamento_causa_abbandonos.php": {
-    "mtime": 1791179590.3937793,
-    "seen": 1791216662.4109366,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.9802146,
     "ast_hash": "3240daadf1074a71a4bc38f3ab1e1fdb",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_trattamentos.php": {
-    "mtime": 1791179590.3937793,
-    "seen": 1791216662.4109378,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.9802184,
     "ast_hash": "b2220dfec04137abe97198f990e5ce79",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/list_users.php": {
-    "mtime": 1791179590.3937793,
-    "seen": 1791216662.4109395,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.9802217,
     "ast_hash": "dd0619760262cb959e2817e9bc4785ab",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/patient_resource.php": {
-    "mtime": 1791179590.3947794,
-    "seen": 1791216662.4109416,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.980225,
     "ast_hash": "80aaaa8552a9470916beb86ddc10047c",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/patient_visit_resource.php": {
-    "mtime": 1791179590.3957794,
-    "seen": 1791216662.410944,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.9802284,
     "ast_hash": "90e535b0ff293e84c84935f3941cca25",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/treatment_annotations_relation_manager.php": {
-    "mtime": 1791179590.3957794,
-    "seen": 1791216662.4109468,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.9802327,
     "ast_hash": "816a88fef6acca90991d9a2b5e2fc002",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/user_manual.php": {
-    "mtime": 1791179590.3957794,
-    "seen": 1791216662.4109492,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.9802363,
     "ast_hash": "da55272d3baaf9a0b1303ddf85344576",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/user_resource.php": {
-    "mtime": 1791179590.3957794,
-    "seen": 1791216662.4109519,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.9802396,
     "ast_hash": "fc5da3121ae4f4bf99a0c769cc84c5c9",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/vibe_coding_prompt.php": {
-    "mtime": 1791179590.3957794,
-    "seen": 1791216662.4109542,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.9802437,
     "ast_hash": "43f6c18e85f56689aca0d2d6a3bc41ed",
     "semantic_hash": ""
   },
   "lang/en/filament/admin/visits_relation_manager.php": {
-    "mtime": 1791179590.3957794,
-    "seen": 1791216662.4109583,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.9802473,
     "ast_hash": "b3a168f06f47b9dd46eb163663a37a0a",
     "semantic_hash": ""
   },
   "lang/it.json": {
-    "mtime": 1791179590.3957794,
-    "seen": 1791216662.4109607,
+    "mtime": 1792425012.4658678,
+    "seen": 1792842487.9802513,
     "ast_hash": "dbb98b8f6741fcfb0f708212a35d1a95",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/dashboard.php": {
-    "mtime": 1791179590.3957794,
-    "seen": 1791216662.4109633,
+    "mtime": 1792425012.4668262,
+    "seen": 1792842487.9802551,
     "ast_hash": "51670c1317a947498825ee5bb31ccee0",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_alcool.php": {
-    "mtime": 1791179590.3967793,
-    "seen": 1791216662.4109654,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9802594,
     "ast_hash": "45aa6bd654a338fa3e1033dcbcbc4102",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_alcool35.php": {
-    "mtime": 1791179590.3967793,
-    "seen": 1791216662.4109683,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9802632,
     "ast_hash": "8b5fafaf488fa1440ed57600076f97bc",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_antidiabetico.php": {
-    "mtime": 1791179590.3967793,
-    "seen": 1791216662.4109707,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.980267,
     "ast_hash": "5baed01c59379d2f3f3cda4e9a440e2f",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_art_altro.php": {
-    "mtime": 1791179590.3967793,
-    "seen": 1791216662.4109728,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.980271,
     "ast_hash": "2cd0957ce5879541814fdf04950ad90c",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_art_terapia.php": {
-    "mtime": 1791179590.3967793,
-    "seen": 1791216662.4109755,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9802752,
     "ast_hash": "c594b348af9c10448ea5e9c66b61a4b6",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_cardiopatia.php": {
-    "mtime": 1791179590.3967793,
-    "seen": 1791216662.4109783,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.980279,
     "ast_hash": "b2f37988b394f5a350fab93f4211157c",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_center.php": {
-    "mtime": 1791179590.3967793,
-    "seen": 1791216662.410981,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9802916,
     "ast_hash": "bb5b7ab021f358cb2fb4c16d813f6f66",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_cirrosi.php": {
-    "mtime": 1791179590.3967793,
-    "seen": 1791216662.4109836,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.980296,
     "ast_hash": "e071cc0703e753f583e3915ce6671851",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_diabete.php": {
-    "mtime": 1791179590.3967793,
-    "seen": 1791216662.4109864,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9802995,
     "ast_hash": "5ceff575a44529586824ca395bf92bd7",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_dislipidemia.php": {
-    "mtime": 1791179590.3967793,
-    "seen": 1791216662.4109898,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803033,
     "ast_hash": "cc7ddb30aebe5950efa8bf5fc760dbeb",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_droga.php": {
-    "mtime": 1791179590.3967793,
-    "seen": 1791216662.4109924,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803069,
     "ast_hash": "c43ace7b89299c486a9216d060779b0a",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_ecogenicita.php": {
-    "mtime": 1791179590.3967793,
-    "seen": 1791216662.4109957,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803112,
     "ast_hash": "130b8530d05ef38bb4be899a22ba6fe9",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_endolumiale.php": {
-    "mtime": 1791179590.3967793,
-    "seen": 1791216662.4109983,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.980315,
     "ast_hash": "0e7d22be9405e806d8ae32207ab08cd9",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_epatite.php": {
-    "mtime": 1791179590.3977792,
-    "seen": 1791216662.4110012,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803183,
     "ast_hash": "57fd29b3b30a960f95b916a40d808aea",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_etnia.php": {
-    "mtime": 1791179590.3977792,
-    "seen": 1791216662.4110034,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803221,
     "ast_hash": "6612018fba353a6e46a24a0aa551a6e7",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_farmaco.php": {
-    "mtime": 1791179590.3977792,
-    "seen": 1791216662.411005,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.980326,
     "ast_hash": "913c9fd29b49da9da49386c253a561b3",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_field_reference_range.php": {
-    "mtime": 1791179590.3977792,
-    "seen": 1791216662.4110067,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803298,
     "ast_hash": "fb6a8453a982a66df8dc977fabd6937e",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_fumo.php": {
-    "mtime": 1791179590.3977792,
-    "seen": 1791216662.4110084,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803338,
     "ast_hash": "a56fb399fa4d7faf0538d9bd540e4ebb",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_ictus.php": {
-    "mtime": 1791179590.3977792,
-    "seen": 1791216662.4110096,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803374,
     "ast_hash": "c81947806db387727564c53a1b9bcdf3",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_infezione.php": {
-    "mtime": 1791179590.3977792,
-    "seen": 1791216662.4110112,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803417,
     "ast_hash": "9697f80d54cb33da62b882c988f0cf5a",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_infezione_hiv.php": {
-    "mtime": 1791179590.3977792,
-    "seen": 1791216662.4110131,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803455,
     "ast_hash": "11b27e1ac5cfce6b841bfab999ae99d9",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_ini.php": {
-    "mtime": 1791179590.3977792,
-    "seen": 1791216662.4110146,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803495,
     "ast_hash": "e03fb27bf70d6bebf6c89159571ab548",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_insuffrenale.php": {
-    "mtime": 1791179590.3977792,
-    "seen": 1791216662.411016,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803529,
     "ast_hash": "8dd4deb9b6c80588a583df6015b38d38",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_ipertensione.php": {
-    "mtime": 1791179590.3977792,
-    "seen": 1791216662.4110174,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.980357,
     "ast_hash": "a6b5a769e918e33414031398ea2183be",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_ipolipemizzante.php": {
-    "mtime": 1791179590.3977792,
-    "seen": 1791216662.411019,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803605,
     "ast_hash": "48b5df2aae489fa13ca1af5372cabe82",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_lavoro.php": {
-    "mtime": 1791179590.3987794,
-    "seen": 1791216662.4110205,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803643,
     "ast_hash": "d4238335cf165acc802aa0d1f1fa5e78",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_lipodistrofia.php": {
-    "mtime": 1791179590.3987794,
-    "seen": 1791216662.4110222,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803684,
     "ast_hash": "52ef664a22ccef2d2e23d3e2ac73d55d",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_naive.php": {
-    "mtime": 1791179590.3987794,
-    "seen": 1791216662.4110236,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803722,
     "ast_hash": "6988ef9422267b3d8717eaad9769c367",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_neoplasia.php": {
-    "mtime": 1791179590.3987794,
-    "seen": 1791216662.411025,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803758,
     "ast_hash": "b76dc655765d8ba192258f682aec3747",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_nnrti.php": {
-    "mtime": 1791179590.3987794,
-    "seen": 1791216662.4110267,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.98038,
     "ast_hash": "9b5cf906433c09d0bfb33a9e0bc0ccde",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_nrti.php": {
-    "mtime": 1791179590.3987794,
-    "seen": 1791216662.411028,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.980384,
     "ast_hash": "a137b05093b81c328cc300c8c53044f3",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_osteoporosi.php": {
-    "mtime": 1791179590.3987794,
-    "seen": 1791216662.4110296,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803877,
     "ast_hash": "66301387c1b0703012e6cd5c16409b28",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_patient.php": {
-    "mtime": 1791179590.3987794,
-    "seen": 1791216662.411031,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.9803915,
     "ast_hash": "d594cd8bb929c1b79bed2c180bfe8229",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_patient_visit.php": {
-    "mtime": 1791179590.3987794,
-    "seen": 1791216662.4110324,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.980395,
     "ast_hash": "1ae97c4c7d4a97752f2f6a95918bbcf5",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_pi.php": {
-    "mtime": 1791179590.3987794,
-    "seen": 1791216662.4110339,
+    "mtime": 1792425012.4669187,
+    "seen": 1792842487.980399,
     "ast_hash": "ec41bf86f6bc5774b991eecb7f46f595",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_rischio.php": {
-    "mtime": 1791179590.3987794,
-    "seen": 1791216662.4110353,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.980403,
     "ast_hash": "8c34212a1d7bdafd0ddf282af6b2b089",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_sino.php": {
-    "mtime": 1791179590.3987794,
-    "seen": 1791216662.411037,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9804068,
     "ast_hash": "088ebe19d70c682139c58215051a479a",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_stato_civile.php": {
-    "mtime": 1791179590.3987794,
-    "seen": 1791216662.4110386,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.980411,
     "ast_hash": "2a907723e5937a81ffe82ac1488031d0",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_statogen.php": {
-    "mtime": 1791179590.3997793,
-    "seen": 1791216662.4110403,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9804146,
     "ast_hash": "2b8041edd070b22ef811dcd09674a783",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_stenosi.php": {
-    "mtime": 1791179590.3997793,
-    "seen": 1791216662.4110417,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.980419,
     "ast_hash": "671557b57904d7ae63b53fc7da9ee981",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_tip.php": {
-    "mtime": 1791179590.3997793,
-    "seen": 1791216662.4110434,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9804227,
     "ast_hash": "7658d758e4bd568a35e9bec817c98ace",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_trattamento.php": {
-    "mtime": 1791179590.3997793,
-    "seen": 1791216662.4110448,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9804263,
     "ast_hash": "ed80ed120a93109cfbde32386bd2fc37",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/edit_trattamento_causa_abbandono.php": {
-    "mtime": 1791179590.3997793,
-    "seen": 1791216662.4110465,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9804304,
     "ast_hash": "a1b2f65a09356f0a924e5f8a3b104afb",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/field_reference_range_resource.php": {
-    "mtime": 1791179590.3997793,
-    "seen": 1791216662.411048,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9804342,
     "ast_hash": "73ec14ec0e9043c4224f58df2d1336cd",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_alcool35s.php": {
-    "mtime": 1791179590.3997793,
-    "seen": 1791216662.4110494,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9804385,
     "ast_hash": "ab830250f985213027f7c6efa20cdc49",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_alcools.php": {
-    "mtime": 1791179590.3997793,
-    "seen": 1791216662.411051,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9804428,
     "ast_hash": "59ba9887a7c84cf8f59f80495d2a6411",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_antidiabeticos.php": {
-    "mtime": 1791179590.3997793,
-    "seen": 1791216662.4110525,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9804466,
     "ast_hash": "0ce40486ef79344c794864ab2c3a1041",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_art_altros.php": {
-    "mtime": 1791179590.3997793,
-    "seen": 1791216662.4110541,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9804506,
     "ast_hash": "37bfc2464cf8a0a63423dc77d3554ecc",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_art_terapias.php": {
-    "mtime": 1791179590.3997793,
-    "seen": 1791216662.4110556,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9804547,
     "ast_hash": "fd0d931d4056d71abb46a90631d2167c",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_cardiopatias.php": {
-    "mtime": 1791179590.3997793,
-    "seen": 1791216662.4110577,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9804585,
     "ast_hash": "64ce0fea9663607fc09c72e6e1887063",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_centers.php": {
-    "mtime": 1791179590.4007792,
-    "seen": 1791216662.4110591,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.980462,
     "ast_hash": "8fecf78306f8d4176fdbf4c313862244",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_cirrosis.php": {
-    "mtime": 1791179590.4007792,
-    "seen": 1791216662.4110608,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9804664,
     "ast_hash": "17e5e29459d7b9e0340dd91796bea486",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_diabetes.php": {
-    "mtime": 1791179590.4007792,
-    "seen": 1791216662.411062,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.980471,
     "ast_hash": "0c3d72ff6158a851c10801991e714de9",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_dislipidemias.php": {
-    "mtime": 1791179590.4007792,
-    "seen": 1791216662.4110637,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.980475,
     "ast_hash": "f3fa3d9787bec28da3ee033b050b1a4f",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_drogas.php": {
-    "mtime": 1791179590.4007792,
-    "seen": 1791216662.411065,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9804788,
     "ast_hash": "8d1b398702b879f3ab224251b4374cb6",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_ecogenicitas.php": {
-    "mtime": 1791179590.4007792,
-    "seen": 1791216662.4110665,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9804823,
     "ast_hash": "3a8d203e3584abf55455bcc0259f5abb",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_endolumiales.php": {
-    "mtime": 1791179590.4007792,
-    "seen": 1791216662.411069,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.980486,
     "ast_hash": "a8626b5b8ecb024173967dd2a6a0b993",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_epatites.php": {
-    "mtime": 1791179590.4007792,
-    "seen": 1791216662.411071,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9804897,
     "ast_hash": "f248290817941c812d48e3e00ad73b4e",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_etnias.php": {
-    "mtime": 1791179590.4007792,
-    "seen": 1791216662.4110734,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9804933,
     "ast_hash": "3abf90178c135f7399c6e1906c4182eb",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_farmacos.php": {
-    "mtime": 1791179590.4007792,
-    "seen": 1791216662.411076,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9804974,
     "ast_hash": "957b3a17016b41b825bd1204417f3588",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_field_reference_ranges.php": {
-    "mtime": 1791179590.4007792,
-    "seen": 1791216662.4110813,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9805014,
     "ast_hash": "4967ce749aa9328b3236af5ec1420714",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_fumos.php": {
-    "mtime": 1791179590.4007792,
-    "seen": 1791216662.4110863,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9805057,
     "ast_hash": "9db859af193b496bb6a7c9e5f05f8333",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_ictuses.php": {
-    "mtime": 1791179590.4017792,
-    "seen": 1791216662.4110906,
+    "mtime": 1792425012.4678676,
+    "seen": 1792842487.9805095,
     "ast_hash": "e13f3521f494724b199c78e8f52b7e95",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_infezione_hivs.php": {
-    "mtime": 1791179590.4017792,
-    "seen": 1791216662.4110942,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.980513,
     "ast_hash": "c687125c1faa41665944eeff5ff414c4",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_infeziones.php": {
-    "mtime": 1791179590.4017792,
-    "seen": 1791216662.4110963,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.980517,
     "ast_hash": "23c3b0ab0e13d0db6a5539f6ac26246f",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_inis.php": {
-    "mtime": 1791179590.4017792,
-    "seen": 1791216662.411099,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.980521,
     "ast_hash": "9bced242df92f0f0067f26b16fbb8a9e",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_insuffrenales.php": {
-    "mtime": 1791179590.4017792,
-    "seen": 1791216662.4111009,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9805245,
     "ast_hash": "2c79211e25c317ff40bdd48666ed2d0c",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_ipertensiones.php": {
-    "mtime": 1791179590.4017792,
-    "seen": 1791216662.4111032,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9805288,
     "ast_hash": "64a25a27ed9f5d31bce32ebdef3aa392",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_ipolipemizzantes.php": {
-    "mtime": 1791179590.4017792,
-    "seen": 1791216662.4111054,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9805326,
     "ast_hash": "2094d51085ed1add16cc711999d38642",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_lavoros.php": {
-    "mtime": 1791179590.4017792,
-    "seen": 1791216662.4111075,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.980537,
     "ast_hash": "d9d1d64e0cb8925a40bda8fea01e5086",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_lipodistrofias.php": {
-    "mtime": 1791179590.4017792,
-    "seen": 1791216662.41111,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9805405,
     "ast_hash": "3a95680ba21da3d53ba83b3792392b73",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_naives.php": {
-    "mtime": 1791179590.4017792,
-    "seen": 1791216662.4111125,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9805443,
     "ast_hash": "def238b9bb24a66627236386715fbc70",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_neoplasias.php": {
-    "mtime": 1791179590.4017792,
-    "seen": 1791216662.411115,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9805481,
     "ast_hash": "d7f561171c01c4a8114521b6da902424",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_nnrtis.php": {
-    "mtime": 1791179590.4017792,
-    "seen": 1791216662.4111176,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.980552,
     "ast_hash": "d3fb1f69e3a4450b6820f008eaac1c60",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_nrtis.php": {
-    "mtime": 1791179590.4027793,
-    "seen": 1791216662.4111197,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9805555,
     "ast_hash": "74d8ebc284e2cf6a6872c983760a0922",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_osteoporosis.php": {
-    "mtime": 1791179590.4027793,
-    "seen": 1791216662.4111216,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9805598,
     "ast_hash": "81b296ac2f8de95bd1f0217e51a0a90a",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_patient_visits.php": {
-    "mtime": 1791179590.4027793,
-    "seen": 1791216662.4111238,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.980564,
     "ast_hash": "fd9458cd804e9cfd8beceae2b9f20b59",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_patients.php": {
-    "mtime": 1791179590.4027793,
-    "seen": 1791216662.4111264,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9805684,
     "ast_hash": "9eee8c25e26c3fc55034100545e5344e",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_pis.php": {
-    "mtime": 1791179590.4027793,
-    "seen": 1791216662.4111285,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9805722,
     "ast_hash": "bc12a7751c52bb221787caf2d5995512",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_rischios.php": {
-    "mtime": 1791179590.4027793,
-    "seen": 1791216662.411131,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9805763,
     "ast_hash": "faae233548e03eb7c835065b155e4655",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_sinos.php": {
-    "mtime": 1791179590.4027793,
-    "seen": 1791216662.4111333,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9805806,
     "ast_hash": "822d484bde449735bc0eb2620610ccce",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_stato_civiles.php": {
-    "mtime": 1791179590.4027793,
-    "seen": 1791216662.411136,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9805846,
     "ast_hash": "04d1ca2cf52fb5b5b8bead6501cb42a5",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_statogens.php": {
-    "mtime": 1791179590.4027793,
-    "seen": 1791216662.4111383,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9805882,
     "ast_hash": "04ae4d522ec3cfa34ccd2d9f3be9df00",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_stenosis.php": {
-    "mtime": 1791179590.4027793,
-    "seen": 1791216662.4111404,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.980592,
     "ast_hash": "382d09bd179244d1f41f7e5b785712ef",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_tips.php": {
-    "mtime": 1791179590.4027793,
-    "seen": 1791216662.4111426,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.980596,
     "ast_hash": "a533a10075c4626c659d0365a761fcda",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_trattamento_causa_abbandonos.php": {
-    "mtime": 1791179590.4027793,
-    "seen": 1791216662.4111452,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9805996,
     "ast_hash": "3240daadf1074a71a4bc38f3ab1e1fdb",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_trattamentos.php": {
-    "mtime": 1791179590.4037793,
-    "seen": 1791216662.4111476,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9806035,
     "ast_hash": "b2220dfec04137abe97198f990e5ce79",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/list_users.php": {
-    "mtime": 1791179590.4037793,
-    "seen": 1791216662.41115,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9806073,
     "ast_hash": "dd0619760262cb959e2817e9bc4785ab",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/patient_resource.php": {
-    "mtime": 1791179590.4037793,
-    "seen": 1791216662.4111526,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.980611,
     "ast_hash": "80aaaa8552a9470916beb86ddc10047c",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/patient_visit_resource.php": {
-    "mtime": 1791179590.4037793,
-    "seen": 1791216662.4111547,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.980615,
     "ast_hash": "90e535b0ff293e84c84935f3941cca25",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/treatment_annotations_relation_manager.php": {
-    "mtime": 1791179590.4037793,
-    "seen": 1791216662.411157,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9806185,
     "ast_hash": "816a88fef6acca90991d9a2b5e2fc002",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/user_manual.php": {
-    "mtime": 1791179590.4037793,
-    "seen": 1791216662.4111593,
+    "mtime": 1792425012.4688678,
+    "seen": 1792842487.9806225,
     "ast_hash": "da55272d3baaf9a0b1303ddf85344576",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/user_resource.php": {
-    "mtime": 1791179590.4037793,
-    "seen": 1791216662.4111617,
+    "mtime": 1792425012.4698677,
+    "seen": 1792842487.980626,
     "ast_hash": "fc5da3121ae4f4bf99a0c769cc84c5c9",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/vibe_coding_prompt.php": {
-    "mtime": 1791179590.4047792,
-    "seen": 1791216662.4111638,
+    "mtime": 1792425012.4698677,
+    "seen": 1792842487.98063,
     "ast_hash": "43f6c18e85f56689aca0d2d6a3bc41ed",
     "semantic_hash": ""
   },
   "lang/it/filament/admin/visits_relation_manager.php": {
-    "mtime": 1791179590.4047792,
-    "seen": 1791216662.4111662,
+    "mtime": 1792425012.4698677,
+    "seen": 1792842487.9806335,
     "ast_hash": "b3a168f06f47b9dd46eb163663a37a0a",
     "semantic_hash": ""
   },
   "lang/vendor/filament-socialite/it/auth.php": {
-    "mtime": 1791179590.4047792,
-    "seen": 1791216662.4111686,
+    "mtime": 1792425012.4701765,
+    "seen": 1792842487.980638,
     "ast_hash": "b7119ca7118259267bbc4d84ffa4380f",
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1791179590.4047792,
-    "seen": 1791216662.4111707,
+    "mtime": 1792425012.4701765,
+    "seen": 1792842487.980642,
     "ast_hash": "59ec21ff5f1f5b3acb8f2f82c8b6dc77",
     "semantic_hash": ""
   },
   "public/index.php": {
-    "mtime": 1791179590.4107792,
-    "seen": 1791216662.4111733,
+    "mtime": 1792425012.4718678,
+    "seen": 1792842487.9806461,
     "ast_hash": "d8eda274115af5fd2aaa8230af329ef7",
     "semantic_hash": ""
   },
   "resources/js/app.js": {
-    "mtime": 1791179590.4107792,
-    "seen": 1791216662.4111762,
+    "mtime": 1792425012.4728677,
+    "seen": 1792842487.9806502,
     "ast_hash": "b519d08ef66fd54910edbedba6181ec2",
     "semantic_hash": ""
   },
   "resources/views/filament/pages/documentation/user-manual.blade.php": {
-    "mtime": 1791179590.4117792,
-    "seen": 1791216662.4111788,
+    "mtime": 1792425012.4732423,
+    "seen": 1792842487.9806535,
     "ast_hash": "a30380095e4de7dbabbd0c95ee10a889",
     "semantic_hash": ""
   },
   "resources/views/filament/pages/documentation/vibe-coding-prompt.blade.php": {
-    "mtime": 1791179590.4117792,
-    "seen": 1791216662.411182,
+    "mtime": 1792425012.473313,
+    "seen": 1792842487.9806576,
     "ast_hash": "1708f8a3ad5c072a2c21ecc529248fd7",
     "semantic_hash": ""
   },
   "resources/views/filament/widgets/app-switcher-widget.blade.php": {
-    "mtime": 1791179590.412779,
-    "seen": 1791216662.4111845,
+    "mtime": 1792425012.473313,
+    "seen": 1792842487.9806614,
     "ast_hash": "d60e4b12c9b1b2c433764cff31d0b072",
     "semantic_hash": ""
   },
   "resources/views/welcome.blade.php": {
-    "mtime": 1791179590.412779,
-    "seen": 1791216662.4111872,
+    "mtime": 1792425012.473313,
+    "seen": 1792842487.9806654,
     "ast_hash": "da56402fdf5bec86a05148aab9f18155",
     "semantic_hash": ""
   },
   "routes/api.php": {
-    "mtime": 1791179590.413779,
-    "seen": 1791216662.41119,
+    "mtime": 1792425012.473313,
+    "seen": 1792842487.9806697,
     "ast_hash": "766e194135a4844c8fe0d253c994de56",
     "semantic_hash": ""
   },
   "routes/console.php": {
-    "mtime": 1791179590.413779,
-    "seen": 1791216662.4111924,
+    "mtime": 1792425012.4735725,
+    "seen": 1792842487.9806733,
     "ast_hash": "3c6ce2e6d16444282b24a9aa63885563",
     "semantic_hash": ""
   },
   "routes/web.php": {
-    "mtime": 1791179590.414779,
-    "seen": 1791216662.4111958,
+    "mtime": 1792425012.4735725,
+    "seen": 1792842487.9806774,
     "ast_hash": "010cdd489cf722b7dfa1c79ac8add62c",
     "semantic_hash": ""
   },
   "tests/Feature/AppSwitcherWidgetTest.php": {
-    "mtime": 1791179590.415779,
-    "seen": 1791216662.4111977,
+    "mtime": 1792425012.4743302,
+    "seen": 1792842487.9806814,
     "ast_hash": "527f9436d8b2769972fc6e03acc2b63c",
     "semantic_hash": ""
   },
   "tests/Feature/ExampleTest.php": {
-    "mtime": 1791179590.415779,
-    "seen": 1791216662.4111993,
+    "mtime": 1792425012.4743938,
+    "seen": 1792842487.980685,
     "ast_hash": "0f4d91c9c5bbcd4e2f46cf885acb7fb6",
     "semantic_hash": ""
   },
   "tests/Feature/SsoTokenApiControllerTest.php": {
-    "mtime": 1791179590.415779,
-    "seen": 1791216662.4112008,
+    "mtime": 1792425012.4743938,
+    "seen": 1792842487.980689,
     "ast_hash": "0d388b240fe2dee54cfa6d12af65dee8",
     "semantic_hash": ""
   },
   "tests/TestCase.php": {
-    "mtime": 1791179590.416779,
-    "seen": 1791216662.4112027,
+    "mtime": 1792425012.4743938,
+    "seen": 1792842487.980693,
     "ast_hash": "7e567dc27e68d5b57bae16af07f68907",
     "semantic_hash": ""
   },
   "tests/Unit/ExampleTest.php": {
-    "mtime": 1791179590.416779,
-    "seen": 1791216662.4112043,
+    "mtime": 1792425012.4743938,
+    "seen": 1792842487.9806967,
     "ast_hash": "3f679e9508c834f0ad95943455fcd836",
     "semantic_hash": ""
   },
   "vite.config.js": {
-    "mtime": 1791179590.416779,
-    "seen": 1791216662.411206,
+    "mtime": 1792425012.4743938,
+    "seen": 1792842487.9807007,
     "ast_hash": "8ef22d264079dab94f6d36526b0cb1bc",
     "semantic_hash": ""
   },
   ".claude/skills/deploying-to-cloud/SKILL.md": {
-    "mtime": 1791179590.301781,
-    "seen": 1791216662.4112074,
-    "ast_hash": "b062652acaac0f16fee14b75dd3a8256",
+    "mtime": 1792433771.7345648,
+    "seen": 1792842487.9807048,
+    "ast_hash": "b346c1d63426ea8eca08da6f993aa342",
     "semantic_hash": ""
   },
   ".claude/skills/deploying-to-cloud/reference/checklists.md": {
-    "mtime": 1791179590.301781,
-    "seen": 1791216662.4112089,
+    "mtime": 1792433771.7347515,
+    "seen": 1792842487.9807086,
     "ast_hash": "54a1af2e1cf30ea952c13230394d2934",
     "semantic_hash": ""
   },
   ".claude/skills/infer-conventions/SKILL.md": {
-    "mtime": 1791179590.301781,
-    "seen": 1791216662.4112105,
+    "mtime": 1792433771.7340112,
+    "seen": 1792842487.9807124,
     "ast_hash": "bba7ba34be447fb1004920514cf86dcf",
     "semantic_hash": ""
   },
   ".claude/skills/infer-conventions/references/checklist.md": {
-    "mtime": 1791179590.301781,
-    "seen": 1791216662.411212,
+    "mtime": 1792433771.7335634,
+    "seen": 1792842487.9807162,
     "ast_hash": "f1dee4368df8baa779d53ddd0acc3ea8",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/SKILL.md": {
-    "mtime": 1791179590.301781,
-    "seen": 1791216662.4112136,
+    "mtime": 1792433771.7355497,
+    "seen": 1792842487.9807208,
     "ast_hash": "facaad34ca71f6f9bd7818e2ebf281ed",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/advanced-queries.md": {
-    "mtime": 1791179590.3027809,
-    "seen": 1791216662.4112148,
+    "mtime": 1792433771.7399673,
+    "seen": 1792842487.9807248,
     "ast_hash": "828e2a0e4bb10ef36bed4ec4aec03519",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/architecture.md": {
-    "mtime": 1791179590.3027809,
-    "seen": 1791216662.4112165,
+    "mtime": 1792433771.7383525,
+    "seen": 1792842487.9807284,
     "ast_hash": "77e9221159f77a3a9f2021285ec350ca",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/blade-views.md": {
-    "mtime": 1791179590.3027809,
-    "seen": 1791216662.411218,
+    "mtime": 1792433771.7368672,
+    "seen": 1792842487.980732,
     "ast_hash": "b6a9841dcd5337948ca51d40a3c9d8bd",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/caching.md": {
-    "mtime": 1791179590.3027809,
-    "seen": 1791216662.4112194,
+    "mtime": 1792433771.7412586,
+    "seen": 1792842487.980736,
     "ast_hash": "76bb5c2a51844680534506af5e8737d8",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/collections.md": {
-    "mtime": 1791179590.3027809,
-    "seen": 1791216662.411221,
+    "mtime": 1792433771.7411432,
+    "seen": 1792842487.9807398,
     "ast_hash": "1f7aec8f30542b0b6e667a3b4a8666a9",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/config.md": {
-    "mtime": 1791179590.3027809,
-    "seen": 1791216662.4112225,
+    "mtime": 1792433771.7367327,
+    "seen": 1792842487.9807436,
     "ast_hash": "f044bca7e23680a8513885da9a6d73bf",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/db-performance.md": {
-    "mtime": 1791179590.3027809,
-    "seen": 1791216662.4112241,
+    "mtime": 1792433771.7386134,
+    "seen": 1792842487.9807475,
     "ast_hash": "63b5160e60a74ddd56e84a13996b2218",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/eloquent.md": {
-    "mtime": 1791179590.3037808,
-    "seen": 1791216662.4112253,
+    "mtime": 1792433771.7357635,
+    "seen": 1792842487.980751,
     "ast_hash": "bd894089f77c7413a7b4882cc5290bd4",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/error-handling.md": {
-    "mtime": 1791179590.3037808,
-    "seen": 1791216662.411227,
+    "mtime": 1792433771.7398465,
+    "seen": 1792842487.9807556,
     "ast_hash": "6b6ac1b84e7eaa6114c8cf84d877a75f",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/events-notifications.md": {
-    "mtime": 1791179590.3037808,
-    "seen": 1791216662.4112284,
+    "mtime": 1792433771.7421255,
+    "seen": 1792842487.9807591,
     "ast_hash": "00ad097cd2e9f524bf63c8a69a693b67",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/http-client.md": {
-    "mtime": 1791179590.3037808,
-    "seen": 1791216662.4112298,
+    "mtime": 1792433771.7432048,
+    "seen": 1792842487.9807632,
     "ast_hash": "5e5f4ee902ce35010fb203fe4731c685",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/mail.md": {
-    "mtime": 1791179590.3037808,
-    "seen": 1791216662.4112315,
+    "mtime": 1792433771.740969,
+    "seen": 1792842487.9807673,
     "ast_hash": "737748d709446fe01299157812370937",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/migrations.md": {
-    "mtime": 1791179590.3037808,
-    "seen": 1791216662.411233,
+    "mtime": 1792433771.7395828,
+    "seen": 1792842487.9807713,
     "ast_hash": "371f145e3a4dad420fd6c50c28fc90ff",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/queue-jobs.md": {
-    "mtime": 1791179590.3037808,
-    "seen": 1791216662.4112346,
+    "mtime": 1792433771.7369971,
+    "seen": 1792842487.9807749,
     "ast_hash": "0e785c5767bb0e21eef7e16623bfd13c",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/routing.md": {
-    "mtime": 1791179590.3047807,
-    "seen": 1791216662.4112358,
+    "mtime": 1792433771.7384727,
+    "seen": 1792842487.9807894,
     "ast_hash": "6d474169fb509df69ac8afe540647ac4",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/scheduling.md": {
-    "mtime": 1791179590.3047807,
-    "seen": 1791216662.4112375,
+    "mtime": 1792433771.7430484,
+    "seen": 1792842487.9807978,
     "ast_hash": "3e6fccf7e988edbcf164268d19b64266",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/security.md": {
-    "mtime": 1791179590.3047807,
-    "seen": 1791216662.4112387,
+    "mtime": 1792433771.738143,
+    "seen": 1792842487.980801,
     "ast_hash": "ab058effac7e2a23e085e2459849800b",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/style.md": {
-    "mtime": 1791179590.3047807,
-    "seen": 1791216662.4112403,
+    "mtime": 1792433771.7401109,
+    "seen": 1792842487.980805,
     "ast_hash": "7cbf5becc35586f8d90b0e1a524ac5aa",
     "semantic_hash": ""
   },
   ".claude/skills/laravel-best-practices/rules/validation.md": {
-    "mtime": 1791179590.3047807,
-    "seen": 1791216662.411242,
+    "mtime": 1792433771.7397316,
+    "seen": 1792842487.9808087,
     "ast_hash": "7f226f5597fe24b57c12c3c1fd40f88c",
     "semantic_hash": ""
   },
   ".claude/skills/socialite-development/SKILL.md": {
-    "mtime": 1791179590.3047807,
-    "seen": 1791216662.4112432,
+    "mtime": 1792433771.7559512,
+    "seen": 1792842487.9808125,
     "ast_hash": "31c9af5fd9c827233d4bcd85d688062a",
     "semantic_hash": ""
   },
   ".claude/skills/tailwindcss-development/SKILL.md": {
-    "mtime": 1791179590.305781,
-    "seen": 1791216662.411245,
+    "mtime": 1792433771.756357,
+    "seen": 1792842487.9808164,
     "ast_hash": "40c70cec955c744d19d8aba21f7bffd4",
     "semantic_hash": ""
   },
   ".claude/skills/testing-best-practices/SKILL.md": {
-    "mtime": 1791179590.305781,
-    "seen": 1791216662.4112465,
-    "ast_hash": "bdd32b0deb861e8c6ca6a7fd2cd8e861",
+    "mtime": 1792433771.7439754,
+    "seen": 1792842487.98082,
+    "ast_hash": "22d00186bb1d248f6e11aedefbe3a73f",
     "semantic_hash": ""
   },
   ".claude/skills/testing-best-practices/rules/assertions.md": {
-    "mtime": 1791179590.305781,
-    "seen": 1791216662.4112482,
-    "ast_hash": "df47b7220a2fab240c5d8b088ca02141",
+    "mtime": 1792433771.7543752,
+    "seen": 1792842487.9808235,
+    "ast_hash": "e9a9be9043e33a7befbd5c6bc4514e53",
     "semantic_hash": ""
   },
   ".claude/skills/testing-best-practices/rules/endpoint-tests.md": {
-    "mtime": 1791179590.305781,
-    "seen": 1791216662.4112494,
+    "mtime": 1792433771.7478063,
+    "seen": 1792842487.9808273,
     "ast_hash": "ee4ff86a95e4bafb26b15911a81b1a50",
     "semantic_hash": ""
   },
   ".claude/skills/testing-best-practices/rules/finding-features.md": {
-    "mtime": 1791179590.305781,
-    "seen": 1791216662.4112513,
+    "mtime": 1792433771.755575,
+    "seen": 1792842487.9808311,
     "ast_hash": "6ecf3cc96fc90eeff858b1f2295ad3f4",
     "semantic_hash": ""
   },
   ".claude/skills/testing-best-practices/rules/isolation.md": {
-    "mtime": 1791179590.305781,
-    "seen": 1791216662.411253,
+    "mtime": 1792433771.750193,
+    "seen": 1792842487.9808347,
     "ast_hash": "feba049ff2ef2ab43af2d23e226bbf33",
     "semantic_hash": ""
   },
   ".claude/skills/testing-best-practices/rules/naming.md": {
-    "mtime": 1791179590.305781,
-    "seen": 1791216662.4112546,
+    "mtime": 1792433771.7490318,
+    "seen": 1792842487.9808385,
     "ast_hash": "d7ec61dfc078f9c815fe511e7bb8c11c",
     "semantic_hash": ""
   },
   ".claude/skills/testing-best-practices/rules/performance.md": {
-    "mtime": 1791179590.305781,
-    "seen": 1791216662.411256,
-    "ast_hash": "9fb661575bc3253b113874e69f310930",
+    "mtime": 1792433771.7530587,
+    "seen": 1792842487.9808428,
+    "ast_hash": "68414a906d7c9f7c4643048454d10268",
     "semantic_hash": ""
   },
   ".claude/skills/testing-best-practices/rules/review.md": {
-    "mtime": 1791179590.3067808,
-    "seen": 1791216662.4112577,
+    "mtime": 1792433771.7452471,
+    "seen": 1792842487.9808466,
     "ast_hash": "a09aef8c319586bc8592d1f5b1cb92ea",
     "semantic_hash": ""
   },
   ".claude/skills/testing-best-practices/rules/security.md": {
-    "mtime": 1791179590.3067808,
-    "seen": 1791216662.4112594,
+    "mtime": 1792433771.7463908,
+    "seen": 1792842487.9808505,
     "ast_hash": "993d39e4411c0c1ba5c0802a2edbd33f",
     "semantic_hash": ""
   },
   ".claude/skills/testing-best-practices/rules/test-data.md": {
-    "mtime": 1791179590.3067808,
-    "seen": 1791216662.4112608,
+    "mtime": 1792433771.7513459,
+    "seen": 1792842487.9808543,
     "ast_hash": "edea9b226693e250cbc97f3e09ea455d",
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1791179590.3077807,
-    "seen": 1791216662.4112628,
+    "mtime": 1792425012.371866,
+    "seen": 1792842487.9808583,
     "ast_hash": "4b049823bd463671a9cbbe6d0fd9a302",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1791179590.3077807,
-    "seen": 1791216662.411264,
-    "ast_hash": "02fae6cbc8ed5df9f200a354b0a02bb9",
+    "mtime": 1792433771.6208076,
+    "seen": 1792842487.9808621,
+    "ast_hash": "90ac6b8d32570b3887c8ecdbad1453a8",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1791179590.3077807,
-    "seen": 1791216662.4112656,
+    "mtime": 1792425012.371866,
+    "seen": 1792842487.9808662,
     "ast_hash": "d2661a31fed7f254f5b7d3b6fe19330a",
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1791179590.4107792,
-    "seen": 1791216662.411267,
+    "mtime": 1792425012.4718678,
+    "seen": 1792842487.9808698,
     "ast_hash": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "semantic_hash": ""
   },
   "public/utenti.txt": {
-    "mtime": 1791179590.4107792,
-    "seen": 1791216662.411269,
+    "mtime": 1792425012.4718678,
+    "seen": 1792842487.980874,
     "ast_hash": "fc502c398d3d05756ca5885232a72a7a",
     "semantic_hash": ""
   },
   "resources/docs/manuale-utente.html": {
-    "mtime": 1791179590.4107792,
-    "seen": 1791216662.4112704,
+    "mtime": 1792425012.4728036,
+    "seen": 1792842487.980878,
     "ast_hash": "20b58b14b3af5bd0d34e99eb081d012a",
     "semantic_hash": ""
   },
   "resources/docs/prompt-vibe-coding.md": {
-    "mtime": 1791179590.4107792,
-    "seen": 1791216662.411272,
+    "mtime": 1792425012.4728677,
+    "seen": 1792842487.980882,
     "ast_hash": "b684709814809c54e432c9b016925762",
     "semantic_hash": ""
   },
   "public/images/DAIshboard.png": {
-    "mtime": 1791179590.4057791,
-    "seen": 1791216662.4112735,
+    "mtime": 1792425012.4704218,
+    "seen": 1792842487.9810338,
     "ast_hash": "4edb3c883864ecd2c485892554b3dbc3",
     "semantic_hash": ""
   },
   "public/images/clinicaldb.png": {
-    "mtime": 1791179590.4057791,
-    "seen": 1791216662.4112751,
+    "mtime": 1792425012.4706953,
+    "seen": 1792842487.981038,
     "ast_hash": "2f971b5a153dbda6fe8ef3d728c80203",
     "semantic_hash": ""
   },
   "public/images/dashboard-banner.jpg": {
-    "mtime": 1791179590.4067793,
-    "seen": 1791216662.411277,
+    "mtime": 1792425012.4708679,
+    "seen": 1792842487.9810424,
     "ast_hash": "98dd1330fa6685e9edd1a530b23550b7",
     "semantic_hash": ""
   },
   "public/images/dbai_logo.jpg": {
-    "mtime": 1791179590.4077792,
-    "seen": 1791216662.4112785,
+    "mtime": 1792425012.4708679,
+    "seen": 1792842487.9810462,
     "ast_hash": "a748377f49336c03ee08be905bceac5a",
     "semantic_hash": ""
   },
   "public/images/unicoaiact.png": {
-    "mtime": 1791179590.4087791,
-    "seen": 1791216662.4112802,
+    "mtime": 1792425012.4708679,
+    "seen": 1792842487.9810503,
     "ast_hash": "4487da989b74bd09ea9ab04b7acb7889",
     "semantic_hash": ""
   },
   "public/images/unicobpm.png": {
-    "mtime": 1791179590.4087791,
-    "seen": 1791216662.4112818,
+    "mtime": 1792425012.4708679,
+    "seen": 1792842487.9810545,
     "ast_hash": "c7f03decf486eb843434056cfc93f754",
     "semantic_hash": ""
   },
   "public/images/unicocall.png": {
-    "mtime": 1791179590.4087791,
-    "seen": 1791216662.4112837,
+    "mtime": 1792425012.4718678,
+    "seen": 1792842487.9810584,
     "ast_hash": "6040b9d8f4a6ecd7a5e13ecc88143c26",
     "semantic_hash": ""
   },
   "public/images/unicocoge.png": {
-    "mtime": 1791179590.4087791,
-    "seen": 1791216662.411285,
+    "mtime": 1792425012.4718678,
+    "seen": 1792842487.9810627,
     "ast_hash": "2f608e329b8bfb4b68db2ae05ce73f6f",
     "semantic_hash": ""
   },
   "public/images/unicoloan.png": {
-    "mtime": 1791179590.4087791,
-    "seen": 1791216662.4112868,
+    "mtime": 1792425012.4718678,
+    "seen": 1792842487.9810672,
     "ast_hash": "2968775132b072c8fc521cbd3695fa58",
     "semantic_hash": ""
   },
   "public/images/unicooam.png": {
-    "mtime": 1791179590.409779,
-    "seen": 1791216662.4112883,
+    "mtime": 1792425012.4718678,
+    "seen": 1792842487.981071,
     "ast_hash": "946dca4abbf625187c427aac562ba5b6",
     "semantic_hash": ""
   },
   "public/images/unicowhistle.png": {
-    "mtime": 1791179590.409779,
-    "seen": 1791216662.41129,
+    "mtime": 1792425012.4718678,
+    "seen": 1792842487.9810753,
     "ast_hash": "d2f5e4e4400d9d803162fea7a1171c59",
+    "semantic_hash": ""
+  },
+  "database/migrations/2026_10_20_235900_ensure_clinicaldb_schema.php": {
+    "mtime": 1792478466.451383,
+    "seen": 1792842487.9799926,
+    "ast_hash": "4c6059b66c22f07406f03dad78fb0d36",
+    "semantic_hash": ""
+  },
+  "public/brand/icons/clinical-db-512.png": {
+    "mtime": 1792510682.6708279,
+    "seen": 1792842487.9808855,
+    "ast_hash": "f369907c198c43581fb6e32eb0bb7872",
+    "semantic_hash": ""
+  },
+  "public/brand/icons/clinical-db-64.png": {
+    "mtime": 1792510682.6686778,
+    "seen": 1792842487.9809039,
+    "ast_hash": "9cbd8880268b8523fdc572be25d07451",
+    "semantic_hash": ""
+  },
+  "public/brand/icons/clinical-db.png": {
+    "mtime": 1792510682.6663892,
+    "seen": 1792842487.9809074,
+    "ast_hash": "f369907c198c43581fb6e32eb0bb7872",
+    "semantic_hash": ""
+  },
+  "public/brand/logos/clinical-db.jpg": {
+    "mtime": 1792510682.662494,
+    "seen": 1792842487.980911,
+    "ast_hash": "a00938c790eed792107351656ff3e5fa",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/clinical-db-64.png": {
+    "mtime": 1792510682.6885962,
+    "seen": 1792842487.9809144,
+    "ast_hash": "9cbd8880268b8523fdc572be25d07451",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/dai-shboard-64.png": {
+    "mtime": 1792510682.6887302,
+    "seen": 1792842487.9809175,
+    "ast_hash": "49c1898db2c5d1bcf15c0b6df9fe2464",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/unico-agent-64.png": {
+    "mtime": 1792510682.6888356,
+    "seen": 1792842487.9809208,
+    "ast_hash": "26be2c5c2da74ee024c6a2235aad7c18",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/unico-aiact-64.png": {
+    "mtime": 1792510682.688938,
+    "seen": 1792842487.980924,
+    "ast_hash": "048f51b9e18a25ae7a5b8b4261bead3f",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/unico-bpm-64.png": {
+    "mtime": 1792510682.6890612,
+    "seen": 1792842487.980927,
+    "ast_hash": "f1a04377d10dbb99780bba772fc690cc",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/unico-call-64.png": {
+    "mtime": 1792510682.6891491,
+    "seen": 1792842487.9809303,
+    "ast_hash": "e536a85077d0736083f7eb9362d03409",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/unico-coge-64.png": {
+    "mtime": 1792510682.6892333,
+    "seen": 1792842487.9809334,
+    "ast_hash": "0b61a59520d90709deb25b752fec2880",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/unico-consultant-64.png": {
+    "mtime": 1792510682.6893175,
+    "seen": 1792842487.980937,
+    "ast_hash": "120248773d9a596021ce15bce32cb8a3",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/unico-cyber-64.png": {
+    "mtime": 1792510682.6894035,
+    "seen": 1792842487.98094,
+    "ast_hash": "a0b35b3809fe99b0654e04ef325a9e24",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/unico-dora-64.png": {
+    "mtime": 1792510682.6895227,
+    "seen": 1792842487.9809432,
+    "ast_hash": "de0779c1e42791438eb8e636ae4e081f",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/unico-esg-64.png": {
+    "mtime": 1792510682.6896217,
+    "seen": 1792842487.980946,
+    "ast_hash": "db50e320f565d7d71c8a7e0fbd01439d",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/unico-fesr-64.png": {
+    "mtime": 1792510682.6897426,
+    "seen": 1792842487.9809492,
+    "ast_hash": "750452574386743beb6b0be1ed445bf5",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/unico-finance-64.png": {
+    "mtime": 1792510682.6898525,
+    "seen": 1792842487.9809523,
+    "ast_hash": "b71e7798702512f3e838cf0da0b5e5c3",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/unico-fse-64.png": {
+    "mtime": 1792510682.689961,
+    "seen": 1792842487.9809554,
+    "ast_hash": "b13e96e7d63ac4051c14502e94da354d",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/unico-gdpr-64.png": {
+    "mtime": 1792510682.6900632,
+    "seen": 1792842487.9809585,
+    "ast_hash": "803bb5c20f23d0d34297ae4be7d317fa",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/unico-nis-64.png": {
+    "mtime": 1792510682.6901994,
+    "seen": 1792842487.9809613,
+    "ast_hash": "fbf350ce1cf9fbf4ae4bd25c1b970532",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/unico-oam-64.png": {
+    "mtime": 1792510682.690319,
+    "seen": 1792842487.9809647,
+    "ast_hash": "76c04206e51dcf2bb4c068a29314b761",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/unico-pqc-64.png": {
+    "mtime": 1792510682.6904254,
+    "seen": 1792842487.9809678,
+    "ast_hash": "9948986a8bd8f9c306f9b316ae47c3f3",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/icons/unico-whistle-64.png": {
+    "mtime": 1792510682.6905255,
+    "seen": 1792842487.9809709,
+    "ast_hash": "1ee7958dbcd4984718ab729e9db9d1cd",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/clinical-db.jpg": {
+    "mtime": 1792510682.6779227,
+    "seen": 1792842487.9809737,
+    "ast_hash": "a00938c790eed792107351656ff3e5fa",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/dai-shboard.jpg": {
+    "mtime": 1792510682.6784027,
+    "seen": 1792842487.9809768,
+    "ast_hash": "1ae5e84a22d42514c74f739bb4a5d249",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/unico-agent.jpg": {
+    "mtime": 1792510682.678746,
+    "seen": 1792842487.98098,
+    "ast_hash": "7aed44f7f6202db6f0c9fad64cb93a99",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/unico-aiact.jpg": {
+    "mtime": 1792510682.6791298,
+    "seen": 1792842487.980983,
+    "ast_hash": "421d11666204002044ddd9771de3c377",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/unico-bpm.jpg": {
+    "mtime": 1792510682.6794608,
+    "seen": 1792842487.980986,
+    "ast_hash": "d73bfc848a7f1117817ab01534d2f0c8",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/unico-call.jpg": {
+    "mtime": 1792510682.679735,
+    "seen": 1792842487.980989,
+    "ast_hash": "b2c6a4789aacd4c90bcda2b792d52947",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/unico-coge.jpg": {
+    "mtime": 1792510682.6800935,
+    "seen": 1792842487.9809923,
+    "ast_hash": "6de19df9ec1d3410de4f675452e5b644",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/unico-consultant.jpg": {
+    "mtime": 1792510682.680454,
+    "seen": 1792842487.9809954,
+    "ast_hash": "5eb18388e20ae2bde4970858a8f1cc26",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/unico-cyber.jpg": {
+    "mtime": 1792510682.6804943,
+    "seen": 1792842487.9809988,
+    "ast_hash": "bd23268920f363daaba68cd4cef8c45b",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/unico-dora.jpg": {
+    "mtime": 1792510682.6814067,
+    "seen": 1792842487.9810016,
+    "ast_hash": "c6f006cc0fc7f53412c77ae0f21090f2",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/unico-esg.jpg": {
+    "mtime": 1792510682.6817856,
+    "seen": 1792842487.9810047,
+    "ast_hash": "e3e893e1d02d5537d334029e3a9c2247",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/unico-fesr.jpg": {
+    "mtime": 1792510682.6822026,
+    "seen": 1792842487.9810078,
+    "ast_hash": "90a4f792a89dc2994040eaa9a3970e02",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/unico-finance.jpg": {
+    "mtime": 1792510682.6825776,
+    "seen": 1792842487.981011,
+    "ast_hash": "c95d5a20e813c0ec8aea6312f1d2342e",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/unico-fse.jpg": {
+    "mtime": 1792510682.6829753,
+    "seen": 1792842487.981014,
+    "ast_hash": "2b11d78a68f9ebc0e8cf9a5a9956db09",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/unico-gdpr.jpg": {
+    "mtime": 1792510682.6833522,
+    "seen": 1792842487.9810174,
+    "ast_hash": "622bbe0773d04bc2de1ce70634ece6da",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/unico-nis.jpg": {
+    "mtime": 1792510682.6837122,
+    "seen": 1792842487.9810207,
+    "ast_hash": "57dfc165ca133a6b6ac9c65c80a159fa",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/unico-oam.jpg": {
+    "mtime": 1792510682.6841588,
+    "seen": 1792842487.9810236,
+    "ast_hash": "c1d83c7555b26f01fe20ed9d8cc079aa",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/unico-pqc.jpg": {
+    "mtime": 1792510682.6845033,
+    "seen": 1792842487.9810266,
+    "ast_hash": "625b241a712dc2312b6a7d644be57a21",
+    "semantic_hash": ""
+  },
+  "public/brand/suite/logos/unico-whistle.jpg": {
+    "mtime": 1792510682.6848786,
+    "seen": 1792842487.98103,
+    "ast_hash": "ae38e7f5034b8ef84299799eac2e0e59",
     "semantic_hash": ""
   }
 }
