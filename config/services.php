@@ -50,20 +50,8 @@ return [
         'password' => env('IMAP_PASSWORD'),
     ],
 
-    /*
-    |--------------------------------------------------------------------------
-    | App esterne raggiungibili da AppSwitcherWidget
-    |--------------------------------------------------------------------------
-    |
-    | App esterne verso cui ClinicalDB può proporre il passaggio con login
-    | automatico (bridge SSO già in produzione tra UnicoBPM e Dashboard).
-    |
-    */
-    'apps' => [
-        'daishboard' => [
-            'url' => env('DAISHBOARD_API_URL', 'https://dashboard.archiprevaleat.com'),
-            'label' => 'Dashboard',
-        ],
+    'grafici' => [
+        'url' => env('GRAFICI_URL', 'https://daishboard.hassisto.com'),
     ],
 
 ];

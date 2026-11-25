@@ -4,7 +4,6 @@ namespace App\Providers\Filament;
 
 use App\Filament\Pages\Auth\EditProfile;
 use App\Filament\Pages\Dashboard;
-use App\Filament\Widgets\AppSwitcherWidget;
 use App\Filament\Widgets\RecentlyModifiedPatients;
 use App\Filament\Widgets\RecentlyModifiedVisits;
 use App\Models\User;
@@ -19,6 +18,7 @@ use Filament\Navigation\NavigationItem;
 use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
+use Filament\Support\Icons\Heroicon;
 use Filament\Widgets\AccountWidget;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
@@ -66,8 +66,10 @@ class AdminPanelProvider extends PanelProvider
                 NavigationGroup::make('Manuali'),
             ])
             ->navigationItems([
-                NavigationItem::make('Dashboard')
-                    ->url('https://dashboard.archiprevaleat.com', shouldOpenInNewTab: true),
+                NavigationItem::make('Grafici')
+                    ->icon(Heroicon::OutlinedChartBar)
+                    ->sort(100)
+                    ->url(fn (): string => route('grafici'), shouldOpenInNewTab: true),
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
@@ -77,7 +79,6 @@ class AdminPanelProvider extends PanelProvider
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
                 //   AccountWidget::class,
-                AppSwitcherWidget::class,
                 RecentlyModifiedPatients::class,
                 RecentlyModifiedVisits::class,
             ])
