@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Neoplasia',
-    'title' => 'Edit Neoplasia',
-
+    'navigation_label' => 'Modifica Neoplasia',
+    'title' => 'Modifica Neoplasia',
 ];

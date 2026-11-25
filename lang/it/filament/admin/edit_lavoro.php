@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Lavoro',
-    'title' => 'Edit Lavoro',
-
+    'navigation_label' => 'Modifica Lavoro',
+    'title' => 'Modifica Lavoro',
 ];

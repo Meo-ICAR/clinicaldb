@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Nrti',
-    'title' => 'Edit Nrti',
-
+    'navigation_label' => 'Modifica NRTI',
+    'title' => 'Modifica NRTI',
 ];

@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'List Pis',
-    'title' => 'List Pis',
-
+    'navigation_label' => 'PI',
+    'title' => 'PI',
 ];

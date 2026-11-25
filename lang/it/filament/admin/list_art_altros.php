@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'List Art Altros',
-    'title' => 'List Art Altros',
-
+    'navigation_label' => 'ART altro',
+    'title' => 'ART altro',
 ];

@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'List Inis',
-    'title' => 'List Inis',
-
+    'navigation_label' => 'INI',
+    'title' => 'INI',
 ];

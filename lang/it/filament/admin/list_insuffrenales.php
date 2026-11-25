@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'List Insuffrenales',
-    'title' => 'List Insuffrenales',
-
+    'navigation_label' => 'Insufficienze renali',
+    'title' => 'Insufficienze renali',
 ];

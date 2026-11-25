@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Cirrosi',
-    'title' => 'Edit Cirrosi',
-
+    'navigation_label' => 'Modifica Cirrosi',
+    'title' => 'Modifica Cirrosi',
 ];

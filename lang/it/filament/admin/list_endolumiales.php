@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'List Endolumiales',
-    'title' => 'List Endolumiales',
-
+    'navigation_label' => 'Superfici endolumiali',
+    'title' => 'Superfici endolumiali',
 ];

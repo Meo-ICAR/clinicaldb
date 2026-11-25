@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Center',
-    'title' => 'Edit Center',
-
+    'navigation_label' => 'Modifica Centro',
+    'title' => 'Modifica Centro',
 ];

@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Diabete',
-    'title' => 'Edit Diabete',
-
+    'navigation_label' => 'Modifica Diabete',
+    'title' => 'Modifica Diabete',
 ];

@@ -14,6 +14,7 @@ use Filament\Tables\Columns\TextInputColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\Schema as DatabaseSchema;
 use Illuminate\Support\Str;
 use UnitEnum;
@@ -21,6 +22,34 @@ use UnitEnum;
 abstract class LookupResource extends Resource
 {
     protected static UnitEnum|string|null $navigationGroup = 'Configurazioni';
+
+    public static function getModelLabel(): string
+    {
+        return self::lookupModelLabel('singular') ?? parent::getModelLabel();
+    }
+
+    public static function getPluralModelLabel(): string
+    {
+        return self::lookupModelLabel('plural') ?? parent::getPluralModelLabel();
+    }
+
+    /**
+     * Nome italiano del modello (singolare o plurale) da
+     * lang/it/filament/admin/lookup_labels.php, se presente.
+     */
+    private static function lookupModelLabel(string $form): ?string
+    {
+        $key = 'filament/admin/lookup_labels.models.'.Str::snake(class_basename(static::getModel())).'.'.$form;
+
+        return Lang::has($key) ? __($key) : null;
+    }
+
+    private static function columnLabel(string $column): string
+    {
+        $key = 'filament/admin/lookup_labels.columns.'.$column;
+
+        return Lang::has($key) ? __($key) : Str::headline($column);
+    }
 
     public static function getNavigationLabel(): string
     {
@@ -65,7 +94,7 @@ abstract class LookupResource extends Resource
         return $table
             ->columns(array_map(
                 fn (string $column) => TextInputColumn::make($column)
-                    ->label(Str::headline($column))
+                    ->label(self::columnLabel($column))
                     ->searchable()
                     ->sortable(),
                 $columns,
@@ -92,8 +121,8 @@ abstract class LookupResource extends Resource
             : TextInput::make($column);
 
         return $component
-            ->label(Str::headline($column))
-            ->required($column === (new (static::getModel))->getKeyName())
+            ->label(self::columnLabel($column))
+            ->required($column === (new (static::getModel()))->getKeyName())
             ->maxLength(255);
     }
 }

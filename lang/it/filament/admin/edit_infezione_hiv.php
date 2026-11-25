@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Infezione Hiv',
-    'title' => 'Edit Infezione Hiv',
-
+    'navigation_label' => 'Modifica Infezione HIV',
+    'title' => 'Modifica Infezione HIV',
 ];

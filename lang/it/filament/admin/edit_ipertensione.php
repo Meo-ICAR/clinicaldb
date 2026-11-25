@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Ipertensione',
-    'title' => 'Edit Ipertensione',
-
+    'navigation_label' => 'Modifica Ipertensione',
+    'title' => 'Modifica Ipertensione',
 ];

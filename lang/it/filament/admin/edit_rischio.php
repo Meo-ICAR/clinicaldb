@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Rischio',
-    'title' => 'Edit Rischio',
-
+    'navigation_label' => 'Modifica Rischio',
+    'title' => 'Modifica Rischio',
 ];

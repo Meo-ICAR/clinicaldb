@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Stato Civile',
-    'title' => 'Edit Stato Civile',
-
+    'navigation_label' => 'Modifica Stato civile',
+    'title' => 'Modifica Stato civile',
 ];

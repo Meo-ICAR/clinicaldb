@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'List Users',
-    'title' => 'List Users',
-
+    'navigation_label' => 'Specialisti',
+    'title' => 'Specialisti',
 ];

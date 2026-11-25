@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Epatite',
-    'title' => 'Edit Epatite',
-
+    'navigation_label' => 'Modifica Epatite',
+    'title' => 'Modifica Epatite',
 ];

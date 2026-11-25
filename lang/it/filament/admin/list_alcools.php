@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'List Alcools',
-    'title' => 'List Alcools',
-
+    'navigation_label' => 'Alcool',
+    'title' => 'Alcool',
 ];

@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Stenosi',
-    'title' => 'Edit Stenosi',
-
+    'navigation_label' => 'Modifica Stenosi',
+    'title' => 'Modifica Stenosi',
 ];

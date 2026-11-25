@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Insuffrenale',
-    'title' => 'Edit Insuffrenale',
-
+    'navigation_label' => 'Modifica Insufficienza renale',
+    'title' => 'Modifica Insufficienza renale',
 ];

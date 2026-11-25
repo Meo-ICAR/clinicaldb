@@ -11,5 +11,22 @@
     "Please click the button below to verify your email address.": "Fai clic sul pulsante qui sotto per verificare il tuo indirizzo email.",
     "Verify Email Address": "Verifica indirizzo email",
     "If you did not create an account, no further action is required.": "Se non hai creato un account, non è necessaria alcuna azione.",
-    "If you're having trouble clicking the \":actionText\" button, copy and paste the URL below\ninto your web browser:": "Se hai problemi a fare clic sul pulsante \":actionText\", copia e incolla l'URL qui sotto\nnel tuo browser web:"
+    "If you're having trouble clicking the \":actionText\" button, copy and paste the URL below\ninto your web browser:": "Se hai problemi a fare clic sul pulsante \":actionText\", copia e incolla l'URL qui sotto\nnel tuo browser web:",
+    "Unauthorized": "Non autorizzato",
+    "Payment Required": "Pagamento richiesto",
+    "Forbidden": "Accesso negato",
+    "Not Found": "Pagina non trovata",
+    "Page Expired": "Pagina scaduta",
+    "Too Many Requests": "Troppe richieste",
+    "Server Error": "Errore del server",
+    "Service Unavailable": "Servizio non disponibile",
+    "Payload Too Large": "Contenuto troppo grande",
+    "Pagination Navigation": "Navigazione tra le pagine",
+    "Go to page :page": "Vai alla pagina :page",
+    "Showing": "Risultati da",
+    "to": "a",
+    "of": "di",
+    "results": "risultati",
+    "Previous": "Precedente",
+    "Next": "Successivo"
 }

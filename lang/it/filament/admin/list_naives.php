@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'List Naives',
-    'title' => 'List Naives',
-
+    'navigation_label' => 'Naive',
+    'title' => 'Naive',
 ];

@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Ini',
-    'title' => 'Edit Ini',
-
+    'navigation_label' => 'Modifica INI',
+    'title' => 'Modifica INI',
 ];

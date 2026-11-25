@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'List Ipolipemizzantes',
-    'title' => 'List Ipolipemizzantes',
-
+    'navigation_label' => 'Ipolipemizzanti',
+    'title' => 'Ipolipemizzanti',
 ];

@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'List Ictuses',
-    'title' => 'List Ictuses',
-
+    'navigation_label' => 'Ictus',
+    'title' => 'Ictus',
 ];

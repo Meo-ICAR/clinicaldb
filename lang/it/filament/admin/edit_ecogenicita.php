@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Ecogenicita',
-    'title' => 'Edit Ecogenicita',
-
+    'navigation_label' => 'Modifica Ecogenicità',
+    'title' => 'Modifica Ecogenicità',
 ];

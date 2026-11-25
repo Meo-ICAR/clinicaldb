@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Ipolipemizzante',
-    'title' => 'Edit Ipolipemizzante',
-
+    'navigation_label' => 'Modifica Ipolipemizzante',
+    'title' => 'Modifica Ipolipemizzante',
 ];

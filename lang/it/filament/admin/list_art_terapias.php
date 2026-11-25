@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'List Art Terapias',
-    'title' => 'List Art Terapias',
-
+    'navigation_label' => 'Terapie ART',
+    'title' => 'Terapie ART',
 ];

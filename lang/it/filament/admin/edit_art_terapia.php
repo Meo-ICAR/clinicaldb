@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Art Terapia',
-    'title' => 'Edit Art Terapia',
-
+    'navigation_label' => 'Modifica Terapia ART',
+    'title' => 'Modifica Terapia ART',
 ];

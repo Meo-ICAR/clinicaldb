@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'List Field Reference Ranges',
-    'title' => 'List Field Reference Ranges',
-
+    'navigation_label' => 'Range di riferimento',
+    'title' => 'Range di riferimento',
 ];

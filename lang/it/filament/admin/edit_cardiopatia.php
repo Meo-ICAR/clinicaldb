@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Cardiopatia',
-    'title' => 'Edit Cardiopatia',
-
+    'navigation_label' => 'Modifica Cardiopatia',
+    'title' => 'Modifica Cardiopatia',
 ];

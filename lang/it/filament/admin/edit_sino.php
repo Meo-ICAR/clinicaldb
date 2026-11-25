@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Sino',
-    'title' => 'Edit Sino',
-
+    'navigation_label' => 'Modifica Sino',
+    'title' => 'Modifica Sino',
 ];

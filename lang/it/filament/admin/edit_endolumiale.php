@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Endolumiale',
-    'title' => 'Edit Endolumiale',
-
+    'navigation_label' => 'Modifica Superficie endolumiale',
+    'title' => 'Modifica Superficie endolumiale',
 ];

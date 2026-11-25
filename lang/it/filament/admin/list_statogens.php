@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'List Statogens',
-    'title' => 'List Statogens',
-
+    'navigation_label' => 'Stati generali',
+    'title' => 'Stati generali',
 ];

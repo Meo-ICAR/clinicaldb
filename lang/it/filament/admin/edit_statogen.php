@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Statogen',
-    'title' => 'Edit Statogen',
-
+    'navigation_label' => 'Modifica Stato generale',
+    'title' => 'Modifica Stato generale',
 ];

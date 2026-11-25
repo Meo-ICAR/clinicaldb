@@ -1,10 +1,8 @@
 <?php
 
 return [
-
-    'archiprevaleat_dashboard' => 'Archiprevaleatdashboard',
+    'archiprevaleat_dashboard' => 'Dashboard ARCHIPREVALEAT',
     'dashboard_a_r_c_h_i_p_r_e_v_a_l_e_a_t' => 'Dashboard ARCHIPREVALEAT',
     'navigation_label' => 'Dashboard',
     'title' => 'Dashboard',
-
 ];

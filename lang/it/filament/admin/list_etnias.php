@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'List Etnias',
-    'title' => 'List Etnias',
-
+    'navigation_label' => 'Etnie',
+    'title' => 'Etnie',
 ];

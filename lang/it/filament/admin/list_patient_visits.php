@@ -1,10 +1,8 @@
 <?php
 
 return [
-
-    'clear_anomaly_filter' => 'Clearanomalyfilter',
-    'navigation_label' => 'List Patient Visits',
+    'clear_anomaly_filter' => 'Rimuovi filtro valori anomali',
+    'navigation_label' => 'Visite',
     'rimuovi_filtro_valori_anomali' => 'Rimuovi filtro valori anomali',
-    'title' => 'List Patient Visits',
-
+    'title' => 'Visite',
 ];

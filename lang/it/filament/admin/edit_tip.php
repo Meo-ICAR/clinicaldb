@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Tip',
-    'title' => 'Edit Tip',
-
+    'navigation_label' => 'Modifica Tip',
+    'title' => 'Modifica Tip',
 ];

@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Osteoporosi',
-    'title' => 'Edit Osteoporosi',
-
+    'navigation_label' => 'Modifica Osteoporosi',
+    'title' => 'Modifica Osteoporosi',
 ];

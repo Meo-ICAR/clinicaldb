@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Dislipidemia',
-    'title' => 'Edit Dislipidemia',
-
+    'navigation_label' => 'Modifica Dislipidemia',
+    'title' => 'Modifica Dislipidemia',
 ];

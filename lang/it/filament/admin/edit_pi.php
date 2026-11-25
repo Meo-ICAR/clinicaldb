@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Pi',
-    'title' => 'Edit Pi',
-
+    'navigation_label' => 'Modifica PI',
+    'title' => 'Modifica PI',
 ];

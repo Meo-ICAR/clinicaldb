@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'List Fumos',
-    'title' => 'List Fumos',
-
+    'navigation_label' => 'Fumo',
+    'title' => 'Fumo',
 ];

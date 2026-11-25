@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'List Trattamento Causa Abbandonos',
-    'title' => 'List Trattamento Causa Abbandonos',
-
+    'navigation_label' => 'Cause di abbandono',
+    'title' => 'Cause di abbandono',
 ];

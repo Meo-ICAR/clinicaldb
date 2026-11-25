@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'Edit Lipodistrofia',
-    'title' => 'Edit Lipodistrofia',
-
+    'navigation_label' => 'Modifica Lipodistrofia',
+    'title' => 'Modifica Lipodistrofia',
 ];

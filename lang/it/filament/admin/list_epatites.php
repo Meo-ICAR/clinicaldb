@@ -1,8 +1,6 @@
 <?php
 
 return [
-
-    'navigation_label' => 'List Epatites',
-    'title' => 'List Epatites',
-
+    'navigation_label' => 'Epatiti',
+    'title' => 'Epatiti',
 ];
