@@ -54,6 +54,7 @@ class PatientsTable
             ->toolbarActions([
                 BulkActionGroup::make([
                     DeleteBulkAction::make()
+                        ->authorizeIndividualRecords('delete')
                         ->label(__('filament/admin/patient_resource.delete_bulk')),
                 ]),
             ]);

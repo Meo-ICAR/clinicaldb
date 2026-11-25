@@ -422,6 +422,7 @@ class PatientVisitsTable
             ->toolbarActions([
                 BulkActionGroup::make([
                     DeleteBulkAction::make()
+                        ->authorizeIndividualRecords('delete')
                         ->label(__('filament/admin/patient_visit_resource.delete_bulk')),
                 ]),
             ]);
